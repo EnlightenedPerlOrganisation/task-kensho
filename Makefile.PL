@@ -51,9 +51,10 @@ feature 'Database Development',
   ;
 
 feature 'Web Crawling',
-  -default      => 0,
-  'Bundle::LWP' => 0,
-  'LWP::Simple' => 0,
+  -default         => 0,
+  'Bundle::LWP'    => 0,
+  'LWP::Simple'    => 0,
+  'WWW::Mechanize' => 0,
   ;
 
 feature 'Module Development',

@@ -118,6 +118,8 @@ top 100 most used perl modules lists.
 
 =item LWP::Simple
 
+=item WWW::Mechanize
+
 =back
 
 =head2 Module Development
@@ -144,11 +146,14 @@ Please report any bugs or feature requests to
 C<bug-task-kensho@rt.cpan.org>, or through the web interface at
 L<http://rt.cpan.org>.
 
+=head1 SEE ALSO
+
+Enlightend Perl Organization L<http://www.enlightenedperl.org/>, 
+L<Perl::Dist::Strawberry>
 
 =head1 AUTHOR
 
 Chris Prather  C<< <perigrin@cpan.org> >>
-
 
 =head1 LICENCE AND COPYRIGHT
 
