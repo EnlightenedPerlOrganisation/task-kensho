@@ -6,7 +6,7 @@ __END__
 
 =head1 NAME
 
-Task::Kensho - [One line description of module's purpose here]
+Task::Kensho - A Glimpse at an Enlightened Perl
 
 
 =head1 VERSION
@@ -16,98 +16,127 @@ This document describes Task::Kensho version 0.0.1
 
 =head1 SYNOPSIS
 
-    use Task::Kensho;
+    > cpan Task::Kensho
 
-=for author to fill in:
-    Brief code example(s) here showing commonest usage(s).
-    This section will be as far as many users bother reading
-    so make it as educational and exeplary as possible.
-  
-  
-=head1 DESCRIPTION
+=head1 DESCRIPTION,
 
-=for author to fill in:
-    Write a full description of the module and its features here.
-    Use subsections (=head2, =head3) as appropriate.
+From L<http://en.wikipedia.org/wiki/Kensho>:
 
+    Kenshō (見性) (C. Wu) is a Japanese term for enlightenment experiences—most
+    commonly used within the confines of Zen Buddhism—literally meaning
+    "seeing one's nature"[1] or "true self."[2] It generally "refers to the
+    realization of nonduality of subject and object."[3] 
+    
+Task::Kensho is a first cut at building a list of reccomended modules for
+Enlightened Perl development. CPAN is wonderful, but there are too many wheels
+and you have to pick and choose amongst the various competing technologies. 
 
-=head1 INTERFACE 
+The plan is for Task::Kensho to eventually morph into an actual perl 
+distribution possibly called Satori Perl.
 
-=for author to fill in:
-    Write a separate section listing the public components of the modules
-    interface. These normally consist of either subroutines that may be
-    exported, or methods that may be called on objects belonging to the
-    classes provided by the module.
+The modules that are bundled by Task::Kensho are broken down into several 
+categories and are still being considered. They are all taken from various 
+top 100 most used perl modules lists.
 
+=head2 Basic Toolchain
 
-=head1 DIAGNOSTICS
+=over 
 
-=for author to fill in:
-    List every single error and warning message that the module can
-    generate (even the ones that will "never happen"), with a full
-    explanation of each problem, one or more likely causes, and any
-    suggested remedies.
+=item Bundle::CPAN
 
-=over
-
-=item C<< Error message here, perhaps with %s placeholders >>
-
-[Description of error here]
-
-=item C<< Another error message here >>
-
-[Description of error here]
-
-[Et cetera, et cetera]
+=item version
 
 =back
 
+=head2 Testing
 
-=head1 CONFIGURATION AND ENVIRONMENT
+=over
 
-=for author to fill in:
-    A full explanation of any configuration system(s) used by the
-    module, including the names and locations of any configuration
-    files, and the meaning of any environment variables or properties
-    that can be set. These descriptions must also include details of any
-    configuration language used.
-  
-Task::Kensho requires no configuration files or environment variables.
+=item Test::Pod
 
+=item Test::More
 
-=head1 DEPENDENCIES
+=item Test::Exception
 
-=for author to fill in:
-    A list of all the other modules that this module relies upon,
-    including any restrictions on versions, and an indication whether
-    the module is part of the standard Perl distribution, part of the
-    module's distribution, or must be installed separately. ]
+=item Test::Pod::Coverage
 
-None.
+=back
 
+=head2 Object Oriented Programming
 
-=head1 INCOMPATIBILITIES
+=over
 
-=for author to fill in:
-    A list of any modules that this module cannot be used in conjunction
-    with. This may be due to name conflicts in the interface, or
-    competition for system or program resources, or due to internal
-    limitations of Perl (for example, many modules that use source code
-    filters are mutually incompatible).
+=item Moose
 
-None reported.
+=item Moose::Autobox
 
+=item MooseX::AttributeHelpers
+
+=item MooseX::Storage
+
+=item MooseX::Getopt
+
+=back
+
+=head2 Asynchronous Programming
+
+=over
+
+=item POE
+
+=back
+
+=head2 Web Development
+
+=over
+
+=item Catalyst
+
+=item Catalyst::View::TT
+
+=item Catalyst::Model::DBIC
+
+=back
+
+=head2 Database Development
+
+=over
+
+=item DBI
+
+=item DBD::SQLite
+
+=item DBIx::Class
+
+=back
+
+=head2 Web Crawling
+
+=over
+
+=item Bundle::LWP
+
+=item LWP::Simple
+
+=back
+
+=head2 Module Development
+
+=over
+
+=item Module::Starter
+
+=item Module::Install
+
+=back
 
 =head1 BUGS AND LIMITATIONS
 
-=for author to fill in:
-    A list of known problems with the module, together with some
-    indication Whether they are likely to be fixed in an upcoming
-    release. Also a list of restrictions on the features the module
-    does provide: data types that cannot be handled, performance issues
-    and the circumstances in which they may arise, practical
-    limitations on the size of data sets, special cases that are not
-    (yet) handled, etc.
+This list is by no means comprehensive of the "Good" Modules on CPAN. Nor is 
+this neccessarily the correct path for all developers. Each of these modules
+has a perfectly acceptable replacement that may work better for you. This 
+is however a path to good perl practicies, and a starting 
+place on the road to Enlightened Perl programming.
 
 No bugs have been reported.
 
@@ -123,31 +152,8 @@ Chris Prather  C<< <perigrin@cpan.org> >>
 
 =head1 LICENCE AND COPYRIGHT
 
-Copyright (c) 2008, Chris Prather C<< <perigrin@cpan.org> >>. All rights reserved.
+Copyright (c) 2008, Chris Prather C<< <perigrin@cpan.org> >>. Some rights reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself. See L<perlartistic>.
 
-
-=head1 DISCLAIMER OF WARRANTY
-
-BECAUSE THIS SOFTWARE IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
-FOR THE SOFTWARE, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN
-OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
-PROVIDE THE SOFTWARE "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER
-EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE
-ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE SOFTWARE IS WITH
-YOU. SHOULD THE SOFTWARE PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL
-NECESSARY SERVICING, REPAIR, OR CORRECTION.
-
-IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
-WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
-REDISTRIBUTE THE SOFTWARE AS PERMITTED BY THE ABOVE LICENCE, BE
-LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL,
-OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE
-THE SOFTWARE (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING
-RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A
-FAILURE OF THE SOFTWARE TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
-SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
-SUCH DAMAGES.

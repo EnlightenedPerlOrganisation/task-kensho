@@ -3,12 +3,12 @@ use inc::Module::Install;
 
 # Define metadata
 name 'Task-Kensho';
-abstract 'A glipmse at an Englightened Perl bundle.';
+abstract 'A glipmse at an Englightened Perl.';
 author 'Chris Prather <chris@prahter.org>';
 version_from 'lib/Task/Kensho.pm';
 license 'perl';
 
-feature 'Basic Tools',
+feature 'Basic Toolchain',
   -default       => 1,
   'Bundle::CPAN' => 0,
   'version'      => 0,
@@ -16,9 +16,9 @@ feature 'Basic Tools',
 
 feature 'Testing',
   -default              => 1,
-  'Test::Pod'           => 0,
   'Test::More'          => 0,
   'Test::Exception'     => 0,
+  'Test::Pod'           => 0,
   'Test::Pod::Coverage' => 0,
   ;
 
@@ -29,7 +29,6 @@ feature 'Object Oriented Programming',
   'MooseX::AttributeHelpers' => 0,
   'MooseX::Storage'          => 0,
   'MooseX::Getopt'           => 0,
-  'Task::Moose'              => 0,
   ;
 
 feature 'Asynchronous Programming',
@@ -44,7 +43,7 @@ feature 'Web Development',
   'Catalyst::Model::DBIC' => 0,
   ;
 
-feature 'Databases',
+feature 'Database Development',
   -default      => 0,
   'DBI'         => 0,
   'DBD::SQLite' => 0,
