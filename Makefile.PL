@@ -11,6 +11,7 @@ license 'perl';
 feature 'Basic Toolchain',
   -default       => 1,
   'Bundle::CPAN' => 0,
+  'local::lib'   => 0,
   'version'      => 0,
   ;
 
@@ -44,11 +45,11 @@ feature 'Web Development',
   ;
 
 feature 'Database Development',
-  -default      => 0,
-  'DBI'         => 0,
-  'DBD::SQLite' => 0,
-  'DBIx::Class' => 0,
-  ;
+  -default                       => 0,
+  'DBI'                          => 0,
+  'DBD::SQLite'                  => 0,
+  'DBIx::Class'                  => 0,
+  'DBIx::Class::Schema::Loader' => 0;
 
 feature 'Web Crawling',
   -default         => 0,

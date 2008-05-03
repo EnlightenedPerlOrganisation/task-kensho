@@ -8,7 +8,6 @@ __END__
 
 Task::Kensho - A Glimpse at an Enlightened Perl
 
-
 =head1 VERSION
 
 This document describes Task::Kensho version 0.0.1
@@ -43,6 +42,8 @@ top 100 most used perl modules lists.
 =over 
 
 =item Bundle::CPAN
+
+=item local::lib
 
 =item version
 
@@ -108,6 +109,8 @@ top 100 most used perl modules lists.
 
 =item DBIx::Class
 
+=item DBIx::Class::Schema::Loader
+
 =back
 
 =head2 Web Crawling
@@ -148,8 +151,7 @@ L<http://rt.cpan.org>.
 
 =head1 SEE ALSO
 
-Enlightend Perl Organization L<http://www.enlightenedperl.org/>, 
-L<Perl::Dist::Strawberry>
+L<http://www.enlightenedperl.org/>, L<Perl::Dist::Strawberry>
 
 =head1 AUTHOR
 
