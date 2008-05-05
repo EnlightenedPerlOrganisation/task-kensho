@@ -3,6 +3,7 @@ use strict;
 our $VERSION = '0.0.1';
 
 __END__
+=encoding utf-8
 
 =head1 NAME
 
@@ -31,7 +32,7 @@ Enlightened Perl development. CPAN is wonderful, but there are too many wheels
 and you have to pick and choose amongst the various competing technologies. 
 
 The plan is for Task::Kensho to eventually morph into an actual perl 
-distribution possibly called Satori Perl.
+distribution.
 
 The modules that are bundled by Task::Kensho are broken down into several 
 categories and are still being considered. They are all taken from various 
