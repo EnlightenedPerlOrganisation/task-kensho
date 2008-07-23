@@ -9,10 +9,13 @@ version_from 'lib/Task/Kensho.pm';
 license 'perl';
 
 feature 'Basic Toolchain',
-  -default       => 1,
-  'Bundle::CPAN' => 0,
-  'local::lib'   => 0,
-  'version'      => 0,
+  -default           => 1,
+  'Bundle::CPAN'     => 0,
+  'local::lib'       => 0,
+  'version'          => 0,
+  'App::Ack'         => 0,
+  'Devel::REPL'      => 0,
+  'Module::Corelist' => 0,
   ;
 
 feature 'Testing',
@@ -38,18 +41,23 @@ feature 'Asynchronous Programming',
   ;
 
 feature 'Web Development',
-  -default                => 0,
-  'Catalyst'              => 0,
-  'Catalyst::View::TT'    => 0,
-  'Catalyst::Model::DBIC::Schema' => 0,
+  -default                           => 0,
+  'Catalyst'                         => 0,
+  'Catalyst::View::TT'               => 0,
+  'Catalyst::Model::DBIC::Schema'    => 0,
+  'Catalyst::Devel'                  => 0,
+  'Catalyst::Plugin::Session'        => 0,
+  'Catalyst::Plugin::Authentication' => 0,
   ;
 
 feature 'Database Development',
-  -default                       => 0,
-  'DBI'                          => 0,
-  'DBD::SQLite'                  => 0,
-  'DBIx::Class'                  => 0,
-  'DBIx::Class::Schema::Loader' => 0;
+  -default                      => 0,
+  'DBI'                         => 0,
+  'DBD::SQLite'                 => 0,
+  'DBIx::Class'                 => 0,
+  'DBIx::Class::Schema::Loader' => 0,
+  'SQL::Translator'             => 0,
+  ;
 
 feature 'Web Crawling',
   -default         => 0,
