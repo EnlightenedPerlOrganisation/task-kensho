@@ -41,7 +41,7 @@ feature 'Web Development',
   -default                => 0,
   'Catalyst'              => 0,
   'Catalyst::View::TT'    => 0,
-  'Catalyst::Model::DBIC' => 0,
+  'Catalyst::Model::DBIC::Schema' => 0,
   ;
 
 feature 'Database Development',
@@ -64,5 +64,4 @@ feature 'Module Development',
   'Module::Install' => 0,
   ;
 
-auto_install;
 WriteAll;

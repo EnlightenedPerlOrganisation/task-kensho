@@ -152,7 +152,7 @@ L<http://rt.cpan.org>.
 
 =head1 SEE ALSO
 
-L<http://www.enlightenedperl.org/>, L<Perl::Dist::Strawberry>
+L<http://www.enlightenedperl.org/>, L<Perl::Dist::Strawberry>, L<http://gitorious.org/projects/task-kensho>
 
 =head1 AUTHOR
 
