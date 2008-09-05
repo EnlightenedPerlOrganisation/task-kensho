@@ -101,6 +101,7 @@ feature 'Script Hackery',
   -default          => 0,
   'Smart::Comments' => 0,
   'IO::All'         => 0,
+  'XXX'             => 0,
   ;
 
 WriteAll;
