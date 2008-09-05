@@ -1,3 +1,6 @@
+# require a modern perl
+use 5.8.2;
+
 # Load the Module::Install bundled in ./inc/
 use inc::Module::Install;
 
@@ -17,7 +20,7 @@ feature 'Basic Toolchain',
 
 feature 'Testing',
   -default              => 1,
-  'Test::More'          => 0,
+  'Test::Simple'        => 0,
   'Test::Exception'     => 0,
   'Test::Pod'           => 0,
   'Test::Pod::Coverage' => 0,
@@ -73,9 +76,11 @@ feature 'Module Development',
   'Devel::NYTProf'  => 0,
   ;
 
-feature 'Email Modules',
-  -default => 0,
-  ;
+## There is no clear winner here
+## so we'll leave it out of 0.01
+# feature 'Email Modules',
+#   -default => 0,
+#   ;
 
 feature 'Date Modules',
   -default          => 0,

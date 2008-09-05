@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.0.1';
+our $VERSION = '0.0.0_1';
 
 __END__
 =encoding utf-8
@@ -40,51 +40,85 @@ top 100 most used perl modules lists.
 
 =head2 Basic Toolchain
 
-=over 
+=over
 
-=item Bundle::CPAN
+=item  Bundle::CPAN
 
-=item local::lib
+Bundle to optimize the behaviour of CPAN.pm
+
+=item  local::lib
+
+Create and use a local lib/ for perl modules with PERL5LIB 
 
 =item version
+
+Perl extension for Version Objects 
 
 =back
 
 =head2 Testing
 
-=over
+=over 
 
-=item Test::Pod
+=item Test::Simple
 
-=item Test::More
+Basic utilities for writing tests.
 
 =item Test::Exception
 
+Test exception based code 
+
+=item Test::Pod
+
+Check for POD errors in files
+
 =item Test::Pod::Coverage
+
+Check for pod coverage in your distribution.
+
+=item Test::Memory::Cycle
+
+Check for memory leaks and circular memory references
 
 =back
 
 =head2 Object Oriented Programming
 
-=over
+=over 
 
-=item Moose
+=item  Moose
 
-=item Moose::Autobox
+A postmodern object system for Perl 5 
 
-=item MooseX::AttributeHelpers
+=item  Moose::Autobox
 
-=item MooseX::Storage
+Autoboxed wrappers for Native Perl datatypes 
 
-=item MooseX::Getopt
+=item  MooseX::AttributeHelpers
+
+Extend your attribute interfaces 
+
+=item  MooseX::Storage
+
+An serialization framework for Moose classes 
+
+=item  MooseX::Getopt
+
+A Moose role for processing command line options 
+
+=item  namespace::clean
+
+Keep imports and functions out of your namespace 
 
 =back
 
 =head2 Asynchronous Programming
 
-=over
+=over 
 
-=item POE
+=item  POE
+
+portable multitasking and networking framework for Perl 
 
 =back
 
@@ -92,25 +126,60 @@ top 100 most used perl modules lists.
 
 =over
 
-=item Catalyst
+=item Catalyst 
+
+The Elegant MVC Web Application Framework 
 
 =item Catalyst::View::TT
 
-=item Catalyst::Model::DBIC
+Template View Class 
 
-=back
+=item Catalyst::Model::DBIC::Schema
+
+DBIx::Class::Schema Model Class
+
+=item Catalyst::Devel
+
+Catalyst Development Tools 
+
+=item Catalyst::Plugin::Session
+
+Generic Session plugin - ties together server side storage and client side
+state required to maintain session data.
+
+=item Catalyst::Plugin::Authentication
+
+Infrastructure plugin for the Catalyst authentication framework
+
+=item Catalyst::Plugin::StackTrace
+
+Display a stack trace on the debug screen 
+
+=back 
 
 =head2 Database Development
 
-=over
+=over 
 
 =item DBI
 
+Database independent interface for Perl 
+
 =item DBD::SQLite
+
+Self Contained RDBMS in a DBI Driver 
 
 =item DBIx::Class
 
+Extensible and flexible object <-> relational mapper. 
+
 =item DBIx::Class::Schema::Loader
+
+Dynamic definition of a DBIx::Class::Schema 
+
+=item SQL::Translator
+
+Manipulate structured data definitions (SQL and more) 
 
 =back
 
@@ -120,11 +189,17 @@ top 100 most used perl modules lists.
 
 =item Bundle::LWP
 
+Install all libwww-perl related modules
+
 =item LWP::Simple
+
+Simple procedural interface to LWP 
 
 =item WWW::Mechanize
 
-=back
+Handy web browsing in a Perl object 
+
+=back 
 
 =head2 Module Development
 
@@ -132,7 +207,89 @@ top 100 most used perl modules lists.
 
 =item Module::Starter
 
+A simple starter kit for any module 
+
 =item Module::Install
+
+Standalone, extensible Perl module installer 
+
+=item Devel::NYTProf
+
+Powerful feature-rich perl source code profiler 
+
+=back
+
+=head2 Date Modules
+
+=over
+
+=item DateTime
+
+A date and time object 
+
+=item Date::Tiny
+
+A date object with as little code as possible 
+
+=item Time::ParseDate
+
+Date parsing both relative and absolute
+
+=back
+
+=head2 Config Modules
+
+=over
+
+=item Config::Any
+
+Load configuration from different file formats, transparently 
+
+=item Config::General
+
+Generic Config Module 
+
+=back
+
+=head2 Useful Command-line Tools
+
+=over
+
+=item App::Ack
+
+A grep-like text finder
+
+=item App::Nopaste
+
+Easy access to any pastebin
+
+=item Devel::REPL
+
+A modern perl interactive shell 
+
+=item Module::Corelist
+
+What modules shipped with versions of perl 
+
+=back
+
+=head2 Script Hackery
+
+=over
+
+=item Smart::Comments
+
+Comments that do more than just sit there 
+
+=item IO::All
+
+IO::All combines all of the best Perl IO modules into a single nifty object
+oriented interface to greatly simplify your everyday Perl IO idioms.
+
+=item XXX
+
+XXX.pm exports a function called XXX that you can put just about anywhere in
+your Perl code to make it die with a YAML dump of the arguments to its right.
 
 =back
 
