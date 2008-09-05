@@ -109,4 +109,5 @@ feature 'Script Hackery',
   'XXX'             => 0,
   ;
 
+auto_install();
 WriteAll;
