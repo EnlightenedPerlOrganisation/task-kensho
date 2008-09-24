@@ -1,5 +1,9 @@
 Revision history for Task-Kensho
 
+0.0.2 2008-09-23
+	  Add Perl::Tidy 
+	  Fix missing inc/ from Module::Install
+
 0.0.1  2008-09-05
        Initial release.
 
