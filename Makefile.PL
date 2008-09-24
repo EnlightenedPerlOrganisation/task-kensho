@@ -74,10 +74,11 @@ feature 'Module Development',
   'Module::Starter' => 0,
   'Module::Install' => 0,
   'Devel::NYTProf'  => 0,
+  'Perl::Tidy'      => 0,
   ;
 
 ## There is no clear winner here
-## so we'll leave it out of 0.01
+## so we'll leave it out of 0.02
 # feature 'Email Modules',
 #   -default => 0,
 #   ;

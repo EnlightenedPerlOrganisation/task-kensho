@@ -217,6 +217,10 @@ Standalone, extensible Perl module installer
 
 Powerful feature-rich perl source code profiler 
 
+=item Perl::Tidy
+
+Parses and beautifies perl source
+
 =back
 
 =head2 Date Modules
