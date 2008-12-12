@@ -64,6 +64,10 @@ Perl extension for Version Objects
 
 Basic utilities for writing tests.
 
+=item Test::Most
+
+Most commonly needed test functions and features.
+
 =item Test::Exception
 
 Test exception based code 

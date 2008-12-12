@@ -1,9 +1,11 @@
 Revision history for Task-Kensho
 
 0.0.5 2008-12-11
-	  Add documentation on the Script Hackery section to clarify that it's not 
-	  intended for *production* but for hacking up prototypes and debugging.
-
+	  + Add documentation on the Script Hackery section to clarify that it's
+        not intended for *production* but for hacking up prototypes and
+        debugging.
+      + Add Test::Most (RT #39594)
+	
 0.0.4 2008-09-28
 	  Fix bad tarball
 	
