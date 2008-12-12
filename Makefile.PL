@@ -101,7 +101,7 @@ feature 'Useful Command-line Tools',
   -default           => 0,
   'App::Ack'         => 0,
   'Devel::REPL'      => 0,
-  'Module::Corelist' => 0,
+  'Module::CoreList' => 0,
   ;
 
 feature 'Script Hackery',
