@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.0.4';
+our $VERSION = '0.0.5';
 
 __END__
 =encoding utf-8
@@ -278,6 +278,10 @@ What modules shipped with versions of perl
 =back
 
 =head2 Script Hackery
+
+These packages are included less for production work and more for
+whippitupitude. They reflect packages that people have found incredibly useful
+for prototyping and debugging before reducing down to a production script.
 
 =over
 
