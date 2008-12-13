@@ -29,13 +29,15 @@ feature 'Testing',
   ;
 
 feature 'Object Oriented Programming',
-  -default                   => 0,
-  'Moose'                    => 0,
-  'Moose::Autobox'           => 0,
-  'MooseX::AttributeHelpers' => 0,
-  'MooseX::Storage'          => 0,
-  'MooseX::Getopt'           => 0,
-  'namespace::clean'         => 0,
+  -default                    => 0,
+  'Moose'                     => 0,
+  'Moose::Autobox'            => 0,
+  'MooseX::AttributeHelpers'  => 0,
+  'MooseX::Storage'           => 0,
+  'MooseX::Getopt'            => 0,
+  'MooseX::SimpleConfig'      => 0,
+  'MooseX::StrictConstructor' => 0,
+  'namespace::clean'          => 0,
   ;
 
 feature 'Asynchronous Programming',

@@ -1,4 +1,8 @@
 Revision history for Task-Kensho
+0.0.7 2008-12-12
+	+ Add MooseX::StrictConstructor as per Dave Rolsky and Ricardo Signes
+	+ Add MooseX::SimpleConfig
+	
 0.0.6 2008-12-12
     + Fix Module::CoreList to be spelt with a capital L
 
