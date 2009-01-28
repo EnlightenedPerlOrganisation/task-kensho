@@ -73,11 +73,13 @@ feature 'Web Crawling',
   ;
 
 feature 'Module Development',
-  -default          => 0,
-  'Module::Starter' => 0,
-  'Module::Install' => 0,
-  'Devel::NYTProf'  => 0,
-  'Perl::Tidy'      => 0,
+  -default             => 0,
+  'Module::Starter'    => 0,
+  'Module::Install'    => 0,
+  'Devel::NYTProf'     => 0,
+  'Perl::Tidy'         => 0,
+  'Devel::SimpleTrace' => 0,
+  'Modern::Perl'       => 0,
   ;
 
 ## There is no clear winner here

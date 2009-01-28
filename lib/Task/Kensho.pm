@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.0.7';
+our $VERSION = '0.0.8';
 
 __END__
 =encoding utf-8
@@ -232,6 +232,14 @@ Powerful feature-rich perl source code profiler
 =item Perl::Tidy
 
 Parses and beautifies perl source
+
+=item Devel::SimpleTrace
+
+See where your code warns and dies using stack traces 
+
+=item Modern::Perl
+
+enable all of the features of Modern Perl with one command 
 
 =back
 
