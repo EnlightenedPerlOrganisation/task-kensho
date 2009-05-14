@@ -31,19 +31,17 @@ feature 'Testing',
 feature 'Object Oriented Programming',
   -default                    => 0,
   'Moose'                     => 0,
+  'MooseX::Types'             => 0,
   'Moose::Autobox'            => 0,
   'MooseX::AttributeHelpers'  => 0,
   'MooseX::Storage'           => 0,
   'MooseX::Getopt'            => 0,
   'MooseX::SimpleConfig'      => 0,
   'MooseX::StrictConstructor' => 0,
-  'namespace::clean'          => 0,
+  'namespace::autoclean'      => 0,
   ;
 
-feature 'Asynchronous Programming',
-  -default => 0,
-  'POE'    => 0,
-  ;
+feature 'Asynchronous Programming', -default => 0, 'POE' => 0,;
 
 feature 'Web Development',
   -default                           => 0,
@@ -73,13 +71,13 @@ feature 'Web Crawling',
   ;
 
 feature 'Module Development',
-  -default             => 0,
-  'Module::Starter'    => 0,
-  'Module::Install'    => 0,
-  'Devel::NYTProf'     => 0,
-  'Perl::Tidy'         => 0,
-  'Devel::SimpleTrace' => 0,
-  'Modern::Perl'       => 0,
+  -default          => 0,
+  'Module::Starter' => 0,
+  'Module::Install' => 0,
+  'Devel::NYTProf'  => 0,
+  'Perl::Tidy'      => 0,
+  'Carp::Always'    => 0,
+  'Modern::Perl'    => 0,
   ;
 
 ## There is no clear winner here

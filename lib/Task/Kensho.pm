@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.0.8';
+our $VERSION = '0.0.9';
 
 __END__
 =encoding utf-8
@@ -11,8 +11,7 @@ Task::Kensho - A Glimpse at an Enlightened Perl
 
 =head1 VERSION
 
-This document describes Task::Kensho version 0.0.1
-
+This document describes Task::Kensho version 0.0.9
 
 =head1 SYNOPSIS
 
@@ -93,6 +92,10 @@ Check for memory leaks and circular memory references
 =item  Moose
 
 A postmodern object system for Perl 5 
+
+=item MooseX::Types
+
+Organise your Moose types in libraries
 
 =item  Moose::Autobox
 
@@ -233,9 +236,9 @@ Powerful feature-rich perl source code profiler
 
 Parses and beautifies perl source
 
-=item Devel::SimpleTrace
+=item Carp::Always
 
-See where your code warns and dies using stack traces 
+Warns and dies noisily with stack backtraces
 
 =item Modern::Perl
 
@@ -329,8 +332,6 @@ has a perfectly acceptable replacement that may work better for you. This
 is however a path to good perl practicies, and a starting 
 place on the road to Enlightened Perl programming.
 
-No bugs have been reported.
-
 Please report any bugs or feature requests to
 C<bug-task-kensho@rt.cpan.org>, or through the web interface at
 L<http://rt.cpan.org>.
@@ -341,11 +342,11 @@ L<http://www.enlightenedperl.org/>, L<Perl::Dist::Strawberry>, L<http://gitoriou
 
 =head1 AUTHOR
 
-Chris Prather  C<< <perigrin@cpan.org> >>
+Chris Prather  C<< <chris@prather.org> >>
 
 =head1 LICENCE AND COPYRIGHT
 
-Copyright (c) 2008, Chris Prather C<< <perigrin@cpan.org> >>. Some rights reserved.
+Copyright (c) 2008, 2009, Chris Prather  C<< <chris@prather.org> >>. Some rights reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself. See L<perlartistic>.
