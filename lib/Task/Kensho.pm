@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.09';
+our $VERSION = '0.10';
 
 __END__
 =encoding utf-8
@@ -11,7 +11,7 @@ Task::Kensho - A Glimpse at an Enlightened Perl
 
 =head1 VERSION
 
-This document describes Task::Kensho version 0.0.9
+This document describes Task::Kensho version 0.10
 
 =head1 SYNOPSIS
 
