@@ -121,7 +121,7 @@ A Moose role for setting attributes from a simple configfile
 
 Make your object constructors blow up on unknown attributes
 
-=item  namespace::clean
+=item  namespace::autoclean
 
 Keep imports and functions out of your namespace 
 
