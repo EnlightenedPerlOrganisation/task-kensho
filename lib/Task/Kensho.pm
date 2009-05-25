@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 __END__
 =encoding utf-8

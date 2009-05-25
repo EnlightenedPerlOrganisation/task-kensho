@@ -113,5 +113,7 @@ feature 'Script Hackery',
   'YYY'             => 0,
   ;
 
-auto_install();
+auto_set_repository;
+auto_manifest;
+auto_install;
 WriteAll;
