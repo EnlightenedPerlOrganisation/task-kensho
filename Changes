@@ -1,4 +1,6 @@
 Revision history for Task-Kensho
+0.11 2009-05-25
+	+ Change from namespace::clean to namespace::autoclean (rafl)
 
 0.10 2009-05-23
 	+ Change dep for XXX to YYY.pm as per #epo
