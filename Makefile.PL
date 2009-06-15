@@ -78,6 +78,7 @@ feature 'Module Development',
   'Perl::Tidy'      => 0,
   'Carp::Always'    => 0,
   'Modern::Perl'    => 0,
+  'Perl::Version'   => 0,
   ;
 
 ## There is no clear winner here
