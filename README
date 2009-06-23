@@ -7,37 +7,12 @@ From http://en.wikipedia.org/wiki/Kensho :
     "seeing one's nature" or "true self." It generally "refers to the
     realization of nonduality of subject and object."
     
-Task::Kensho is a first cut at building a list of reccomended modules for
-Enlightened Perl development. CPAN is wonderful, but there are too many wheels
-and you have to pick and choose amongst the various competing technologies. 
+Task::Kensho is a list of reccomended modules for Enlightened Perl
+development. CPAN is wonderful, but there are too many wheels and you have to
+pick and choose amongst the various competing technologies.
 
 The plan is for Task::Kensho to eventually morph into an actual perl 
-distribution possibly called Satori Perl.
+distribution called the Enlightned Perl Extended Core.
 
 The modules that are bundled by Task::Kensho are broken down into several 
-categories and are still being considered. They are all taken from various 
-top 100 most used perl modules lists.
-
-
-INSTALLATION
-
-To install this module, run the following commands:
-
-	perl Makefile.PL
-	make
-	make test
-	make install
-
-Alternatively, to install with Module::Build, you can use the following commands:
-
-	perl Build.PL
-	./Build
-	./Build test
-	./Build install
-
-COPYRIGHT AND LICENCE
-
-Copyright (C) 2008, Chris Prather
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+categories and are still being considered. 
