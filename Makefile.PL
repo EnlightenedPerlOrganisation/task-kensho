@@ -91,6 +91,7 @@ feature 'Date Modules',
   'DateTime'        => 0,
   'Date::Tiny'      => 0,
   'Time::ParseDate' => 0,
+  'Time::y2038'     => 0,
   ;
 
 feature 'Config Modules',
