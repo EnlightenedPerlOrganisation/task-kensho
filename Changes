@@ -1,4 +1,12 @@
 Revision history for Task-Kensho
+0.13 2009-07-02 
+    - Identical to 0.12
+    + Fix MANIFEST.SKIP and re-release
+    
+0.12 2009-06-23 (Failed release)
+    + Time::y2038
+    + Perl::Version 
+    
 0.11 2009-05-25
 	+ Change from namespace::clean to namespace::autoclean (rafl)
 
