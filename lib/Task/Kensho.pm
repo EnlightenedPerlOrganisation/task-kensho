@@ -30,12 +30,16 @@ Task::Kensho is a first cut at building a list of reccomended modules for
 Enlightened Perl development. CPAN is wonderful, but there are too many wheels
 and you have to pick and choose amongst the various competing technologies. 
 
-The plan is for Task::Kensho to eventually morph into an actual perl 
-distribution.
+The plan is for Task::Kensho to be a rough testing ground for ideas that go
+into among other things the Enlightned Perl Organisation Extended Core
+(EPO-EC).
 
-The modules that are bundled by Task::Kensho are broken down into several 
-categories and are still being considered. They are all taken from various 
-top 100 most used perl modules lists.
+The modules that are bundled by Task::Kensho are broken down into several
+categories and are still being considered. They are all taken from various top
+100 most used perl modules lists and from discussions with various subject
+matter experts in the Perl Community. That said this bundle does I<not> follow
+the guidelines established for the EPO-EC for peer review via industry
+advisers.
 
 =head2 Basic Toolchain
 
@@ -134,6 +138,28 @@ Keep imports and functions out of your namespace
 =item  POE
 
 portable multitasking and networking framework for Perl 
+
+=back
+
+=head2 XML Development
+
+=over 
+
+=item XML::LibXML
+
+Perl Binding for libxml2
+
+=item XML::SAX
+
+Simple/Streaming API for XML
+
+=item XML::Generator::PerlData
+
+Perl extension for generating SAX2 events from nested Perl data structures.
+
+=item XML::SAX::Writer
+
+Output XML from SAX2 Events
 
 =back
 
