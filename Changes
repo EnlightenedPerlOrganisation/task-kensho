@@ -1,4 +1,8 @@
 Revision history for Task-Kensho
+
+0.15 2009-07-26
+    + Comment out XXX since it can't be found by CPAN anymore.
+
 0.14 2009-07-16
     + Add XML modules
     + Update Documentation a bit to reflect Task::Kensho's place in the

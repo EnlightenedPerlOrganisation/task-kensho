@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.14';
+our $VERSION = '0.15';
 
 __END__
 =encoding utf-8
@@ -355,6 +355,10 @@ oriented interface to greatly simplify your everyday Perl IO idioms.
 
 XXX.pm exports a function called XXX that you can put just about anywhere in
 your Perl code to make it die with a YAML dump of the arguments to its right.
+
+NOTE: As of this release XXX nor the hacks implemented to work around it are
+alllowing XXX to be indexed apparently. It has been commented out in the installer
+until this situation is resolved.
 
 =back
 
