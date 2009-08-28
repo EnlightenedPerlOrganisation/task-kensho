@@ -1,5 +1,10 @@
 Revision history for Task-Kensho
 
+0.16 2009-08-28
+	+ Remove XXX
+	+ Add POD::Readme and Software::License at the request of CSJewell so that
+	  we're inline with the upcoming Perl::Dist::Satori 
+
 0.15 2009-07-26
     + Comment out XXX since it can't be found by CPAN anymore.
 

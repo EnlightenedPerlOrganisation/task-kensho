@@ -1,18 +1,24 @@
-Task-Kensho version 0.0.1
+Task-Kensho
+===========
 
-From http://en.wikipedia.org/wiki/Kensho :
+From L<http://en.wikipedia.org/wiki/Kensho>:
 
     Kenshō (見性) (C. Wu) is a Japanese term for enlightenment experiences—most
     commonly used within the confines of Zen Buddhism—literally meaning
-    "seeing one's nature" or "true self." It generally "refers to the
-    realization of nonduality of subject and object."
+    "seeing one's nature"[1] or "true self."[2] It generally "refers to the
+    realization of nonduality of subject and object."[3] 
     
-Task::Kensho is a list of reccomended modules for Enlightened Perl
-development. CPAN is wonderful, but there are too many wheels and you have to
-pick and choose amongst the various competing technologies.
+Task::Kensho is a first cut at building a list of reccomended modules for
+Enlightened Perl development. CPAN is wonderful, but there are too many wheels
+and you have to pick and choose amongst the various competing technologies. 
 
-The plan is for Task::Kensho to eventually morph into an actual perl 
-distribution called the Enlightned Perl Extended Core.
+The plan is for Task::Kensho to be a rough testing ground for ideas that go
+into among other things the Enlightned Perl Organisation Extended Core
+(EPO-EC).
 
-The modules that are bundled by Task::Kensho are broken down into several 
-categories and are still being considered. 
+The modules that are bundled by Task::Kensho are broken down into several
+categories and are still being considered. They are all taken from various top
+100 most used perl modules lists and from discussions with various subject
+matter experts in the Perl Community. That said this bundle does I<not> follow
+the guidelines established for the EPO-EC for peer review via industry
+advisers.

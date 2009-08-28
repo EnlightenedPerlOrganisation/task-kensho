@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 __END__
 =encoding utf-8
@@ -274,6 +274,14 @@ enable all of the features of Modern Perl with one command
 
 Parse and manipulate Perl version strings
 
+=item Software::License
+
+Packages that provide templated software licenses
+
+=item Pod::Readme
+
+Convert POD to README file
+
 =back
 
 =head2 Date Modules
@@ -350,15 +358,6 @@ Comments that do more than just sit there
 
 IO::All combines all of the best Perl IO modules into a single nifty object
 oriented interface to greatly simplify your everyday Perl IO idioms.
-
-=item XXX
-
-XXX.pm exports a function called XXX that you can put just about anywhere in
-your Perl code to make it die with a YAML dump of the arguments to its right.
-
-NOTE: As of this release XXX nor the hacks implemented to work around it are
-alllowing XXX to be indexed apparently. It has been commented out in the installer
-until this situation is resolved.
 
 =back
 
