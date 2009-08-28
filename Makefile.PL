@@ -88,7 +88,7 @@ feature 'Module Development',
   'Modern::Perl'      => 0,
   'Perl::Version'     => 0,
   'Software::License' => 0,
-  'POD::Readme'       => 0,
+  'Pod::Readme'       => 0,
   ;
 
 ## There is no clear winner here

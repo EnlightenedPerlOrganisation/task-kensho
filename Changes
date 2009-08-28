@@ -1,5 +1,8 @@
 Revision history for Task-Kensho
 
+0.17 2009-08-28
+	+ Fix broken Pod::Readme link in the Makefile.PL 
+
 0.16 2009-08-28
 	+ Remove XXX
 	+ Add POD::Readme and Software::License at the request of CSJewell so that
