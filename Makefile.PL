@@ -28,6 +28,12 @@ feature 'Testing',
   'Test::Memory::Cycle' => 0,
   ;
 
+feature 'Exception Handling',
+  -default    => 1,
+  'Try::Tiny' => 0,
+  'TryCatch'  => 0,
+  ;
+
 feature 'Object Oriented Programming',
   -default                    => 0,
   'Moose'                     => 0,
@@ -41,7 +47,10 @@ feature 'Object Oriented Programming',
   'namespace::autoclean'      => 0,
   ;
 
-feature 'Asynchronous Programming', -default => 0, 'POE' => 0,;
+feature 'Asynchronous Programming',
+  -default => 0,
+  'POE'    => 0,
+  ;
 
 feature 'XML Development',
   -default                   => 0,
