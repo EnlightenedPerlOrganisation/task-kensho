@@ -100,10 +100,9 @@ feature 'Module Development',
   'Pod::Readme'       => 0,
   ;
 
-## There is no clear winner here
-## so we'll leave it out of 0.02
 # feature 'Email Modules',
-#   -default => 0,
+#   -default           => 0,
+#   'Email::MIME::Kit' => 0,
 #   ;
 
 feature 'Date Modules',
@@ -111,7 +110,7 @@ feature 'Date Modules',
   'DateTime'        => 0,
   'Date::Tiny'      => 0,
   'Time::ParseDate' => 0,
-  'Time::y2038'     => 0,
+#  'Time::y2038'     => 0, # causing more trouble than it's worth
   ;
 
 feature 'Config Modules',

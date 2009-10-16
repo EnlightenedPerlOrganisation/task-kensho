@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.17';
+our $VERSION = '0.18';
 
 __END__
 =encoding utf-8
@@ -299,10 +299,6 @@ A date object with as little code as possible
 =item Time::ParseDate
 
 Date parsing both relative and absolute
-
-=item Time::y2038
-
-Versions of Perl's time functions which work beyond 2038 
 
 =back
 
