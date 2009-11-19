@@ -89,7 +89,7 @@ feature 'Web Crawling',
 
 feature 'Module Development',
   -default            => 0,
-  'Module::Starter'   => 0,
+  'Dist::Zilla'       => 0,
   'Module::Install'   => 0,
   'Devel::NYTProf'    => 0,
   'Perl::Tidy'        => 0,
@@ -110,7 +110,8 @@ feature 'Date Modules',
   'DateTime'        => 0,
   'Date::Tiny'      => 0,
   'Time::ParseDate' => 0,
-#  'Time::y2038'     => 0, # causing more trouble than it's worth
+
+  #  'Time::y2038'     => 0, # causing more trouble than it's worth
   ;
 
 feature 'Config Modules',

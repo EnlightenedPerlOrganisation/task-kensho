@@ -246,9 +246,9 @@ Handy web browsing in a Perl object
 
 =over
 
-=item Module::Starter
+=item Dist::Zilla
 
-A simple starter kit for any module 
+Builds distributions of code to be uploaded to the CPAN. 
 
 =item Module::Install
 
