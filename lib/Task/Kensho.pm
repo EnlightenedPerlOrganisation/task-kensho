@@ -105,9 +105,9 @@ Organise your Moose types in libraries
 
 Autoboxed wrappers for Native Perl datatypes 
 
-=item  MooseX::AttributeHelpers
+=item MooseX::Aliases
 
-Extend your attribute interfaces 
+Easy aliasing of methods and attributes in Moose
 
 =item  MooseX::Storage
 
