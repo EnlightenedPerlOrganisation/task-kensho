@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.18';
+our $VERSION = '0.19';
 
 __END__
 =encoding utf-8
@@ -21,25 +21,27 @@ This document describes Task::Kensho version 0.11
 
 From L<http://en.wikipedia.org/wiki/Kensho>:
 
-    Kenshō (見性) (C. Wu) is a Japanese term for enlightenment experiences—most
-    commonly used within the confines of Zen Buddhism—literally meaning
-    "seeing one's nature"[1] or "true self."[2] It generally "refers to the
-    realization of nonduality of subject and object."[3] 
+    Kenshō (見性) (C. Wu) is a Japanese term for enlightenment
+    experiences—most commonly used within the confines of Zen
+    Buddhism—literally meaning "seeing one's nature"[1] or "true
+    self."[2] It generally "refers to the realization of nonduality of
+    subject and object."[3]
     
-Task::Kensho is a first cut at building a list of reccomended modules for
-Enlightened Perl development. CPAN is wonderful, but there are too many wheels
-and you have to pick and choose amongst the various competing technologies. 
+Task::Kensho is a first cut at building a list of reccomended modules
+for Enlightened Perl development. CPAN is wonderful, but there are too
+many wheels and you have to pick and choose amongst the various
+competing technologies.
 
-The plan is for Task::Kensho to be a rough testing ground for ideas that go
-into among other things the Enlightned Perl Organisation Extended Core
-(EPO-EC).
+The plan is for Task::Kensho to be a rough testing ground for ideas that
+go into among other things the Enlightned Perl Organisation Extended
+Core (EPO-EC).
 
-The modules that are bundled by Task::Kensho are broken down into several
-categories and are still being considered. They are all taken from various top
-100 most used perl modules lists and from discussions with various subject
-matter experts in the Perl Community. That said this bundle does I<not> follow
-the guidelines established for the EPO-EC for peer review via industry
-advisers.
+The modules that are bundled by Task::Kensho are broken down into
+several categories and are still being considered. They are all taken
+from various top 100 most used perl modules lists and from discussions
+with various subject matter experts in the Perl Community. That said
+this bundle does I<not> follow the guidelines established for the EPO-EC
+for peer review via industry advisers.
 
 =head2 Basic Toolchain
 
@@ -137,7 +139,7 @@ Keep imports and functions out of your namespace
 
 =item  POE
 
-portable multitasking and networking framework for Perl 
+Multitasking and networking framework for Perl 
 
 =back
 
@@ -155,7 +157,8 @@ Simple/Streaming API for XML
 
 =item XML::Generator::PerlData
 
-Perl extension for generating SAX2 events from nested Perl data structures.
+Perl extension for generating SAX2 events from nested Perl data
+structures.
 
 =item XML::SAX::Writer
 
@@ -185,8 +188,8 @@ Catalyst Development Tools
 
 =item Catalyst::Plugin::Session
 
-Generic Session plugin - ties together server side storage and client side
-state required to maintain session data.
+Generic Session plugin - ties together server side storage and client
+side state required to maintain session data.
 
 =item Catalyst::Plugin::Authentication
 
@@ -341,8 +344,9 @@ What modules shipped with versions of perl
 =head2 Script Hackery
 
 These packages are included less for production work and more for
-whippitupitude. They reflect packages that people have found incredibly useful
-for prototyping and debugging before reducing down to a production script.
+whippitupitude. They reflect packages that people have found incredibly
+useful for prototyping and debugging before reducing down to a
+production script.
 
 =over
 
@@ -352,18 +356,25 @@ Comments that do more than just sit there
 
 =item IO::All
 
-IO::All combines all of the best Perl IO modules into a single nifty object
-oriented interface to greatly simplify your everyday Perl IO idioms.
+IO::All combines all of the best Perl IO modules into a single nifty
+object oriented interface to greatly simplify your everyday Perl IO
+idioms.
 
 =back
 
+=head1 RELEASE SCHEDULE
+
+Starting with release 0.18 Task::Kensho was moved to a monthly release
+cycle. This will facilitate a consistent schedule for upstream vendors
+to track the changes in Task::Kensho.
+
 =head1 BUGS AND LIMITATIONS
 
-This list is by no means comprehensive of the "Good" Modules on CPAN. Nor is 
-this neccessarily the correct path for all developers. Each of these modules
-has a perfectly acceptable replacement that may work better for you. This 
-is however a path to good perl practicies, and a starting 
-place on the road to Enlightened Perl programming.
+This list is by no means comprehensive of the "Good" Modules on CPAN.
+Nor is this neccessarily the correct path for all developers. Each of
+these modules has a perfectly acceptable replacement that may work
+better for you. This is however a path to good perl practicies, and a
+starting place on the road to Enlightened Perl programming.
 
 Please report any bugs or feature requests to
 C<bug-task-kensho@rt.cpan.org>, or through the web interface at
