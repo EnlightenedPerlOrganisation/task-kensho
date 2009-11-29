@@ -4,7 +4,10 @@ Revision history for Task-Kensho
 	- Remove MooseX::AttributeHelpers
 	+ Add MooseX::Aliases
 	+ Document the move to Monthly Releases for Task::Kensho
-
+	- Remove reference to gitorious
+	+ Add Perl::Critic as suggested by Hinrik via rt#48295
+	+ Add Devel::Cover as suggested by Hinrik via rt#48293
+	
 0.18 2009-11-19
 	+ Replace Module::Starter with Dist::Zilla
 	- Remove Time::y2038

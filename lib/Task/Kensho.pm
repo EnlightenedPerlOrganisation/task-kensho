@@ -89,6 +89,10 @@ Check for pod coverage in your distribution.
 
 Check for memory leaks and circular memory references
 
+=item Devel::Cover
+
+Code coverage metrics for Perl
+
 =back
 
 =head2 Object Oriented Programming
@@ -265,6 +269,10 @@ Powerful feature-rich perl source code profiler
 
 Parses and beautifies perl source
 
+=item Perl::Critic
+
+Critique Perl source code for best-practices.
+
 =item Carp::Always
 
 Warns and dies noisily with stack backtraces
@@ -382,7 +390,7 @@ L<http://rt.cpan.org>.
 
 =head1 SEE ALSO
 
-L<http://www.enlightenedperl.org/>, L<Perl::Dist::Strawberry>, L<http://gitorious.org/projects/task-kensho>
+L<http://www.enlightenedperl.org/>, L<Perl::Dist::Strawberry>
 
 =head1 AUTHOR
 
