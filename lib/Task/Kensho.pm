@@ -217,9 +217,15 @@ Maintain session IDs using cookies.
 
 =item Catalyst::Plugin::Session::Store::DBIC
 
+Store your sessions via DBIx::Class 
+
 =item Catalyst::Plugin::Static::Simple
 
+Make serving static pages painless.
+
 =item Catalyst::View::JSON
+
+Serve JSON through Catalyst
 
 =back 
 
@@ -407,6 +413,8 @@ production script.
 Comments that do more than just sit there 
 
 =item Term::ProgressBar::Simple
+
+Simple progress bars 
 
 =item IO::All
 
