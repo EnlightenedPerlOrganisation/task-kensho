@@ -203,7 +203,37 @@ Infrastructure plugin for the Catalyst authentication framework
 
 Display a stack trace on the debug screen 
 
+=item Catalyst::Plugin::FillInForm
+
+=item Catalyst::Plugin::FormValidator
+
+=item Catalyst::Plugin::Session::State::Cookie
+
+=item Catalyst::Plugin::Session::Store::DBIC
+
+=item Catalyst::Plugin::Static::Simple
+
+=item Catalyst::View::JSON
+
 =back 
+
+=head2 Web Crawling
+
+=over
+
+=item Bundle::LWP
+
+Install all libwww-perl related modules
+
+=item LWP::Simple
+
+Simple procedural interface to LWP 
+
+=item WWW::Mechanize
+
+Handy web browsing in a Perl object 
+
+=back
 
 =head2 Database Development
 
@@ -231,23 +261,17 @@ Manipulate structured data definitions (SQL and more)
 
 =back
 
-=head2 Web Crawling
+=head2 Excel / CSV
 
-=over
+=over 
 
-=item Bundle::LWP
+=item Text::CSV_XS
 
-Install all libwww-perl related modules
+=item Spreadsheet::ParseExcel::Simple
 
-=item LWP::Simple
+=item Spreadsheet::WriteExcel::Simple
 
-Simple procedural interface to LWP 
-
-=item WWW::Mechanize
-
-Handy web browsing in a Perl object 
-
-=back 
+=back
 
 =head2 Module Development
 
@@ -369,6 +393,8 @@ production script.
 =item Smart::Comments
 
 Comments that do more than just sit there 
+
+=item Term::ProgressBar::Simple
 
 =item IO::All
 

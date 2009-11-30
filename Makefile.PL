@@ -6,8 +6,8 @@ use inc::Module::Install;
 
 # Define metadata
 name 'Task-Kensho';
-abstract 'A glipmse at an Englightened Perl.';
-author 'Chris Prather <chris@prahter.org>';
+abstract 'A glimpse at an Enlightened Perl.';
+author 'Chris Prather <chris@prather.org>';
 version_from 'lib/Task/Kensho.pm';
 license 'perl';
 
@@ -62,14 +62,29 @@ feature 'XML Development',
   ;
 
 feature 'Web Development',
-  -default                           => 0,
-  'Catalyst'                         => 0,
-  'Catalyst::View::TT'               => 0,
-  'Catalyst::Model::DBIC::Schema'    => 0,
-  'Catalyst::Devel'                  => 0,
-  'Catalyst::Plugin::Session'        => 0,
-  'Catalyst::Plugin::Authentication' => 0,
-  'Catalyst::Plugin::StackTrace'     => 0,
+  -default                                   => 0,
+  'Catalyst'                                 => 0,
+  'Catalyst::View::TT'                       => 0,
+  'Catalyst::Model::DBIC::Schema'            => 0,
+  'Catalyst::Devel'                          => 0,
+  'Catalyst::Plugin::Session'                => 0,
+  'Catalyst::Plugin::Authentication'         => 0,
+  'Catalyst::Plugin::StackTrace'             => 0,
+  'Catalyst::Plugin::FillInForm'             => 0,
+  'Catalyst::Plugin::FormValidator'          => 0,
+  'Catalyst::Plugin::Session::State::Cookie' => 0,
+  'Catalyst::Plugin::Session::Store::DBIC'   => 0,
+  'Catalyst::Plugin::Static::Simple'         => 0,
+  'Catalyst::View::JSON'                     => 0,
+  'XML::RSS'                                 => 0,
+  'MIME::Types'                              => 0,
+  ;
+
+feature 'Web Crawling',
+  -default         => 0,
+  'Bundle::LWP'    => 0,
+  'LWP::Simple'    => 0,
+  'WWW::Mechanize' => 0,
   ;
 
 feature 'Database Development',
@@ -81,11 +96,11 @@ feature 'Database Development',
   'SQL::Translator'             => 0,
   ;
 
-feature 'Web Crawling',
-  -default         => 0,
-  'Bundle::LWP'    => 0,
-  'LWP::Simple'    => 0,
-  'WWW::Mechanize' => 0,
+feature 'Excel / CSV',
+  -default                          => 0,
+  'Text::CSV_XS'                    => 0,
+  'Spreadsheet::ParseExcel::Simple' => 0,
+  'Spreadsheet::WriteExcel::Simple' => 0,
   ;
 
 feature 'Module Development',
@@ -102,20 +117,19 @@ feature 'Module Development',
   'Pod::Readme'       => 0,
   ;
 
-# feature 'Email Modules',
-#   -default           => 0,
-#   'Email::MIME::Kit' => 0,
-#   ;
+feature 'Email Modules',
+  -default        => 0,
+  'Email::Valid'  => 0,
+  'Email::Sender' => 0,
+  ;
 
 feature 'Date Modules',
   -default          => 0,
   'DateTime'        => 0,
   'Date::Tiny'      => 0,
   'Time::Tiny'      => 0,
-  'DateTime::Tiny'      => 0,
+  'DateTime::Tiny'  => 0,
   'Time::ParseDate' => 0,
-
-  #  'Time::y2038'     => 0, # causing more trouble than it's worth
   ;
 
 feature 'Config Modules',
@@ -132,9 +146,10 @@ feature 'Useful Command-line Tools',
   ;
 
 feature 'Script Hackery',
-  -default          => 0,
-  'Smart::Comments' => 0,
-  'IO::All'         => 0,
+  -default                    => 0,
+  'Smart::Comments'           => 0,
+  'Term::ProgressBar::Simple' => 0,
+  'IO::All'                   => 0,
   ;
 
 auto_set_repository;
