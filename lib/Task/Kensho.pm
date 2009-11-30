@@ -205,9 +205,13 @@ Display a stack trace on the debug screen
 
 =item Catalyst::Plugin::FillInForm
 
+Fill forms automatically, based on data from a previous HTML form. 
+
 =item Catalyst::Plugin::FormValidator
 
 =item Catalyst::Plugin::Session::State::Cookie
+
+Maintain session IDs using cookies.
 
 =item Catalyst::Plugin::Session::Store::DBIC
 
@@ -267,9 +271,15 @@ Manipulate structured data definitions (SQL and more)
 
 =item Text::CSV_XS
 
+Manipulate comma-separated values (CSV) 
+
 =item Spreadsheet::ParseExcel::Simple
 
+A simple interface to Excel data
+
 =item Spreadsheet::WriteExcel::Simple
+
+Create Excel documents easily
 
 =back
 
