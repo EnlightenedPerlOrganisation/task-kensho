@@ -7,6 +7,7 @@ Revision history for Task-Kensho
 	- Remove reference to gitorious
 	+ Add Perl::Critic as suggested by Hinrik via rt#48295
 	+ Add Devel::Cover as suggested by Hinrik via rt#48293
+        + Add Time::Tiny and DateTime::Tiny as suggested by mst
 	
 0.18 2009-11-19
 	+ Replace Module::Starter with Dist::Zilla

@@ -307,6 +307,14 @@ A date and time object
 
 A date object with as little code as possible 
 
+=item Time::Tiny
+
+A time object with as little code as possible 
+
+=item DateTime::Tiny
+
+A date object with as little code as possible 
+
 =item Time::ParseDate
 
 Date parsing both relative and absolute

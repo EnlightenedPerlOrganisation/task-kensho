@@ -111,6 +111,8 @@ feature 'Date Modules',
   -default          => 0,
   'DateTime'        => 0,
   'Date::Tiny'      => 0,
+  'Time::Tiny'      => 0,
+  'DateTime::Tiny'      => 0,
   'Time::ParseDate' => 0,
 
   #  'Time::y2038'     => 0, # causing more trouble than it's worth
