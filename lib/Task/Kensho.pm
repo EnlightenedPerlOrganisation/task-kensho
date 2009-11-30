@@ -207,7 +207,9 @@ Display a stack trace on the debug screen
 
 Fill forms automatically, based on data from a previous HTML form. 
 
-=item Catalyst::Plugin::FormValidator
+=item Catalyst::Controller::FormBuilder
+
+Create and validate forms in Catalyst
 
 =item Catalyst::Plugin::Session::State::Cookie
 
