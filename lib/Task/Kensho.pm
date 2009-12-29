@@ -3,6 +3,7 @@ use strict;
 our $VERSION = '0.19';
 
 __END__
+
 =encoding utf-8
 
 =head1 NAME
@@ -99,41 +100,10 @@ Code coverage metrics for Perl
 
 =over 
 
-=item L<Moose>
+=item L<Task::Moose|Task::Moose>
 
-A postmodern object system for Perl 5 
-
-=item L<MooseX::Types|MooseX::Types>
-
-Organise your Moose types in libraries
-
-=item L<Moose::Autobox|Moose::Autobox>
-
-Autoboxed wrappers for Native Perl datatypes 
-
-=item L<MooseX::Aliases|MooseX::Aliases>
-
-Easy aliasing of methods and attributes in Moose
-
-=item L<MooseX::Storage|MooseX::Storage>
-
-An serialization framework for Moose classes 
-
-=item L<MooseX::Getopt|MooseX::Getopt>
-
-A Moose role for processing command line options 
-
-=item L<MooseX::SimpleConfig|MooseX::SimpleConfig>
-
-A Moose role for setting attributes from a simple configfile
-
-=item L<MooseX::StrictConstructor|MooseX::StrictConstructor>
-
-Make your object constructors blow up on unknown attributes
-
-=item L<namespace::autoclean|namespace::autoclean>
-
-Keep imports and functions out of your namespace 
+Moose is a postmodern object system for Perl5. Task::Moose installs
+Moose and optionally a list of reccomended modules that extend Moose.
 
 =back
 
@@ -174,60 +144,22 @@ Output XML from SAX2 Events
 
 =over
 
-=item L<Catalyst>
+=item L<Task::Catalyst|Task::Catalyst>
 
-The Elegant MVC Web Application Framework 
+L<Catalyst|Catalyst> is The Elegant MVC Web Application Framework.
+Task::Catalyst is all you need to start with Catalyst.
 
-=item L<Catalyst::View::TT|Catalyst::View::TT>
+=item L<XML::RSS|XML::RSS>
 
-Template View Class 
+Creates and updates RSS files  
+  	 
+=item L<XML::Atom|XML::Atom>
 
-=item L<Catalyst::Model::DBIC::Schema|Catalyst::Model::DBIC::Schema>
+Atom feed and API implementation
 
-DBIx::Class::Schema Model Class
+=item L<MIME::Types|MIME::Types>
 
-=item L<Catalyst::Devel|Catalyst::Devel>
-
-Catalyst Development Tools 
-
-=item L<Catalyst::Plugin::Session|Catalyst::Plugin::Session>
-
-Generic Session plugin - ties together server side storage and client
-side state required to maintain session data.
-
-=item L<Catalyst::Plugin::Authentication|Catalyst::Plugin::Authentication>
-
-Infrastructure plugin for the Catalyst authentication framework
-
-=item L<Catalyst::Plugin::StackTrace|Catalyst::Plugin::StackTrace>
-
-Display a stack trace on the debug screen 
-
-=item L<Catalyst::Plugin::FillInForm|Catalyst::Plugin::FillInForm>
-
-Fill forms automatically, based on data from a previous HTML form. 
-
-=item L<Catalyst::Controller::FormBuilder|Catalyst::Controller::FormBuilder>
-
-Create and validate forms in Catalyst
-
-=item L<Catalyst::Plugin::Session::State::Cookie|Catalyst::Plugin::Session::State::Cookie>
-
-Maintain session IDs using cookies.
-
-=item L<Catalyst::Plugin::Session::Store::DBIC|Catalyst::Plugin::Session::Store::DBIC>
-
-Store your sessions via DBIx::Class 
-
-=item L<Catalyst::Plugin::Static::Simple|Catalyst::Plugin::Static::Simple>
-
-Make serving static pages painless.
-
-=item L<Catalyst::View::JSON|Catalyst::View::JSON>
-
-Serve JSON through Catalyst
-
-=back 
+Definition of MIME types
 
 =head2 Web Crawling
 

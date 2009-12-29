@@ -1,5 +1,16 @@
 Revision history for Task-Kensho
 
+0.20 2010-01-19
+	- Change to depend on Task::Catalyst rather than explicit 
+	  dependencies.
+	- Remove CGI::FormBuilder::Source::Perl, this should probably be 
+	  handled by Task::Catalyst
+	+ Add XML::Atom
+	+ Add Docs for XML::RSS
+	- Change to depend on Task::Moose rather than explicit 
+	  dependencies.
+	+ Make Task::Moose a default 
+
 0.19 2009-12-28 # 	Of course I blow my first release date.
 	- Remove MooseX::AttributeHelpers
 	+ Add MooseX::Aliases
