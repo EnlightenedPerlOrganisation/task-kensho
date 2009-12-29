@@ -1,6 +1,6 @@
 Revision history for Task-Kensho
 
-0.19 2009-12-19
+0.19 2009-12-28 # 	Of course I blow my first release date.
 	- Remove MooseX::AttributeHelpers
 	+ Add MooseX::Aliases
 	+ Document the move to Monthly Releases for Task::Kensho
