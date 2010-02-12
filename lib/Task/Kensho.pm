@@ -28,13 +28,13 @@ From L<http://en.wikipedia.org/wiki/Kensho>:
     self."[2] It generally "refers to the realization of nonduality of
     subject and object."[3]
     
-Task::Kensho is a first cut at building a list of reccomended modules
+Task::Kensho is a first cut at building a list of recommended modules
 for Enlightened Perl development. CPAN is wonderful, but there are too
 many wheels and you have to pick and choose amongst the various
 competing technologies.
 
 The plan is for Task::Kensho to be a rough testing ground for ideas that
-go into among other things the Enlightned Perl Organisation Extended
+go into among other things the Enlightened Perl Organisation Extended
 Core (EPO-EC).
 
 The modules that are bundled by Task::Kensho are broken down into
@@ -103,7 +103,7 @@ Code coverage metrics for Perl
 =item L<Task::Moose|Task::Moose>
 
 Moose is a postmodern object system for Perl5. Task::Moose installs
-Moose and optionally a list of reccomended modules that extend Moose.
+Moose and optionally a list of recommended modules that extend Moose.
 
 =back
 
@@ -124,6 +124,10 @@ Multitasking and networking framework for Perl
 =item L<XML::LibXML|XML::LibXML>
 
 Perl Binding for libxml2
+
+=item L<XML::LibXSLT|XML::LibXSLT>
+
+Interface to the gnome libxslt library
 
 =item L<XML::SAX|XML::SAX>
 
