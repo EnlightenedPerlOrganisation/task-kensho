@@ -4,6 +4,8 @@ use 5.8.2;
 # Load the Module::Install bundled in ./inc/
 use inc::Module::Install;
 
+BEGIN { $ENV{NYTPROF} = 'start=no'; }
+
 # Define metadata
 name 'Task-Kensho';
 abstract 'A glimpse at an Enlightened Perl.';

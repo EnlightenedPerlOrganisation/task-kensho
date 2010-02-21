@@ -1,6 +1,6 @@
 Revision history for Task-Kensho
 
-0.21 2010-02-19 (Feb)
+0.21 2010-02-21
 	+ Add XML::LibXSLT (per mst)
 	+ Add WWW::Mechanize::TreeBuilder (per mst)
 	+ Add CPAN::Uploader (per mst)
