@@ -15,7 +15,7 @@ license 'perl';
 
 feature 'Basic Toolchain',
   -default       => 1,
-  'Bundle::CPAN' => 0,
+  'App::cpanminus' => 0,
   'local::lib'   => 0,
   'version'      => 0,
   ;
@@ -68,6 +68,7 @@ feature 'Web Development',
 
 feature 'Web Crawling',
   -default                      => 0,
+  ' HTTP::Lite'                 => 0,
   'Bundle::LWP'                 => 0,
   'LWP::Simple'                 => 0,
   'WWW::Mechanize'              => 0,
@@ -131,6 +132,7 @@ feature 'Useful Command-line Tools',
   'App::Ack'         => 0,
   'Devel::REPL'      => 0,
   'Module::CoreList' => 0,
+  'App::perlbrew' => 0,
   ;
 
 feature 'Script Hackery',

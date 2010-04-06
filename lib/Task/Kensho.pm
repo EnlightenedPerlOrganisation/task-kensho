@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.21';
+our $VERSION = '0.22';
 
 __END__
 
@@ -12,7 +12,7 @@ Task::Kensho - A Glimpse at an Enlightened Perl
 
 =head1 VERSION
 
-This document describes Task::Kensho version 0.11
+This document describes Task::Kensho version 0.22
 
 =head1 SYNOPSIS
 
@@ -27,7 +27,7 @@ From L<http://en.wikipedia.org/wiki/Kensho>:
     Buddhism—literally meaning "seeing one's nature"[1] or "true
     self."[2] It generally "refers to the realization of nonduality of
     subject and object."[3]
-    
+
 Task::Kensho is a first cut at building a list of recommended modules
 for Enlightened Perl development. CPAN is wonderful, but there are too
 many wheels and you have to pick and choose amongst the various
@@ -48,23 +48,23 @@ for peer review via industry advisers.
 
 =over
 
-=item L<Bundle::CPAN|Bundle::CPAN>
+=item L<App::cpanminus>
 
-Bundle to optimize the behaviour of CPAN.pm
+Get, unpack, build and install modules from CPAN
 
 =item L<local::lib|local::lib>
 
-Create and use a local lib/ for perl modules with PERL5LIB 
+Create and use a local lib/ for perl modules with PERL5LIB
 
 =item L<version|version>
 
-Perl extension for Version Objects 
+Perl extension for Version Objects
 
 =back
 
 =head2 Testing
 
-=over 
+=over
 
 =item L<Test::Simple|Test::Simple>
 
@@ -76,7 +76,7 @@ Most commonly needed test functions and features.
 
 =item L<Test::Exception|Test::Exception>
 
-Test exception based code 
+Test exception based code
 
 =item L<Test::Pod|Test::Pod>
 
@@ -98,7 +98,7 @@ Code coverage metrics for Perl
 
 =head2 Object Oriented Programming
 
-=over 
+=over
 
 =item L<Task::Moose|Task::Moose>
 
@@ -109,17 +109,17 @@ Moose and optionally a list of recommended modules that extend Moose.
 
 =head2 Asynchronous Programming
 
-=over 
+=over
 
 =item L<POE>
 
-Multitasking and networking framework for Perl 
+Multitasking and networking framework for Perl
 
 =back
 
 =head2 XML Development
 
-=over 
+=over
 
 =item L<XML::LibXML|XML::LibXML>
 
@@ -155,11 +155,11 @@ Task::Catalyst is all you need to start with Catalyst.
 
 =item L<Template::Toolkit|Template::Toolkit>
 
-Template Processing System 
+Template Processing System
 
 =item L<XML::RSS|XML::RSS>
 
-Creates and updates RSS files  
+Creates and updates RSS files
 
 =item L<XML::Atom|XML::Atom>
 
@@ -179,11 +179,11 @@ Install all libwww-perl related modules
 
 =item L<LWP::Simple|LWP::Simple>
 
-Simple procedural interface to LWP 
+Simple procedural interface to LWP
 
 =item L<WWW::Mechanize|WWW::Mechanize>
 
-Handy web browsing in a Perl object 
+Handy web browsing in a Perl object
 
 =item L<WWW::Mechanize::TreeBuilder|WWW::Mechanize::TreeBuilder>
 
@@ -194,37 +194,37 @@ L<HTML::TreeBuilder|HTML::TreeBuilder>.
 
 =head2 Database Development
 
-=over 
+=over
 
 =item L<DBI>
 
-Database independent interface for Perl 
+Database independent interface for Perl
 
 =item L<DBD::SQLite|DBD::SQLite>
 
-Self Contained RDBMS in a DBI Driver 
+Self Contained RDBMS in a DBI Driver
 
 =item L<DBIx::Class|DBIx::Class>
 
-Extensible and flexible object <-> relational mapper. 
+Extensible and flexible object <-> relational mapper.
 
 =item L<DBIx::Class::Schema::Loader|DBIx::Class::Schema::Loader>
 
-Dynamic definition of a DBIx::Class::Schema 
+Dynamic definition of a DBIx::Class::Schema
 
 =item L<SQL::Translator|SQL::Translator>
 
-Manipulate structured data definitions (SQL and more) 
+Manipulate structured data definitions (SQL and more)
 
 =back
 
 =head2 Excel / CSV
 
-=over 
+=over
 
 =item L<Text::CSV_XS|Text::CSV_XS>
 
-Manipulate comma-separated values (CSV) 
+Manipulate comma-separated values (CSV)
 
 =item L<Spreadsheet::ParseExcel::Simple|Spreadsheet::ParseExcel::Simple>
 
@@ -242,15 +242,15 @@ Create Excel documents easily
 
 =item L<Dist::Zilla|Dist::Zilla>
 
-Builds distributions of code to be uploaded to the CPAN. 
+Builds distributions of code to be uploaded to the CPAN.
 
 =item L<Module::Install|Module::Install>
 
-Standalone, extensible Perl module installer 
+Standalone, extensible Perl module installer
 
 =item L<Devel::NYTProf|Devel::NYTProf>
 
-Powerful feature-rich perl source code profiler 
+Powerful feature-rich perl source code profiler
 
 =item L<Perl::Tidy|Perl::Tidy>
 
@@ -266,7 +266,7 @@ Warns and dies noisily with stack backtraces
 
 =item L<Modern::Perl|Modern::Perl>
 
-enable all of the features of Modern Perl with one command 
+enable all of the features of Modern Perl with one command
 
 =item L<Perl::Version|Perl::Version>
 
@@ -292,11 +292,11 @@ Upload things to the CPAN
 
 =item L<Email::Valid|Email::Valid>
 
-Check validity of Internet email addresses 
+Check validity of Internet email addresses
 
 =item L<Email::Sender|Email::Sender>
 
-A library for sending email 
+A library for sending email
 
 =back
 
@@ -306,19 +306,19 @@ A library for sending email
 
 =item L<DateTime>
 
-A date and time object 
+A date and time object
 
 =item L<Date::Tiny|Date::Tiny>
 
-A date object with as little code as possible 
+A date object with as little code as possible
 
 =item L<Time::Tiny|Time::Tiny>
 
-A time object with as little code as possible 
+A time object with as little code as possible
 
 =item L<DateTime::Tiny|DateTime::Tiny>
 
-A date object with as little code as possible 
+A date object with as little code as possible
 
 =item L<Time::ParseDate|Time::ParseDate>
 
@@ -332,11 +332,11 @@ Date parsing both relative and absolute
 
 =item L<Config::Any|Config::Any>
 
-Load configuration from different file formats, transparently 
+Load configuration from different file formats, transparently
 
 =item L<Config::General|Config::General>
 
-Generic Config Module 
+Generic Config Module
 
 =back
 
@@ -354,11 +354,15 @@ Easy access to any pastebin
 
 =item L<Devel::REPL|Devel::REPL>
 
-A modern perl interactive shell 
+A modern perl interactive shell
 
 =item L<Module::Corelist|Module::Corelist>
 
-What modules shipped with versions of perl 
+What modules shipped with versions of perl
+
+=item L<App::perlbrew>
+
+Manage perl installations in your $HOME
 
 =back
 
@@ -373,11 +377,11 @@ production script.
 
 =item L<Smart::Comments|Smart::Comments>
 
-Comments that do more than just sit there 
+Comments that do more than just sit there
 
 =item L<Term::ProgressBar::Simple|Term::ProgressBar::Simple>
 
-Simple progress bars 
+Simple progress bars
 
 =item L<IO::All|IO::All>
 
@@ -407,7 +411,7 @@ L<http://rt.cpan.org>.
 
 =head1 SEE ALSO
 
-L<http://www.enlightenedperl.org/>, 
+L<http://www.enlightenedperl.org/>,
 L<Perl::Dist::Strawberry|Perl::Dist::Strawberry>
 
 =head1 AUTHOR
@@ -421,4 +425,3 @@ rights reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself. See L<perlartistic>.
-
