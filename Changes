@@ -1,5 +1,5 @@
 Revision history for Task-Kensho
-0.22 2010-04-19
+0.22 2010-04-20
     + Replace Bundle::CPAN with App::cpanminus
     + Added HTTP::Lite which is used to great effect by both App::cpanminus and App::perlbrew
     + Added App::perlbrew
