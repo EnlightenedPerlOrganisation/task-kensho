@@ -169,6 +169,8 @@ Atom feed and API implementation
 
 Definition of MIME types
 
+=back
+
 =head2 Web Crawling
 
 =over
@@ -323,6 +325,16 @@ A date object with as little code as possible
 =item L<Time::ParseDate|Time::ParseDate>
 
 Date parsing both relative and absolute
+
+=back
+
+=head2 Scalability
+
+=over
+
+=item L<CHI>
+
+A unified cache interface, like DBI
 
 =back
 

@@ -121,6 +121,11 @@ feature 'Date Modules',
   'Time::ParseDate' => 0,
   ;
 
+feature 'Scalability',
+  -default          => 0,
+  'CHI'             => 0,
+  ;
+
 feature 'Config Modules',
   -default          => 0,
   'Config::Any'     => 0,

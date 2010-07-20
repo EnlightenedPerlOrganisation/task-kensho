@@ -1,4 +1,7 @@
 Revision history for Task-Kensho
+0.23 2010-07-19
+    + Add CHI under Scalability
+
 0.22 2010-04-19
     + Replace Bundle::CPAN with App::cpanminus
     + Added HTTP::Lite which is used to great effect by both App::cpanminus and App::perlbrew
