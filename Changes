@@ -1,4 +1,9 @@
 Revision history for Task-Kensho
+0.24 2010-08-26 # Now with iCal reminders so I don't slip a date
+    + Add autodie
+    + Actually install App::Nopaste
+    | Make sure the POD reflects the Makefile.PL.
+
 0.23 2010-07-19
     + Add CHI under Scalability
 

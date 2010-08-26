@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.23';
+our $VERSION = '0.24';
 
 __END__
 
@@ -12,7 +12,7 @@ Task::Kensho - A Glimpse at an Enlightened Perl
 
 =head1 VERSION
 
-This document describes Task::Kensho version 0.23
+This document describes Task::Kensho version 0.24
 
 =head1 SYNOPSIS
 
@@ -96,6 +96,24 @@ Code coverage metrics for Perl
 
 =back
 
+=head2 Exception Handling
+
+=over
+
+=item L<Try::Tiny|Try::Tiny>
+
+Lightweight exception handling that handles the vagaries of $@.
+
+=item L<TryCatch|TryCatch>
+
+Flexible exception handling without source filters, handles $@ properly.
+
+=item L<autodie|autodie>
+
+Make builtins and other functions die instead of returning undef on failure.
+
+=back
+
 =head2 Object Oriented Programming
 
 =over
@@ -157,6 +175,10 @@ Task::Catalyst is all you need to start with Catalyst.
 
 Template Processing System
 
+=item L<CGI::FormBuilder::Source::Perl|CGI::FormBuilder::Source::Perl>
+
+Build CGI::FormBuilder configs from Perl syntax files.
+
 =item L<XML::RSS|XML::RSS>
 
 Creates and updates RSS files
@@ -174,6 +196,10 @@ Definition of MIME types
 =head2 Web Crawling
 
 =over
+
+=item L<HTTP::Lite|HTTP::Lite>
+
+Lightweight HTTP client implementation
 
 =item L<Bundle::LWP|Bundle::LWP>
 
