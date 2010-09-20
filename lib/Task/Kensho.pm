@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.24';
+our $VERSION = '0.25';
 
 __END__
 
