@@ -108,9 +108,11 @@ feature 'Module Development',
   ;
 
 feature 'Email Modules',
-  -default        => 0,
-  'Email::Valid'  => 0,
-  'Email::Sender' => 0,
+  -default           => 0,
+  'Email::Simple',   => 0,
+  'Email::Valid'     => 0,
+  'Email::Sender'    => 0,
+  'Email::MIME::Kit' => 0,
   ;
 
 feature 'Date Modules',

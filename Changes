@@ -1,4 +1,8 @@
 Revision history for Task-Kensho
+0.25 2010-09-19
+    + Add Email::Simple
+    + Add Email::Mime::Kit
+
 0.24 2010-08-26 # Now with iCal reminders so I don't slip a date
     + Add autodie
     + Actually install App::Nopaste
