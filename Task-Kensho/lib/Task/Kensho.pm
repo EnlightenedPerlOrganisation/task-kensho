@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.26';
+our $VERSION = '0.27';
 
 __END__
 
@@ -12,7 +12,7 @@ Task::Kensho - A Glimpse at an Enlightened Perl
 
 =head1 VERSION
 
-This document describes Task::Kensho version 0.26
+This document describes Task::Kensho version 0.27
 
 =head1 SYNOPSIS
 
@@ -40,11 +40,17 @@ Core (EPO-EC).
 The modules that are bundled by Task::Kensho are broken down into
 several categories and are still being considered. They are all taken
 from various top 100 most used perl modules lists and from discussions
-with various subject matter experts in the Perl Community. That said
+with various subject matter experts in the Perl Community. That said,
 this bundle does I<not> follow the guidelines established for the EPO-EC
 for peer review via industry advisers.
 
-=head2 Basic Toolchain
+Starting in 2011, Task::Kensho split its sub-groups of modules into
+individually-installable tasks. These individual tasks will always install all
+their modules by default. This facilitates the ease and simplicity the
+distribution aims to achieve. Each Task::Kensho sub-task is listed at the
+beginning of its section in this documentation.
+
+=head2 Basic Toolchain: Task::Kensho::Toolchain
 
 =over
 
@@ -62,7 +68,7 @@ Perl extension for Version Objects
 
 =back
 
-=head2 Testing
+=head2 Testing: Task::Kensho::Testing
 
 =over
 
@@ -96,7 +102,7 @@ Code coverage metrics for Perl
 
 =back
 
-=head2 Exception Handling
+=head2 Exception Handling: Task::Kensho::Exceptions
 
 =over
 
@@ -114,7 +120,7 @@ Make builtins and other functions die instead of returning undef on failure.
 
 =back
 
-=head2 Object Oriented Programming
+=head2 Object Oriented Programming: Task::Kensho::OOP
 
 =over
 
@@ -125,7 +131,7 @@ Moose and optionally a list of recommended modules that extend Moose.
 
 =back
 
-=head2 Asynchronous Programming
+=head2 Asynchronous Programming: Task::Kensho::Async
 
 =over
 
@@ -135,7 +141,7 @@ Multitasking and networking framework for Perl
 
 =back
 
-=head2 XML Development
+=head2 XML Development: Task::Kensho::XML
 
 =over
 
@@ -162,7 +168,7 @@ Output XML from SAX2 Events
 
 =back
 
-=head2 Web Development
+=head2 Web Development: Task::Kensho::WebDev
 
 =over
 
@@ -193,7 +199,7 @@ Definition of MIME types
 
 =back
 
-=head2 Web Crawling
+=head2 Web Crawling: Task::Kensho::WebCrawling
 
 =over
 
@@ -220,7 +226,7 @@ L<HTML::TreeBuilder|HTML::TreeBuilder>.
 
 =back
 
-=head2 Database Development
+=head2 Database Development: Task::Kensho::DBDev
 
 =over
 
@@ -246,7 +252,7 @@ Manipulate structured data definitions (SQL and more)
 
 =back
 
-=head2 Excel / CSV
+=head2 Excel / CSV: Task::Kensho::ExcelCSV
 
 =over
 
@@ -264,7 +270,7 @@ Create Excel documents easily
 
 =back
 
-=head2 Module Development
+=head2 Module Development: Task::Kensho::ModuleDev
 
 =over
 
@@ -314,7 +320,7 @@ Upload things to the CPAN
 
 =back
 
-=head2 Email
+=head2 Email: Task::Kensho::Email
 
 =over
 
@@ -336,7 +342,7 @@ The Swiss army chainsaw of assembling email messages
 
 =back
 
-=head2 Date Modules
+=head2 Date Modules: Task::Kensho::Dates
 
 =over
 
@@ -362,7 +368,7 @@ Date parsing both relative and absolute
 
 =back
 
-=head2 Scalability
+=head2 Scalability: Task::Kensho::Scalability
 
 =over
 
@@ -372,7 +378,7 @@ A unified cache interface, like DBI
 
 =back
 
-=head2 Config Modules
+=head2 Config Modules: Task::Kensho::Config
 
 =over
 
@@ -386,7 +392,7 @@ Generic Config Module
 
 =back
 
-=head2 Useful Command-line Tools
+=head2 Useful Command-line Tools: Task::Kensho::CLI
 
 =over
 
@@ -412,7 +418,7 @@ Manage perl installations in your $HOME
 
 =back
 
-=head2 Script Hackery
+=head2 Script Hackery: Task::Kensho::Hackery
 
 These packages are included less for production work and more for
 whippitupitude. They reflect packages that people have found incredibly
@@ -448,7 +454,7 @@ to track the changes in Task::Kensho.
 This list is by no means comprehensive of the "Good" Modules on CPAN.
 Nor is this neccessarily the correct path for all developers. Each of
 these modules has a perfectly acceptable replacement that may work
-better for you. This is however a path to good perl practicies, and a
+better for you. This is however a path to good perl practics, and a
 starting place on the road to Enlightened Perl programming.
 
 Please report any bugs or feature requests to

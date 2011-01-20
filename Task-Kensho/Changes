@@ -1,4 +1,9 @@
 Revision history for Task-Kensho
+0.27 2011-01-19
+    | Split Task::Kensho into sub-tasks which all install their modules by
+      default. Task::Kensho itself will prompt the user to install these
+      subtasks. Thanks to perigrin for the idea.
+
 0.26 2010-10-24 # Late ship date due to Task::Catalyst issue with BerkeleyDB
     + Identical to 0.25
 

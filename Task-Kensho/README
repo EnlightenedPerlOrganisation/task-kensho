@@ -22,3 +22,9 @@ categories and are still being considered. They are all taken from various top
 matter experts in the Perl Community. That said this bundle does I<not> follow
 the guidelines established for the EPO-EC for peer review via industry
 advisers.
+
+Starting in 2011, Task::Kensho split its sub-groups of modules into
+individually-installable tasks. These individual tasks will always install all
+their modules by default. This facilitates the ease and simplicity the
+distribution aims to achieve. Each Task::Kensho sub-task is listed at the
+beginning of its section in this documentation.
