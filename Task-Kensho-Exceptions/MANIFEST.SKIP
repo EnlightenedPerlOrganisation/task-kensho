@@ -1,0 +1,15 @@
+MANIFEST.SKIP
+^\.gitignore$
+^\.git/
+/\.svn/
+^\.svn/
+~$
+\.sw.$
+\.bak$
+\bblib\b
+\bpm_to_blib\b
+^Makefile$
+^Makefile\.old$
+^control/
+^Module-Install-AutoManifest-\d
+^nytprof.out$
