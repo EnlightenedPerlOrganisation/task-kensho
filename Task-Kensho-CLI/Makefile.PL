@@ -20,7 +20,7 @@ feature 'App::Ack',
 
 feature 'App::Nopaste',
   -default                   => 1,
-  'App::NoPaste'             => 0,
+  'App::Nopaste'             => 0,
   ;
 
 feature 'Devel::REPL',

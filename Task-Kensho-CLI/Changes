@@ -1,4 +1,7 @@
 Revision history for Task-Kensho-CLI
+0.28 2011-01-23
+    | It's App::Nopaste, not App::NoPaste.
+
 0.27 2011-01-20
     | Split Task::Kensho into sub-tasks which all install their modules by
       default. Task::Kensho itself will prompt the user to install these
