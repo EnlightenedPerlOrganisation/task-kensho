@@ -20,12 +20,12 @@ feature 'Basic Toolchain',
 
 feature 'Testing',
   -default              => 1,
-  'Task::Kensho::Testing' => 1,
+  'Task::Kensho::Testing' => 0,
   ;
 
 feature 'Exception Handling',
   -default    => 1,
-  'Task::Kensho::Exceptions' => 1,
+  'Task::Kensho::Exceptions' => 0,
   ;
 
 feature 'Object Oriented Programming',
