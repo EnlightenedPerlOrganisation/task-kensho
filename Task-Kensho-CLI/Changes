@@ -1,4 +1,7 @@
 Revision history for Task-Kensho-CLI
+0.29 2011-03-25
+    | Fix Module::CoreList link in POD, thanks alister@alisterwest.com.
+
 0.28 2011-01-23
     | It's App::Nopaste, not App::NoPaste.
 
