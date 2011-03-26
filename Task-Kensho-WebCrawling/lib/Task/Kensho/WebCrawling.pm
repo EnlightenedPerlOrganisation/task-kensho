@@ -1,6 +1,6 @@
 package Task::Kensho::WebCrawling;
 use strict;
-our $VERSION = '0.27';
+our $VERSION = '0.28';
 
 __END__
 
@@ -58,9 +58,9 @@ beginning of its section in this documentation.
 
 Lightweight HTTP client implementation
 
-=item L<Bundle::LWP|Bundle::LWP>
+=item L<LWP::UserAgent>
 
-Install all libwww-perl related modules
+Full-featured Web client library for Perl
 
 =item L<LWP::Simple|LWP::Simple>
 

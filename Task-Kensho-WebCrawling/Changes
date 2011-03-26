@@ -1,4 +1,7 @@
 Revision history for Task-Kensho-WebCrawling
+0.28 2011-03-25
+    | Bundle::LWP is gone; replace with LWP::UserAgent.
+
 0.27 2011-01-20
     | Split Task::Kensho into sub-tasks which all install their modules by
       default. Task::Kensho itself will prompt the user to install these

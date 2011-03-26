@@ -18,9 +18,9 @@ feature 'HTTP::Lite',
   'HTTP::Lite'                  => 0,
   ;
 
-feature 'Bundle::LWP',
+feature 'LWP::UserAgent',
   -default                      => 1,
-  'Bundle::LWP'                 => 0,
+  'LWP::UserAgent'              => 0,
   ;
 
 feature 'LWP::Simple',
