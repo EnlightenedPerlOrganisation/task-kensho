@@ -1,4 +1,7 @@
 Revision history for Task-Kensho-ExcelCSV
+0.28 2011-03-25
+    | No changes from 0.27.
+
 0.27 2011-01-20
     | Split Task::Kensho into sub-tasks which all install their modules by
       default. Task::Kensho itself will prompt the user to install these

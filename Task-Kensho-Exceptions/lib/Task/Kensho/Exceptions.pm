@@ -1,6 +1,6 @@
 package Task::Kensho::Exceptions;
 use strict;
-our $VERSION = '0.27';
+our $VERSION = '0.28';
 
 __END__
 
@@ -12,7 +12,7 @@ Task::Kensho::Exceptions - A Glimpse at an Enlightened Perl (Exceptions)
 
 =head1 VERSION
 
-This document describes Task::Kensho::Exceptions version 0.27
+This document describes Task::Kensho::Exceptions version 0.28
 
 =head1 SYNOPSIS
 

@@ -1,6 +1,6 @@
 package Task::Kensho::ModuleDev;
 use strict;
-our $VERSION = '0.27';
+our $VERSION = '0.28';
 
 __END__
 
@@ -12,7 +12,7 @@ Task::Kensho::ModuleDev - A Glimpse at an Enlightened Perl (ModuleDev)
 
 =head1 VERSION
 
-This document describes Task::Kensho::ModuleDev version 0.27
+This document describes Task::Kensho::ModuleDev version 0.28
 
 =head1 SYNOPSIS
 

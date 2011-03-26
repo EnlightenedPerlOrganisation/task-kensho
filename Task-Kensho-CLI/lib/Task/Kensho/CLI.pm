@@ -12,7 +12,7 @@ Task::Kensho::CLI - A Glimpse at an Enlightened Perl (CLI)
 
 =head1 VERSION
 
-This document describes Task::Kensho::CLI version 0.28
+This document describes Task::Kensho::CLI version 0.29
 
 =head1 SYNOPSIS
 
