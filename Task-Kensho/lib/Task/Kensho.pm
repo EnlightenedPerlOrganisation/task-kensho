@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.30';
+our $VERSION = '0.31';
 
 __END__
 
@@ -12,7 +12,7 @@ Task::Kensho - A Glimpse at an Enlightened Perl
 
 =head1 VERSION
 
-This document describes Task::Kensho version 0.30
+This document describes Task::Kensho version 0.31
 
 =head1 SYNOPSIS
 
