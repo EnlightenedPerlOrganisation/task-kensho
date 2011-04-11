@@ -1,4 +1,7 @@
 Revision history for Task-Kensho
+0.31 2011-04-11
+    | Fix Task::Kensho::Logging version, thanks kent\n
+
 0.30 2011-04-11
     + Task::Kensho::Logging
 
