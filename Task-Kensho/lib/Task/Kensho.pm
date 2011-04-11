@@ -102,6 +102,24 @@ Code coverage metrics for Perl
 
 =back
 
+=head2 Logging: Task::Kensho::Logging
+
+=over
+
+=item L<Log::Dispatch|Log::Dispatch>
+
+Dispatches messages to one or more outputs
+
+=item L<Log::Log4perl|Log::Log4perl>
+
+Log4j implementation for Perl
+
+=item L<Log::Contextual|Log::Contextual>
+
+Simple logging interface with a contextual log
+
+=back
+
 =head2 Exception Handling: Task::Kensho::Exceptions
 
 =over

@@ -23,6 +23,11 @@ feature 'Testing',
   'Task::Kensho::Testing' => 0,
   ;
 
+feature 'Logging',
+  -default       => 1,
+  'Task::Kensho::Logging' => 1,
+  ;
+
 feature 'Exception Handling',
   -default    => 1,
   'Task::Kensho::Exceptions' => 0,
