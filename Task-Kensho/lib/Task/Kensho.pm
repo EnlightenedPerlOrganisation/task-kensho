@@ -225,9 +225,9 @@ Definition of MIME types
 
 Lightweight HTTP client implementation
 
-=item L<Bundle::LWP|Bundle::LWP>
+=item L<LWP::UserAgent|LWP::UserAgent>
 
-Install all libwww-perl related modules
+Web user agent class
 
 =item L<LWP::Simple|LWP::Simple>
 
