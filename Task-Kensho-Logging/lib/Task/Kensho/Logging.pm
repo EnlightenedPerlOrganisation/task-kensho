@@ -1,6 +1,6 @@
 package Task::Kensho::Logging;
 use strict;
-our $VERSION = '0.28';
+our $VERSION = '0.01';
 
 __END__
 
@@ -12,7 +12,7 @@ Task::Kensho::Logging - A Glimpse at an Enlightened Perl (Logging)
 
 =head1 VERSION
 
-This document describes Task::Kensho::Logging version 0.28
+This document describes Task::Kensho::Logging version 0.01
 
 =head1 SYNOPSIS
 
