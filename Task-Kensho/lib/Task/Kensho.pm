@@ -190,6 +190,10 @@ Output XML from SAX2 Events
 
 =over
 
+=item L<Plack>
+
+Flexible superglue between Web Servers and Perl Web Frameworks or code.
+
 =item L<Task::Catalyst|Task::Catalyst>
 
 L<Catalyst|Catalyst> is The Elegant MVC Web Application Framework.

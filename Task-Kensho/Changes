@@ -1,4 +1,7 @@
 Revision history for Task-Kensho
+0.32
+    | Add Plack to Task::Kensho::WebDev
+
 0.31 2011-04-11
     | Fix Task::Kensho::Logging version, thanks kent\n
 
