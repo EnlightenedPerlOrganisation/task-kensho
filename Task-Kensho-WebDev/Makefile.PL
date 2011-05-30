@@ -18,6 +18,11 @@ feature 'Catalyst',
   'Task::Catalyst'                 => 0,
   ;
 
+feature 'Plack',
+  -default                         => 1,
+  'Plack'                 => 0,
+  ;
+
 feature 'Template Toolkit',
   -default                         => 1,
   'Template'                       => 0,

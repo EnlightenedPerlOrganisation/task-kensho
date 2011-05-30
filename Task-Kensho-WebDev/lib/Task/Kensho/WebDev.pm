@@ -1,6 +1,6 @@
 package Task::Kensho::WebDev;
 use strict;
-our $VERSION = '0.28';
+our $VERSION = '0.29';
 
 __END__
 
@@ -53,6 +53,10 @@ beginning of its section in this documentation.
 =head2 Web Development: Task::Kensho::WebDev
 
 =over
+
+=item L<Plack>
+
+Flexible superglue between Web Servers and Perl Web Frameworks or code.
 
 =item L<Task::Catalyst|Task::Catalyst>
 

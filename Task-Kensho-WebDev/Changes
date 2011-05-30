@@ -1,4 +1,7 @@
 Revision history for Task-Kensho-WebDev
+0.29
+    | Add Plack to Task::Kensho::WebDev
+
 0.28 2011-03-25
     | No changes from 0.27.
 
