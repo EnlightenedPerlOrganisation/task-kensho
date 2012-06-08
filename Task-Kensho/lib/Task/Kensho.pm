@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.31';
+our $VERSION = '0.32';
 
 __END__
 
@@ -430,7 +430,7 @@ Easy access to any pastebin
 
 A modern perl interactive shell
 
-=item L<Module::Corelist|Module::Corelist>
+=item L<Module::CoreList|Module::CoreList>
 
 What modules shipped with versions of perl
 
