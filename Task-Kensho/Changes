@@ -1,8 +1,7 @@
 Revision history for Task-Kensho
-0.33
-    | Fix reference to Module::CoreList (RT#65948)
 
-0.32
+0.32 2012-06-08
+    | Fix reference to Module::CoreList (RT#65948)
     | Add Plack to Task::Kensho::WebDev
 
 0.31 2011-04-11
