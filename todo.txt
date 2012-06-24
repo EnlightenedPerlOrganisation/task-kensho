@@ -1,0 +1,13 @@
+
+Investigate ways to generate these dists with a minimum amount of effort.
+
+- slurp in the master file of dists and components
+- generate Makefile.PL etc.
+    - keep using Module::Install?
+    - investigate rjbs's Taskweaver dzil plugin
+
+- automatically detect when a dist changes, and mark that as needing release?
+
+- should Task::Kensho always get re-released when a subdist changes? or should
+  TK just list the categories and not list the actual components?
+
