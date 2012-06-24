@@ -1,0 +1,173 @@
+---
+# this is not in yml to make perigrin cry, but just because ether speaks this
+# more natively than INI. change to another format as desired!
+# To parse: perl -MYAML::Any=LoadFile -MData::Dumper -wle'print Dumper(LoadFile("modules.yml"))'
+
+Task::Kensho::Async:
+    description: Multitasking and networking framework for Perl
+    components:
+        POE: Multitasking and networking framework for Perl
+
+
+Task::Kensho::CLI:
+    description: Useful Command-line Tools
+    components:
+        App::Ack: A grep-like text finder
+        App::Nopaste: Easy access to any pastebin
+        Devel::REPL: A modern perl interactive shell
+        Module::CoreList: What modules shipped with versions of perl
+        App::perlbrew: Manage perl installations in your $HOME
+
+
+Task::Kensho::Config:
+    description: Config Modules
+    components:
+        Config::Any: Load configuration from different file formats, transparently
+        Config::General: Generic Config Module
+
+
+Task::Kensho::DBDev:
+    description: Database Development
+    components:
+        DBI: Database independent interface for Perl
+        DBD::SQLite: Self Contained RDBMS in a DBI Driver
+        DBIx::Class: Extensible and flexible object <-> relational mapper.
+        DBIx::Class::Schema::Loader: Dynamic definition of a DBIx::Class::Schema
+        SQL::Translator: Manipulate structured data definitions (SQL and more)
+
+
+Task::Kensho::Dates:
+    description: Date Modules
+    components:
+        DateTime: A date and time object
+        Date::Tiny: A date object with as little code as possible
+        Time::Tiny: A time object with as little code as possible
+        DateTime::Tiny: A date object with as little code as possible
+        Time::ParseDate: Date parsing both relative and absolute
+
+
+Task::Kensho::Email:
+    description: Email
+    components:
+        Email::Simple: A B<simple> email object. No, really!
+        Email::Valid: Check validity of Internet email addresses
+        Email::Sender: A library for sending email
+        Email::MIME::Kit: The Swiss army chainsaw of assembling email messages
+
+
+Task::Kensho::ExcelCSV:
+    description: Excel/CSV
+    components:
+        Text::CSV_XS: Manipulate comma-separated values (CSV)
+        Spreadsheet::ParseExcel::Simple: A simple interface to Excel data
+        Spreadsheet::WriteExcel::Simple: Create Excel documents easily
+
+
+Task::Kensho::Exceptions:
+    description: Exception Handling
+    components:
+        Try::Tiny: Lightweight exception handling that handles the vagaries of $@.
+        TryCatch: Flexible exception handling without source filters, handles $@ properly.
+        autodie: Make builtins and other functions die instead of returning undef on failure.
+
+
+Task::Kensho::Hackery:
+    description: 'Script Hackery
+
+These packages are included less for production work and more for whippitupitude. They reflect packages that people have found incredibly useful for prototyping and debugging before reducing down to a production script.'
+    components:
+        Smart::Comments: Comments that do more than just sit there
+        Term::ProgressBar::Simple: Simple progress bars
+        IO::All: 'IO::All combines all of the best Perl IO modules into a single nifty object oriented interface to greatly simplify your everyday Perl IO idioms.'
+
+
+Task::Kensho::Logging:
+    description: Logging
+    components:
+        Log::Dispatch: 'This module manages a set of Log::Dispatch::* output objects that can be logged to via a unified interface.'
+        Log::Log4perl: 'Log::Log4perl lets you remote-control and fine-tune the logging behaviour of your system from the outside. It implements the widely popular (Java-based) Log4j logging package in pure Perl.'
+        Log::Contextual: 'Log::Contextual is a simple interface to extensible logging.  It is bundled with a really basic logger, Log::Contextual::SimpleLogger.'
+
+
+Task::Kensho::ModuleDev:
+    description: Module Development
+    components:
+        Dist::Zilla: Builds distributions of code to be uploaded to the CPAN.
+        Module::Install: Standalone, extensible Perl module installer
+        Devel::NYTProf: Powerful feature-rich perl source code profiler
+        Perl::Tidy: Parses and beautifies perl source
+        Perl::Critic: Critique Perl source code for best-practices.
+        Carp::Always: Warns and dies noisily with stack backtraces
+        Modern::Perl: enable all of the features of Modern Perl with one command
+        Perl::Version: Parse and manipulate Perl version strings
+        Software::License: Packages that provide templated software licenses
+        Pod::Readme: Convert POD to README file
+        CPAN::Uploader: Upload things to the CPAN
+
+
+Task::Kensho::OOP:
+    description: Object Oriented Programming
+    components:
+        Task::Moose: 'Moose is a postmodern object system for Perl5. Task::Moose installs Moose and optionally a list of recommended modules that extend Moose.'
+
+
+Task::Kensho::Scalability:
+    description: Scalability
+    components:
+        CHI: A unified cache interface, like DBI
+
+
+Task::Kensho::Testing:
+    description: Testing
+    components:
+        Test::Simple: Basic utilities for writing tests.
+        Test::Most: Most commonly needed test functions and features.
+        Test::Fatal: Test exception-based code
+        Test::Pod: Check for POD errors in files
+        Test::Pod::Coverage: Check for pod coverage in your distribution.
+        Test::Memory::Cycle: Check for memory leaks and circular memory references
+        Devel::Cover: Code coverage metrics for Perl
+        Test::Deep: Test deep data structures
+        Test::Requires: Make running a test conditional on a particular module being installed
+        Test::NoWarnings: Ensure that no (unexpected) warnings occur during testing
+
+
+Task::Kensho::Toolchain:
+    description: Basic Toolchain
+    components:
+        App::cpanminus: Get, unpack, build and install modules from CPAN
+        local::lib: Create and use a local lib/ for perl modules with PERL5LIB
+        version: Perl extension for Version Objects
+
+
+Task::Kensho::WebCrawling:
+    description: Web Crawling
+    components:
+        HTTP::Lite: Lightweight HTTP client implementation 
+        LWP::UserAgent: Full-featured Web client library for Perl 
+        LWP::Simple: Simple procedural interface to LWP 
+        WWW::Mechanize: Handy web browsing in a Perl object 
+        WWW::Mechanize::TreeBuilder: This module combines WWW::Mechanize and HTML::TreeBuilder.
+
+
+Task::Kensho::WebDev:
+    description: Web Development
+    components:
+        Plack: Flexible superglue between Web Servers and Perl Web Frameworks or code.
+        Task::Catalyst: Catalyst is The Elegant MVC Web Application Framework. Task::Catalyst is all you need to start with Catalyst.
+        Template::Toolkit: Template Processing System
+        CGI::FormBuilder::Source::Perl: Build CGI::FormBuilder configs from Perl syntax files.
+        XML::RSS: Creates and updates RSS files
+        XML::Atom: Atom feed and API implementation
+        MIME::Types: Definition of MIME types
+
+
+Task::Kensho::XML:
+    description: XML Development
+    components:
+        XML::LibXML: Perl Binding for libxml2
+        XML::LibXSLT: Interface to the gnome libxslt library
+        XML::SAX: Simple/Streaming API for XML
+        XML::Generator::PerlData: Perl extension for generating SAX2 events from nested Perl data structures.
+        XML::SAX::Writer: Output XML from SAX2 Events
+
