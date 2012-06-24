@@ -23,9 +23,9 @@ feature 'Test::Most',
   'Test::Most'          => 0,
   ;
 
-feature 'Test::Exception',
+feature 'Test::Fatal',
   -default              => 1,
-  'Test::Exception'     => 0,
+  'Test::Fatal'         => 0,
   ;
 
 feature 'Test::Pod',
@@ -46,6 +46,21 @@ feature 'Test::Memory::Cycle',
 feature 'Devel::Cover',
   -default              => 1,
   'Devel::Cover'        => 0,
+  ;
+
+feature 'Test::Deep',
+  -default              => 1,
+  'Test::Deep'          => 0,
+  ;
+
+feature 'Test::Requires',
+  -default              => 1,
+  'Test::Requires'      => 0,
+  ;
+
+feature 'Test::NoWarnings',
+  -default              => 1,
+  'Test::Requires'      => 0,
   ;
 
 auto_set_repository;

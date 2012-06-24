@@ -1,6 +1,6 @@
 package Task::Kensho;
 use strict;
-our $VERSION = '0.32';
+our $VERSION = '0.33';
 
 __END__
 
@@ -12,7 +12,7 @@ Task::Kensho - A Glimpse at an Enlightened Perl
 
 =head1 VERSION
 
-This document describes Task::Kensho version 0.31
+This document describes Task::Kensho version 0.33
 
 =head1 SYNOPSIS
 
@@ -80,9 +80,9 @@ Basic utilities for writing tests.
 
 Most commonly needed test functions and features.
 
-=item L<Test::Exception|Test::Exception>
+=item L<Test::Fatal|Test::Fatal>
 
-Test exception based code
+Test exception-based code
 
 =item L<Test::Pod|Test::Pod>
 
@@ -99,6 +99,18 @@ Check for memory leaks and circular memory references
 =item L<Devel::Cover|Devel::Cover>
 
 Code coverage metrics for Perl
+
+=item L<Test::Deep|Test::Deep>
+
+Test deep data structures
+
+=item L<Test::Requires|Test::Requires>
+
+Make running a test conditional on a particular module being installed
+
+=item L<Test::NoWarnings>
+
+Ensure that no (unexpected) warnings occur during testing
 
 =back
 
