@@ -4,6 +4,7 @@ Revision history for Task-Kensho
           - Task::Kensho::Testing:
             - Retired Test::Exception and replaced with Test::Fatal
             - added Test::Deep, Test::Requires and Test::NoWarnings
+          - Task::Kensho::WebDev: added Plack
 
 0.32      2012-06-08
           - Fix reference to Module::CoreList (RT#65948)
@@ -16,10 +17,13 @@ Revision history for Task-Kensho
           - new group, Task::Kensho::Logging
 
 0.29      2011-03-25
-          - No changes from 0.28.
+          - Task::Kensho::CLI: Fix Module::CoreList link in POD, thanks alister@alisterwest.com.
+          - Task::Kensho::WebCrawling: Bundle::LWP is gone; replace with
+            LWP::UserAgent. Thanks, kentnl@cpan.org.
 
 0.28      2011-01-23
           - Bugfix: Some tasks had a version of 1.0 marked as required. Fix this.
+          - Task::Kensho::CLI: It's App::Nopaste, not App::NoPaste.
 
 0.27      2011-01-20
           - Split Task::Kensho into sub-tasks which all install their modules
