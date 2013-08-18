@@ -4,6 +4,7 @@
 /Makefile.old
 /MANIFEST
 /MANIFEST.bak
+/MANIFEST.SKIP
 /blib/
 /pm_to_blib
 /.build
@@ -17,7 +18,7 @@ test-mydeps-*
 nytprof*
 /inc/
 !.gitignore
-*.sw*
+.*.sw[a-z]
 /Task-Kensho-*
 /Task-Kensho*/META.yml
 /Task-Kensho*/MYMETA.*
