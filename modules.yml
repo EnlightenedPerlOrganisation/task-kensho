@@ -129,7 +129,7 @@ Task::Kensho::Testing:
         Devel::Cover: Code coverage metrics for Perl
         Test::Deep: Test deep data structures
         Test::Requires: Make running a test conditional on a particular module being installed
-        Test::NoWarnings: Ensure that no (unexpected) warnings occur during testing
+        Test::FailWarnings: Add test failures if warnings are caught
 
 
 Task::Kensho::Toolchain:
@@ -143,10 +143,10 @@ Task::Kensho::Toolchain:
 Task::Kensho::WebCrawling:
     description: Web Crawling
     components:
-        HTTP::Lite: Lightweight HTTP client implementation 
-        LWP::UserAgent: Full-featured Web client library for Perl 
-        LWP::Simple: Simple procedural interface to LWP 
-        WWW::Mechanize: Handy web browsing in a Perl object 
+        HTTP::Lite: Lightweight HTTP client implementation
+        LWP::UserAgent: Full-featured Web client library for Perl
+        LWP::Simple: Simple procedural interface to LWP
+        WWW::Mechanize: Handy web browsing in a Perl object
         WWW::Mechanize::TreeBuilder: This module combines WWW::Mechanize and HTML::TreeBuilder.
 
 
