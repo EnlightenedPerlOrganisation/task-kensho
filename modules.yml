@@ -4,7 +4,7 @@
 # To parse: perl -MYAML::Any=LoadFile -MData::Dumper -wle'print Dumper(LoadFile("modules.yml"))'
 
 Task::Kensho::Async:
-    description: Multitasking and networking framework for Perl
+    description: Async Programming
     components:
         POE: Multitasking and networking framework for Perl
 
