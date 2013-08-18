@@ -90,9 +90,9 @@ Test deep data structures
 
 Make running a test conditional on a particular module being installed
 
-=item L<Test::NoWarnings>
+=item L<Test::FailWarnings>
 
-Ensure that no (unexpected) warnings occur during testing
+Add test failures if warnings are caught
 
 =back
 

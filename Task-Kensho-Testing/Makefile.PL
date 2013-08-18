@@ -58,7 +58,7 @@ feature 'Test::Requires',
   'Test::Requires'      => 0,
   ;
 
-feature 'Test::NoWarnings',
+feature 'Test::FailWarnings',
   -default              => 1,
   'Test::Requires'      => 0,
   ;
