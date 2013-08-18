@@ -1,14 +1,17 @@
-Investigate ways to generate these dists with a minimum amount of effort.
-
-- slurp in the master file of dists and components
-- generate Makefile.PL etc.
-    - keep using Module::Install?
-    - investigate rjbs's Taskweaver dzil plugin
+Investigate ways to generate these dists with a minimum amount of effort,
+ideally dumping Module::Install.
 
 - automatically detect when a dist changes, and mark that as needing release?
+    (can be done with Makefiles and committing the release version of the tree
+    -- ether will investigate after ripping out MI.)
 
 - should Task::Kensho always get re-released when a subdist changes? or should
   TK just list the categories and not list the actual components?
     - TK should always get re-released when a sub-dist changes. 
       The sub-dist is a hack around CPAN clients not reliably 
       doing optional deps. -- Chris
+        - cpan clients should be supporting optional deps now -- I know cpanm
+          does support "optional_features" --
+          https://metacpan.org/module/CPAN::Meta::Spec#optional_features
+          -- so given that information, do we want to keep subdists at all?
+
