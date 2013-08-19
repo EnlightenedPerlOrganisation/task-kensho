@@ -5,9 +5,12 @@ package inc::GenerateTaskModules;
 use Moose;
 with
     'MooseX::SimpleConfig',
+    'Dist::Zilla::Role::FileGatherer',
     'Dist::Zilla::Role::FileMunger',
     'Dist::Zilla::Role::TextTemplate';
 
+use Module::Runtime 'module_notional_filename';
+use Path::Tiny;
 use namespace::autoclean;
 
 # called by MooseX::SimpleConfig
@@ -31,6 +34,31 @@ has module_data => (
     },
 );
 
+sub gather_files
+{
+    my $self = shift;
+
+    require Dist::Zilla::File::InMemory;
+
+    my $template = path('template.pm')->slurp;
+
+    # here is where we generate all the lib/Task/Kensho/*.pm modules
+    foreach my $module ($self->modules)
+    {
+        $self->add_file(Dist::Zilla::File::InMemory->new(
+            name => path('lib', module_notional_filename($module))->stringify,
+            content => $self->fill_in_string(
+                $template,
+                {
+                    dist => \($self->zilla),
+                    plugin => \($self),
+                    module => \$module,
+                    data => \($self->module_data),
+                }
+            )
+        ));
+    }
+}
 
 sub munge_file
 {
