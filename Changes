@@ -1,4 +1,6 @@
-Revision history for Task-Kensho
+Revision history for {{ $dist->name }}
+
+{{ $NEXT }}
 
 0.33      2012-06-24
           - Task::Kensho::Testing:
