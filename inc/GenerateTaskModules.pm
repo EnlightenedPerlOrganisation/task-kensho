@@ -5,10 +5,12 @@ package inc::GenerateTaskModules;
 use Moose;
 with
     'MooseX::SimpleConfig',
+    'Dist::Zilla::Role::MetaProvider',
     'Dist::Zilla::Role::FileGatherer',
     'Dist::Zilla::Role::FileMunger',
     'Dist::Zilla::Role::TextTemplate';
 
+use Dist::Zilla::Plugin::OptionalFeature;
 use Module::Runtime 'module_notional_filename';
 use Path::Tiny;
 use namespace::autoclean;
@@ -33,6 +35,29 @@ has module_data => (
         $self->get_config_from_file($self->configfile);
     },
 );
+
+sub metadata
+{
+    my $self = shift;
+
+    my @features = map {
+        my $module = $_;
+        my $module_data = $self->data_for($module);
+        Dist::Zilla::Plugin::OptionalFeature->new(
+            zilla => $self->zilla,
+            plugin_name => $module,
+            '-description' => $module_data->{description},
+            (map { $_ => 0 } sort keys %{ $module_data->{components} }),
+        )
+    } sort $self->modules;
+
+    require Hash::Merge::Simple;
+    my $meta = {};
+    $meta = Hash::Merge::Simple::merge($meta, $_->metadata)
+        for @features;
+
+    return $meta;
+}
 
 sub gather_files
 {
