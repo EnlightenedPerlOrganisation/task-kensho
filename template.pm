@@ -8,7 +8,7 @@ __END__
 
 =head1 SYNOPSIS
 
-    > cpanm --verbose {{ $module }}
+    > cpanm --interactive {{ $module }}
 
 =head1 DESCRIPTION
 

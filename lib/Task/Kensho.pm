@@ -8,7 +8,7 @@ __END__
 
 =head1 SYNOPSIS
 
-    > cpanm --verbose Task::Kensho
+    > cpanm --interactive Task::Kensho
 
 =head1 DESCRIPTION
 
