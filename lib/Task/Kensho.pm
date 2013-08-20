@@ -12,12 +12,13 @@ __END__
 
 =head1 DESCRIPTION
 
+=for stopwords Buddhism EPO Kenshō nonduality amongst Organisation installable
+
 From L<http://en.wikipedia.org/wiki/Kensho>:
 
-
 Kenshō (見性) (C. Wu) is a Japanese term for enlightenment
-experiences—most commonly used within the confines of Zen
-Buddhism—literally meaning "seeing one's nature"[1] or "true
+experiences - most commonly used within the confines of Zen
+Buddhism - literally meaning "seeing one's nature"[1] or "true
 self."[2] It generally "refers to the realization of nonduality of
 
 Task::Kensho is a first cut at building a list of recommended modules
@@ -74,9 +75,9 @@ to track the changes in Task::Kensho.
 =head1 BUGS AND LIMITATIONS
 
 This list is by no means comprehensive of the "Good" Modules on CPAN.
-Nor is this neccessarily the correct path for all developers. Each of
+Nor is this necessarily the correct path for all developers. Each of
 these modules has a perfectly acceptable replacement that may work
-better for you. This is however a path to good perl practics, and a
+better for you. This is however a path to good perl practice, and a
 starting place on the road to Enlightened Perl programming.
 
 Please report any bugs or feature requests to

@@ -11,6 +11,7 @@ Task::Kensho::Async:
 
 Task::Kensho::CLI:
     description: Useful Command-line Tools
+    long_description: =for stopwords pastebin
     components:
         App::Ack: A grep-like text finder
         App::Nopaste: Easy access to any pastebin
@@ -57,6 +58,7 @@ Task::Kensho::Email:
 
 Task::Kensho::ExcelCSV:
     description: Excel/CSV
+    long_description: =for stopwords CSV
     components:
         Text::CSV_XS: Manipulate comma-separated values (CSV)
         Spreadsheet::ParseExcel::Simple: A simple interface to Excel data
@@ -73,7 +75,9 @@ Task::Kensho::Exceptions:
 
 Task::Kensho::Hackery:
     description: Script Hackery
-    long_description: These packages are included less for production work and more for whippitupitude. They reflect packages that people have found incredibly useful for prototyping and debugging before reducing down to a production script.
+    long_description: '=for stopwords whippitupitude
+
+These packages are included less for production work and more for whippitupitude. They reflect packages that people have found incredibly useful for prototyping and debugging before reducing down to a production script.'
     components:
         Smart::Comments: Comments that do more than just sit there
         Term::ProgressBar::Simple: Simple progress bars
@@ -90,6 +94,7 @@ Task::Kensho::Logging:
 
 Task::Kensho::ModuleDev:
     description: Module Development
+    long_description: =for stopwords profiler templated
     components:
         Dist::Zilla: Builds distributions of code to be uploaded to the CPAN.
         Module::Install: Standalone, extensible Perl module installer
@@ -151,6 +156,7 @@ Task::Kensho::WebCrawling:
 
 Task::Kensho::WebDev:
     description: Web Development
+    long_description: =for stopwords configs RSS
     components:
         Plack: Flexible superglue between Web Servers and Perl Web Frameworks or code.
         Task::Catalyst: Catalyst is The Elegant MVC Web Application Framework. Task::Catalyst is all you need to start with Catalyst.
@@ -163,6 +169,7 @@ Task::Kensho::WebDev:
 
 Task::Kensho::XML:
     description: XML Development
+    long_description: =for stopwords libxml libxslt
     components:
         XML::LibXML: Perl Binding for libxml2
         XML::LibXSLT: Interface to the gnome libxslt library

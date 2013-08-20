@@ -473,6 +473,11 @@
             "version" : "4.300035"
          },
          {
+            "class" : "Dist::Zilla::Plugin::Test::PodSpelling",
+            "name" : "Test::PodSpelling",
+            "version" : "2.006000"
+         },
+         {
             "class" : "Dist::Zilla::Plugin::Git::Describe",
             "name" : "Git::Describe",
             "version" : "0.003"
