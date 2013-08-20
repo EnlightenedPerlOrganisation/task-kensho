@@ -45,7 +45,7 @@ sub metadata
         my $module_data = $self->data_for($module);
         Dist::Zilla::Plugin::OptionalFeature->new(
             zilla => $self->zilla,
-            plugin_name => $module,
+            plugin_name => (split('::', $module))[-1],
             '-description' => $module_data->{description},
             (map { $_ => 0 } sort keys %{ $module_data->{components} }),
         )

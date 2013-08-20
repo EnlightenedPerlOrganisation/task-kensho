@@ -21,7 +21,7 @@
       ]
    },
    "optional_features" : {
-      "Task::Kensho::Async" : {
+      "Async" : {
          "description" : "Async Programming",
          "prereqs" : {
             "runtime" : {
@@ -31,7 +31,7 @@
             }
          }
       },
-      "Task::Kensho::CLI" : {
+      "CLI" : {
          "description" : "Useful Command-line Tools",
          "prereqs" : {
             "runtime" : {
@@ -45,7 +45,7 @@
             }
          }
       },
-      "Task::Kensho::Config" : {
+      "Config" : {
          "description" : "Config Modules",
          "prereqs" : {
             "runtime" : {
@@ -56,7 +56,7 @@
             }
          }
       },
-      "Task::Kensho::DBDev" : {
+      "DBDev" : {
          "description" : "Database Development",
          "prereqs" : {
             "runtime" : {
@@ -70,7 +70,7 @@
             }
          }
       },
-      "Task::Kensho::Dates" : {
+      "Dates" : {
          "description" : "Date Modules",
          "prereqs" : {
             "runtime" : {
@@ -84,7 +84,7 @@
             }
          }
       },
-      "Task::Kensho::Email" : {
+      "Email" : {
          "description" : "Email",
          "prereqs" : {
             "runtime" : {
@@ -97,7 +97,7 @@
             }
          }
       },
-      "Task::Kensho::ExcelCSV" : {
+      "ExcelCSV" : {
          "description" : "Excel/CSV",
          "prereqs" : {
             "runtime" : {
@@ -109,7 +109,7 @@
             }
          }
       },
-      "Task::Kensho::Exceptions" : {
+      "Exceptions" : {
          "description" : "Exception Handling",
          "prereqs" : {
             "runtime" : {
@@ -121,7 +121,7 @@
             }
          }
       },
-      "Task::Kensho::Hackery" : {
+      "Hackery" : {
          "description" : "Script Hackery",
          "prereqs" : {
             "runtime" : {
@@ -133,7 +133,7 @@
             }
          }
       },
-      "Task::Kensho::Logging" : {
+      "Logging" : {
          "description" : "Logging",
          "prereqs" : {
             "runtime" : {
@@ -145,7 +145,7 @@
             }
          }
       },
-      "Task::Kensho::ModuleDev" : {
+      "ModuleDev" : {
          "description" : "Module Development",
          "prereqs" : {
             "runtime" : {
@@ -165,7 +165,7 @@
             }
          }
       },
-      "Task::Kensho::OOP" : {
+      "OOP" : {
          "description" : "Object Oriented Programming",
          "prereqs" : {
             "runtime" : {
@@ -175,7 +175,7 @@
             }
          }
       },
-      "Task::Kensho::Scalability" : {
+      "Scalability" : {
          "description" : "Scalability",
          "prereqs" : {
             "runtime" : {
@@ -185,7 +185,7 @@
             }
          }
       },
-      "Task::Kensho::Testing" : {
+      "Testing" : {
          "description" : "Testing",
          "prereqs" : {
             "runtime" : {
@@ -204,7 +204,7 @@
             }
          }
       },
-      "Task::Kensho::Toolchain" : {
+      "Toolchain" : {
          "description" : "Basic Toolchain",
          "prereqs" : {
             "runtime" : {
@@ -216,7 +216,7 @@
             }
          }
       },
-      "Task::Kensho::WebCrawling" : {
+      "WebCrawling" : {
          "description" : "Web Crawling",
          "prereqs" : {
             "runtime" : {
@@ -230,7 +230,7 @@
             }
          }
       },
-      "Task::Kensho::WebDev" : {
+      "WebDev" : {
          "description" : "Web Development",
          "prereqs" : {
             "runtime" : {
@@ -246,7 +246,7 @@
             }
          }
       },
-      "Task::Kensho::XML" : {
+      "XML" : {
          "description" : "XML Development",
          "prereqs" : {
             "runtime" : {
