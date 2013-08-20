@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+          - distributions reunified under Task::Kensho, and now auto-generated
+            from a master YAML file using Dist::Zilla
 
 0.33      2012-06-24
           - Task::Kensho::Testing:
