@@ -292,82 +292,82 @@
    "provides" : {
       "Task::Kensho" : {
          "file" : "lib/Task/Kensho.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::Async" : {
          "file" : "lib/Task/Kensho/Async.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::CLI" : {
          "file" : "lib/Task/Kensho/CLI.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::Config" : {
          "file" : "lib/Task/Kensho/Config.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::DBDev" : {
          "file" : "lib/Task/Kensho/DBDev.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::Dates" : {
          "file" : "lib/Task/Kensho/Dates.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::Email" : {
          "file" : "lib/Task/Kensho/Email.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::ExcelCSV" : {
          "file" : "lib/Task/Kensho/ExcelCSV.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::Exceptions" : {
          "file" : "lib/Task/Kensho/Exceptions.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::Hackery" : {
          "file" : "lib/Task/Kensho/Hackery.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::Logging" : {
          "file" : "lib/Task/Kensho/Logging.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::ModuleDev" : {
          "file" : "lib/Task/Kensho/ModuleDev.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::OOP" : {
          "file" : "lib/Task/Kensho/OOP.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::Scalability" : {
          "file" : "lib/Task/Kensho/Scalability.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::Testing" : {
          "file" : "lib/Task/Kensho/Testing.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::Toolchain" : {
          "file" : "lib/Task/Kensho/Toolchain.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::WebCrawling" : {
          "file" : "lib/Task/Kensho/WebCrawling.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::WebDev" : {
          "file" : "lib/Task/Kensho/WebDev.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       },
       "Task::Kensho::XML" : {
          "file" : "lib/Task/Kensho/XML.pm",
-         "version" : "0.001"
+         "version" : "0.34"
       }
    },
-   "release_status" : "stable",
+   "release_status" : "testing",
    "resources" : {
       "homepage" : "https://github.com/EnlightenedPerlOrganisation/task-kensho",
       "repository" : {
@@ -376,7 +376,7 @@
          "web" : "https://github.com/EnlightenedPerlOrganisation/task-kensho"
       }
    },
-   "version" : "0.001",
+   "version" : "0.34",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.019002"
@@ -642,7 +642,7 @@
       "zilla" : {
          "class" : "Dist::Zilla::Dist::Builder",
          "config" : {
-            "is_trial" : "0"
+            "is_trial" : "1"
          },
          "version" : "4.300035"
       }
