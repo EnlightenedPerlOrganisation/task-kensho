@@ -1,0 +1,652 @@
+{
+   "abstract" : "A Glimpse at an Enlightened Perl",
+   "author" : [
+      "Chris Prather <chris@prather.org>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.132140",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Task-Kensho",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "examples"
+      ]
+   },
+   "optional_features" : {
+      "Async" : {
+         "description" : "Async Programming",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "POE" : "0"
+               }
+            }
+         }
+      },
+      "CLI" : {
+         "description" : "Useful Command-line Tools",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "App::Ack" : "0",
+                  "App::Nopaste" : "0",
+                  "App::perlbrew" : "0",
+                  "Devel::REPL" : "0",
+                  "Module::CoreList" : "0"
+               }
+            }
+         }
+      },
+      "Config" : {
+         "description" : "Config Modules",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "Config::Any" : "0",
+                  "Config::General" : "0"
+               }
+            }
+         }
+      },
+      "DBDev" : {
+         "description" : "Database Development",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "DBD::SQLite" : "0",
+                  "DBI" : "0",
+                  "DBIx::Class" : "0",
+                  "DBIx::Class::Schema::Loader" : "0",
+                  "SQL::Translator" : "0"
+               }
+            }
+         }
+      },
+      "Dates" : {
+         "description" : "Date Modules",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "Date::Tiny" : "0",
+                  "DateTime" : "0",
+                  "DateTime::Tiny" : "0",
+                  "Time::ParseDate" : "0",
+                  "Time::Tiny" : "0"
+               }
+            }
+         }
+      },
+      "Email" : {
+         "description" : "Email",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "Email::MIME::Kit" : "0",
+                  "Email::Sender" : "0",
+                  "Email::Simple" : "0",
+                  "Email::Valid" : "0"
+               }
+            }
+         }
+      },
+      "ExcelCSV" : {
+         "description" : "Excel/CSV",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "Spreadsheet::ParseExcel::Simple" : "0",
+                  "Spreadsheet::WriteExcel::Simple" : "0",
+                  "Text::CSV_XS" : "0"
+               }
+            }
+         }
+      },
+      "Exceptions" : {
+         "description" : "Exception Handling",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "Try::Tiny" : "0",
+                  "TryCatch" : "0",
+                  "autodie" : "0"
+               }
+            }
+         }
+      },
+      "Hackery" : {
+         "description" : "Script Hackery",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "IO::All" : "0",
+                  "Smart::Comments" : "0",
+                  "Term::ProgressBar::Simple" : "0"
+               }
+            }
+         }
+      },
+      "Logging" : {
+         "description" : "Logging",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "Log::Contextual" : "0",
+                  "Log::Dispatch" : "0",
+                  "Log::Log4perl" : "0"
+               }
+            }
+         }
+      },
+      "ModuleDev" : {
+         "description" : "Module Development",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "CPAN::Uploader" : "0",
+                  "Carp::Always" : "0",
+                  "Devel::NYTProf" : "0",
+                  "Dist::Zilla" : "0",
+                  "Modern::Perl" : "0",
+                  "Module::Install" : "0",
+                  "Perl::Critic" : "0",
+                  "Perl::Tidy" : "0",
+                  "Perl::Version" : "0",
+                  "Pod::Readme" : "0",
+                  "Software::License" : "0"
+               }
+            }
+         }
+      },
+      "OOP" : {
+         "description" : "Object Oriented Programming",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "Task::Moose" : "0"
+               }
+            }
+         }
+      },
+      "Scalability" : {
+         "description" : "Scalability",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "CHI" : "0"
+               }
+            }
+         }
+      },
+      "Testing" : {
+         "description" : "Testing",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "Devel::Cover" : "0",
+                  "Test::Deep" : "0",
+                  "Test::Fatal" : "0",
+                  "Test::Memory::Cycle" : "0",
+                  "Test::Most" : "0",
+                  "Test::NoWarnings" : "0",
+                  "Test::Pod" : "0",
+                  "Test::Pod::Coverage" : "0",
+                  "Test::Requires" : "0",
+                  "Test::Simple" : "0"
+               }
+            }
+         }
+      },
+      "Toolchain" : {
+         "description" : "Basic Toolchain",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "App::cpanminus" : "0",
+                  "local::lib" : "0",
+                  "version" : "0"
+               }
+            }
+         }
+      },
+      "WebCrawling" : {
+         "description" : "Web Crawling",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "HTTP::Lite" : "0",
+                  "LWP::Simple" : "0",
+                  "LWP::UserAgent" : "0",
+                  "WWW::Mechanize" : "0",
+                  "WWW::Mechanize::TreeBuilder" : "0"
+               }
+            }
+         }
+      },
+      "WebDev" : {
+         "description" : "Web Development",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "CGI::FormBuilder::Source::Perl" : "0",
+                  "MIME::Types" : "0",
+                  "Plack" : "0",
+                  "Task::Catalyst" : "0",
+                  "Template::Toolkit" : "0",
+                  "XML::Atom" : "0",
+                  "XML::RSS" : "0"
+               }
+            }
+         }
+      },
+      "XML" : {
+         "description" : "XML Development",
+         "prereqs" : {
+            "runtime" : {
+               "requires" : {
+                  "XML::Generator::PerlData" : "0",
+                  "XML::LibXML" : "0",
+                  "XML::LibXSLT" : "0",
+                  "XML::SAX" : "0",
+                  "XML::SAX::Writer" : "0"
+               }
+            }
+         }
+      }
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Pod::Coverage::TrustPod" : "0",
+            "Test::CPAN::Changes" : "0.19",
+            "Test::CPAN::Meta" : "0",
+            "Test::Pod" : "1.41",
+            "Test::Pod::Coverage" : "1.08"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "perl" : "5.005"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Capture::Tiny" : "0",
+            "Test::More" : "0.94",
+            "blib" : "0"
+         }
+      }
+   },
+   "provides" : {
+      "Task::Kensho" : {
+         "file" : "lib/Task/Kensho.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::Async" : {
+         "file" : "lib/Task/Kensho/Async.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::CLI" : {
+         "file" : "lib/Task/Kensho/CLI.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::Config" : {
+         "file" : "lib/Task/Kensho/Config.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::DBDev" : {
+         "file" : "lib/Task/Kensho/DBDev.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::Dates" : {
+         "file" : "lib/Task/Kensho/Dates.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::Email" : {
+         "file" : "lib/Task/Kensho/Email.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::ExcelCSV" : {
+         "file" : "lib/Task/Kensho/ExcelCSV.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::Exceptions" : {
+         "file" : "lib/Task/Kensho/Exceptions.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::Hackery" : {
+         "file" : "lib/Task/Kensho/Hackery.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::Logging" : {
+         "file" : "lib/Task/Kensho/Logging.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::ModuleDev" : {
+         "file" : "lib/Task/Kensho/ModuleDev.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::OOP" : {
+         "file" : "lib/Task/Kensho/OOP.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::Scalability" : {
+         "file" : "lib/Task/Kensho/Scalability.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::Testing" : {
+         "file" : "lib/Task/Kensho/Testing.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::Toolchain" : {
+         "file" : "lib/Task/Kensho/Toolchain.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::WebCrawling" : {
+         "file" : "lib/Task/Kensho/WebCrawling.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::WebDev" : {
+         "file" : "lib/Task/Kensho/WebDev.pm",
+         "version" : "0.001"
+      },
+      "Task::Kensho::XML" : {
+         "file" : "lib/Task/Kensho/XML.pm",
+         "version" : "0.001"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "homepage" : "https://github.com/EnlightenedPerlOrganisation/task-kensho",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/EnlightenedPerlOrganisation/task-kensho.git",
+         "web" : "https://github.com/EnlightenedPerlOrganisation/task-kensho"
+      }
+   },
+   "version" : "0.001",
+   "x_Dist_Zilla" : {
+      "perl" : {
+         "version" : "5.019002"
+      },
+      "plugins" : [
+         {
+            "class" : "Dist::Zilla::Plugin::Git::NextVersion",
+            "name" : "Git::NextVersion",
+            "version" : "2.014"
+         },
+         {
+            "class" : "inc::GenerateTaskModules",
+            "name" : "=inc::GenerateTaskModules",
+            "version" : null
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::GatherDir",
+            "name" : "Git::GatherDir",
+            "version" : "2.014"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaYAML",
+            "name" : "MetaYAML",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaJSON",
+            "name" : "MetaJSON",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::License",
+            "name" : "License",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Manifest",
+            "name" : "Manifest",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Test::Compile",
+            "config" : {
+               "Dist::Zilla::Plugin::Test::Compile" : {
+                  "module_finder" : [
+                     ":InstallModules"
+                  ],
+                  "script_finder" : [
+                     ":ExecFiles"
+                  ]
+               }
+            },
+            "name" : "Test::Compile",
+            "version" : "2.018"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::NoTabsTests",
+            "name" : "NoTabsTests",
+            "version" : "0.01"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::EOLTests",
+            "name" : "EOLTests",
+            "version" : "0.02"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaTests",
+            "name" : "MetaTests",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Test::Version",
+            "name" : "Test::Version",
+            "version" : "0.002004"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Test::CPAN::Changes",
+            "name" : "Test::CPAN::Changes",
+            "version" : "0.008"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Test::ChangesHasContent",
+            "name" : "Test::ChangesHasContent",
+            "version" : "0.006"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PodSyntaxTests",
+            "name" : "PodSyntaxTests",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PodCoverageTests",
+            "name" : "PodCoverageTests",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Test::PodSpelling",
+            "name" : "Test::PodSpelling",
+            "version" : "2.006000"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::Describe",
+            "name" : "Git::Describe",
+            "version" : "0.003"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PkgVersion",
+            "name" : "PkgVersion",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::PodWeaver",
+            "name" : "PodWeaver",
+            "version" : "3.101642"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::NextRelease",
+            "name" : "NextRelease",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::GithubMeta",
+            "name" : "GithubMeta",
+            "version" : "0.30"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Authority",
+            "name" : "Authority",
+            "version" : "1.006"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaNoIndex",
+            "name" : "MetaNoIndex",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaProvides::Package",
+            "name" : "MetaProvides::Package",
+            "version" : "1.14000003"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MetaConfig",
+            "name" : "MetaConfig",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Prereqs",
+            "config" : {
+               "Dist::Zilla::Plugin::Prereqs" : {
+                  "phase" : "runtime",
+                  "type" : "requires"
+               }
+            },
+            "name" : "Prereqs",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MakeMaker",
+            "name" : "MakeMaker",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::InstallGuide",
+            "name" : "InstallGuide",
+            "version" : "1.200000"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::CopyFilesFromBuild",
+            "name" : "CopyFilesFromBuild",
+            "version" : "0.103510"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::RunExtraTests",
+            "name" : "RunExtraTests",
+            "version" : "0.011"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::Check",
+            "name" : "Git::Check",
+            "version" : "2.014"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::CheckFor::MergeConflicts",
+            "name" : "Git::CheckFor::MergeConflicts",
+            "version" : "0.006"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::CheckFor::CorrectBranch",
+            "name" : "Git::CheckFor::CorrectBranch",
+            "version" : "0.006"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::Remote::Check",
+            "name" : "Git::Remote::Check",
+            "version" : "0.1.2"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::CheckPrereqsIndexed",
+            "name" : "CheckPrereqsIndexed",
+            "version" : "0.009"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::TestRelease",
+            "name" : "TestRelease",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::UploadToCPAN",
+            "name" : "UploadToCPAN",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::Commit",
+            "name" : "Git::Commit",
+            "version" : "2.014"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::Tag",
+            "name" : "Git::Tag",
+            "version" : "2.014"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Git::Push",
+            "name" : "Git::Push",
+            "version" : "2.014"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::ConfirmRelease",
+            "name" : "ConfirmRelease",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":InstallModules",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":IncModules",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":TestFiles",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":ExecFiles",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":ShareFiles",
+            "version" : "4.300035"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::FinderCode",
+            "name" : ":MainModule",
+            "version" : "4.300035"
+         }
+      ],
+      "zilla" : {
+         "class" : "Dist::Zilla::Dist::Builder",
+         "config" : {
+            "is_trial" : "0"
+         },
+         "version" : "4.300035"
+      }
+   },
+   "x_authority" : "cpan:PERIGRIN"
+}
+
