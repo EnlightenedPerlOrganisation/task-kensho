@@ -47,9 +47,9 @@ sub metadata
             zilla => $self->zilla,
             plugin_name => (split('::', $module))[-1],
             '-description' => $module_data->{description},
-            (map { $_ => 0 } sort keys %{ $module_data->{components} }),
+            (map { $_ => 0 } keys %{ $module_data->{components} }),
         )
-    } sort $self->modules;
+    } $self->modules;
 
     require Hash::Merge::Simple;
     my $meta = {};
