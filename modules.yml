@@ -77,12 +77,12 @@ Task::Kensho::Hackery:
     description: Script Hackery
     long_description: '=for stopwords whippitupitude
 
+
 These packages are included less for production work and more for whippitupitude. They reflect packages that people have found incredibly useful for prototyping and debugging before reducing down to a production script.'
     components:
         Smart::Comments: Comments that do more than just sit there
         Term::ProgressBar::Simple: Simple progress bars
         IO::All: 'IO::All combines all of the best Perl IO modules into a single nifty object oriented interface to greatly simplify your everyday Perl IO idioms.'
-
 
 Task::Kensho::Logging:
     description: Logging
