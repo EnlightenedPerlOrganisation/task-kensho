@@ -16,10 +16,14 @@ __END__
 
 From L<http://en.wikipedia.org/wiki/Kensho>:
 
+=over 4
+
 Kenshō (見性) (C. Wu) is a Japanese term for enlightenment
 experiences - most commonly used within the confines of Zen
 Buddhism - literally meaning "seeing one's nature"[1] or "true
 self."[2] It generally "refers to the realization of nonduality of
+
+=back
 
 Task::Kensho is a first cut at building a list of recommended modules
 for Enlightened Perl development. CPAN is wonderful, but there are too
