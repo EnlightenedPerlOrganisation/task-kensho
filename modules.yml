@@ -25,6 +25,7 @@ Task::Kensho::Config:
     components:
         Config::Any: Load configuration from different file formats, transparently
         Config::General: Generic Config Module
+        YAML::XS: Perl YAML Serialization using XS and libyaml
 
 
 Task::Kensho::DBDev:
@@ -133,7 +134,8 @@ Task::Kensho::Testing:
         Devel::Cover: Code coverage metrics for Perl
         Test::Deep: Test deep data structures
         Test::Requires: Make running a test conditional on a particular module being installed
-        Test::NoWarnings: Ensure that no (unexpected) warnings occur during testing
+        Test::FailWarnings: Add test failures if warnings are caught
+        Test::Warnings: Test for warnings and the lack of them
 
 
 Task::Kensho::Toolchain:
@@ -147,10 +149,10 @@ Task::Kensho::Toolchain:
 Task::Kensho::WebCrawling:
     description: Web Crawling
     components:
-        HTTP::Lite: Lightweight HTTP client implementation 
-        LWP::UserAgent: Full-featured Web client library for Perl 
-        LWP::Simple: Simple procedural interface to LWP 
-        WWW::Mechanize: Handy web browsing in a Perl object 
+        HTTP::Lite: Lightweight HTTP client implementation
+        LWP::UserAgent: Full-featured Web client library for Perl
+        LWP::Simple: Simple procedural interface to LWP
+        WWW::Mechanize: Handy web browsing in a Perl object
         WWW::Mechanize::TreeBuilder: This module combines WWW::Mechanize and HTML::TreeBuilder.
 
 
@@ -165,6 +167,7 @@ Task::Kensho::WebDev:
         XML::RSS: Creates and updates RSS files
         XML::Atom: Atom feed and API implementation
         MIME::Types: Definition of MIME types
+        JSON::XS: JSON serialising/deserialising, done correctly and fast
 
 
 Task::Kensho::XML:
