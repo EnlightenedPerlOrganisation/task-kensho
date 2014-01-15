@@ -169,7 +169,7 @@ Task::Kensho::WebDev:
 
 Task::Kensho::XML:
     description: XML Development
-    long_description: =for stopwords libxml libxslt
+    long_description: =for stopwords libxml libxml2 libxslt
     components:
         XML::LibXML: Perl Binding for libxml2
         XML::LibXSLT: Interface to the gnome libxslt library
