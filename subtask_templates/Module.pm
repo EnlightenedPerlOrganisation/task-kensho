@@ -1,7 +1,9 @@
 use strict;
 use warnings;
-package {{ $module }};
-# ABSTRACT: {{ $data->{$module}{description} }}
+package {{
+($module = $dist->name) =~ s/-/::/g;
+$module }};
+# ABSTRACT: {{ $config_data->{$module}{description} }}
 
 __END__
 =pod
@@ -47,8 +49,8 @@ their modules by default. This facilitates the ease and simplicity the
 distribution aims to achieve. Each Task::Kensho sub-task is listed at the
 beginning of its section in this documentation.
 
-=head2 {{ $data->{$module}{description} . ': ' . $module
-    . ($data->{$module}{long_description} ? ("\n\n" . $data->{$module}{long_description}) : '')
+=head2 {{ $config_data->{$module}{description} . ': ' . $module
+    . ($config_data->{$module}{long_description} ? ("\n\n" . $config_data->{$module}{long_description}) : '')
 }}
 
 =over 4
@@ -56,8 +58,8 @@ beginning of its section in this documentation.
 {{
     join "\n\n",
         map {
-            '=item L<' . $_ . ">\n\n" . $data->{$module}{components}{$_}
-        } sort keys %{ $data->{$module}{components} }
+            '=item L<' . $_ . ">\n\n" . $config_data->{$module}{components}{$_}
+        } sort keys %{ $config_data->{$module}{components} }
 }}
 
 =back

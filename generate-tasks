@@ -1,0 +1,84 @@
+#!/usr/bin/env perl
+
+# stick all the files in templates/ into each individual task dir, according
+# to what we see in modules.yml...
+
+use 5.016;  # s///r
+use Config::Any;
+use Path::Tiny;
+
+sub get_config
+{
+    my $config_file = shift || 'modules.yml';
+
+    # TODO: encoding issues? Can we control the backend that is used, or the options passed to it?
+    my $data = Config::Any->load_files({
+        use_ext         => 1,
+        files           => [ $config_file ],
+        flatten_to_hash => 1,
+    });
+    $data->{$config_file};
+}
+
+sub generate_task
+{
+    my $task_module = shift;
+    my $distname = $task_module =~ s/::/-/gr;
+
+    my $distdir = path($distname);
+    $distdir->remove_tree;
+
+    # destination => source
+    my %to_copy;
+
+    foreach my $template_file (glob('subtask_templates/*'))
+    {
+        $template_file = path($template_file);
+
+        # copy file to distdir, treating Module.pm specially
+        my $destination_file;
+        if ($template_file =~ /Module\.pm$/)
+        {
+            my @path = split '::', $task_module;
+            $path[-1] .= '.pm';
+            $destination_file = path($distdir, 'lib', @path);
+        }
+        else
+        {
+            # note this does not work for files in subdirs!
+            $destination_file = path($distdir, $template_file->basename);
+        }
+
+        $to_copy{$destination_file} = $template_file;
+    }
+
+    $to_copy{path($distdir, 'Changes')} = path('Changes');
+
+    foreach my $destination (sort keys %to_copy)
+    {
+        say "copying $to_copy{$destination} to $destination";
+        path($destination)->parent->mkpath;
+
+        my $content = path($to_copy{$destination})->slurp_utf8;
+        $content =~ s/__DIST_NAME__/$distname/g;
+
+        path($destination)->spew_utf8($content);
+    }
+
+    # symlinks back to the parent inc
+    do {
+        symlink(path('..', $_), path($distdir, $_)) or die "cannot create symlink for $_: $!";
+    } foreach qw(inc modules.yml);
+}
+
+sub stuff
+{
+    my $config = get_config();
+    foreach my $task_module (sort keys %$config)
+    {
+        say "\ngenerating task for $task_module";
+        generate_task($task_module);
+    }
+}
+
+stuff();
