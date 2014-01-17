@@ -15,3 +15,10 @@ ideally dumping Module::Install.
           https://metacpan.org/module/CPAN::Meta::Spec#optional_features
           -- so given that information, do we want to keep subdists at all?
 
+
+
+- need some tweaks to [InstallGuide] and/or pod directly
+to mention optional features (i.e. use a cpan client if you want these), e.g.:
+  cpanm --installdeps --interactive Task-Kensho
+  cpanm --installdeps --interactive Task-Kensho-XML
+

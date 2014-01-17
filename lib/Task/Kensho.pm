@@ -51,7 +51,7 @@ Then in 2013, the distributions were reunified again, with each subset of
 modules as discrete sets of optional features. At installation time, you will
 be prompted to determine which sets you wish to install.
 
-=head1 Recommended modules
+=head1 RECOMMENDED MODULES
 
 {{
     use 5.010;
@@ -69,6 +69,16 @@ be prompted to determine which sets you wish to install.
             "=back"
         } sort keys %$data;
 }}
+
+=head1 INSTALLING
+
+Since version 0.34, Task-Kensho has made use of the C<optional_features> field
+in distribution metadata. This allows CPAN clients to interact with you
+regarding which modules you wish to install.
+
+The C<cpanm> client requires interactive mode to be enabled for this to work:
+
+    cpanm --interactive Task-Kensho
 
 =head1 RELEASE SCHEDULE
 
