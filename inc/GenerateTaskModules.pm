@@ -65,7 +65,7 @@ sub gather_files
 
     require Dist::Zilla::File::InMemory;
 
-    my $template = path('template.pm')->slurp;
+    my $template = path('template.pm')->slurp_utf8;
 
     # here is where we generate all the lib/Task/Kensho/*.pm modules
     foreach my $module ($self->modules)
