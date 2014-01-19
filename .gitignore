@@ -1,5 +1,6 @@
 /.build
 !.gitignore
-.*.sw[a-z]
-/Task-Kensho-*
+.*
+Task-Kensho-*[0-9]/
+Task-Kensho-*.tar.gz
 /todo/
