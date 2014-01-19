@@ -26,7 +26,7 @@ sub generate_task
     my $distname = $task_module =~ s/::/-/gr;
 
     my $distdir = path($distname);
-    $distdir->remove_tree;
+    $distdir->remove_tree({ safe => 0 });
 
     # destination => source
     my %to_copy;

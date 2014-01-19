@@ -12,7 +12,8 @@ everything else.
 - add an entry to Changes, including what dists(s) you changed
 - (optional) git commit
 
-- run `perl generate-tasks` to update all the subtasks
+- run `perl generate-tasks` to update all the subtasks (WARNING: this will
+  wipe all existing content in the subtask folders!)
 - (optional) 'git diff' to see what's changed. Unless someone's been hacking
   on the generator code itself, you should only see changes for the specific
   Task-Kensho- dist that you modified in modules.yml.
