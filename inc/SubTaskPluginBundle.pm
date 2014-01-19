@@ -47,10 +47,6 @@ sub configure
         [ 'Test::ReportPrereqs' => { verify_prereqs => 1 } ],   # gives us something in t/
         'Test::Portability',
 
-        # Prune Files
-        'PruneCruft',
-        #'ManifestSkip',    # XXX needed?
-
         # Munge Files
         'Git::Describe',
         [ PkgVersion            => { ':version' => '5.010', die_on_existing_version => 1, die_on_line_insertion => 1 } ],
