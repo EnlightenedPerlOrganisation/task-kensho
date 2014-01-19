@@ -74,7 +74,7 @@ sub configure
         # Register Prereqs
         # (MakeMaker or other installer)
         'AutoPrereqs',
-        'Prereqs::AuthorDeps',
+        [ 'Prereqs::AuthorDeps' => { exclude => [ 'inc::SubTaskPluginBundle', 'inc::MungeFileWithConfig', 'inc::OptionalFeatureForSubTask' ] } ],
         'MinimumPerl',
         [ 'Prereqs' => installer_requirements => {
                 '-phase' => 'develop', '-relationship' => 'requires',
