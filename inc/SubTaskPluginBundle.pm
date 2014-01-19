@@ -26,7 +26,7 @@ sub configure
         [ 'Git::NextVersion'    => { version_regexp => '^v([\d._]+)(-TRIAL)?$' } ],
 
         # Gather Files
-        [ 'Git::GatherDir'      => { exclude_filename => [ 'dist.ini' ], exclude_match => [ '^lib/' ] } ],
+        [ 'Git::GatherDir'      => { exclude_filename => [ 'dist.ini' ] } ],
         [ '=inc::MungeFileWithConfig' => { finder => ':InstallModules', configfile => '../modules.yml' } ],
         qw(MetaYAML MetaJSON License Readme Manifest),
         [ 'Test::Compile'       => { ':version' => '2.039', bail_out_on_fail => 1, xt_mode => 1 } ],
