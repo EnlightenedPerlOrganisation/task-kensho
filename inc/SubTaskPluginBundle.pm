@@ -5,6 +5,7 @@ package # stay away, PAUSE!
 # ABSTRACT: A plugin bundle for building Task::Kensho:: subdists
 # vim: set ts=8 sw=4 tw=78 et :
 
+use 5.016;  # s///r
 use Moose;
 with
     'Dist::Zilla::Role::PluginBundle::Easy',
