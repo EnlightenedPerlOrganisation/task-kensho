@@ -41,8 +41,6 @@ sub configure
         'PodSyntaxTests',
         'PodCoverageTests',
         'Test::PodSpelling',
-        #[Test::Pod::LinkCheck]     many outstanding bugs
-        'Test::Pod::No404s',
         'Test::Kwalitee',
         'MojibakeTests',
         [ 'Test::ReportPrereqs' => { verify_prereqs => 1 } ],   # gives us something in t/
@@ -60,7 +58,10 @@ sub configure
         [ 'GithubMeta'            => { issues => 1 } ],
         # (Authority)
         [ 'MetaNoIndex'         => { directory => [ qw(t xt examples share) ] } ],
-        [ 'MetaProvides::Package' => { meta_noindex => 1, ':version' => '1.15000002', finder => ':InstallModules' } ],
+        # XXX FIXME - this runs too late to get the package name out of our
+        # module, because [Test::PodSpelling] is forcing metadata to be
+        # created before the filemunging phase starts
+        # [ 'MetaProvides::Package' => { meta_noindex => 1, ':version' => '1.15000002', finder => ':InstallModules' } ],
         'MetaConfig',
         [ '=inc::OptionalFeatureForSubTask' => { configfile => 'modules.yml', -default => 1,
             -always_recommend => 1,   # report-prereqs will list these
@@ -94,7 +95,7 @@ sub configure
 
 
         # Before Release
-        [ 'Git::Check'          => 'initial check' => { allow_dirty => [] } ],
+        [ 'Git::Check'          => { repo_root => '..', allow_dirty => ['foo'] } ], # FIXME: Config::MVP::Assembler::WithBundles::_add_bundle_contents
         'Git::CheckFor::MergeConflicts',
         [ 'Git::CheckFor::CorrectBranch' => { ':version' => '0.004', release_branch => 'master' } ],
         [ 'Git::Remote::Check'  => { branch => 'master', remote_branch => 'master' } ],
@@ -109,6 +110,9 @@ sub configure
 
         # After Release
 #        'Git::Push',
+
+        # listed late, to allow all other plugins which do BeforeRelease checks to run first.
+        'ConfirmRelease',
     );
 
     $self->add_plugins(@plugins);

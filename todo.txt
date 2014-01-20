@@ -52,6 +52,13 @@ generate each dist separately.
     at build time for the optional_feature metadata.
 
 
+** problems:
+    - metaprovides is empty (distmeta running too soon - because of Test::PodSpelling
+    - kwalitee is failing, claiming no modules found eihter (this is because it depends on 'provides', when present.)
+    - Git::Check.allow_dirty is not being set      ..problem in Config::MVP::Assembler::WithBundles
+    - Git::Check is ignoring uncommitted files in .. when in subtask dir <--
+        - 'repo_root' needs to be set?  <-- TODO: repo_root is poorly documented. not mentioned in [Git::Check]
+        (maybe solve with hard links from this repo?)
 
 
 - release everything again as TRIAL, bumping all versions to bring them into
