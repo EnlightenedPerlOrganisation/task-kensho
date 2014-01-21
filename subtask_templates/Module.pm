@@ -45,10 +45,13 @@ this bundle does I<not> follow the guidelines established for the EPO-EC
 for peer review via industry advisers.
 
 Starting in 2011, Task::Kensho split its sub-groups of modules into
-individually-installable tasks. These individual tasks will always install all
-their modules by default. This facilitates the ease and simplicity the
-distribution aims to achieve. Each Task::Kensho sub-task is listed at the
+individually-installable tasks.  Each Task::Kensho sub-task is listed at the
 beginning of its section in this documentation.
+
+When installing Task::Kensho itself, you will be asked to install each
+sub-task in turn, or you can install individual tasks separately. These
+individual tasks will always install all their modules by default. This
+facilitates the ease and simplicity the distribution aims to achieve.
 
 =head2 {{ $config_data->{$module}{description} . ': ' . $module
     . ($config_data->{$module}{long_description} ? ("\n\n" . $config_data->{$module}{long_description}) : '')
