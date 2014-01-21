@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+          - fix mangled abstract in META.*
+          - fixed missing list of recommendations in Task::Kensho pod
 
 0.34001   2014-01-21 (TRIAL RELEASE)
           - fix munging of ::Hackery preamble into stopwords
