@@ -1,0 +1,9 @@
+
+This is the Perl distribution {{ $dist->name }}.
+
+Installing {{ $dist->name }} is straightforward.  You do however need to use
+a CPAN client that knows how to interpret the "optional_feature" field in
+META.yml or META.json.  At this time, App::cpanminus is known to work:
+
+  cpanm --interactive {{ $dist->name =~ s/-/::/gr }}
+

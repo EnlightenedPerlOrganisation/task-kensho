@@ -1,5 +1,6 @@
-Task-Kensho
------------
+{{
+$dist->name . "\n" . ('-' x length($dist->name))
+}}
 
 From http://en.wikipedia.org/wiki/Kensho:
 

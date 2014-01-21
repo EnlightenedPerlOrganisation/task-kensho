@@ -1,3 +1,73 @@
+
+# XXX FIXME: http://cpants.cpanauthors.org/dist/Task-Kensho
+
+-----------
+
+generate each dist separately.
+
+- top level dist needs to exclude (via GatherDir) all the subdirectories
+- each subdir gets its own dist.ini
+- move the data files into the subdirs? this will require changing the code in
+  the main TK module to recurse into each of the others to gather the data.
+- so should we create the subdirs? yes! but use symlinks to share a common
+  dist.ini for each, pointing to ../inc/GenerateTaskModule.pm
+
+    .gitignore everything in the task subdirectories
+
+    no, we can still generate the subdirectories via code -- but just do not ship!
+    we'll need to provide some build instructions:
+
+    - update modules.yml and Changes
+    - perl generate-subtasks
+        - creates files in subdirs, from a template directory, populated with:
+            dist.ini    - no autoprereqs; no git commit but keep git::check;
+                          prune dist.ini (use a custom pluginbundle?)
+            lib/Task/Kensho/Foo.pm   - copied from template.pm, adapted to do
+                package {{ $dist->name =~ s/-/::/r }};
+            Changes     - copied from main - need to think about versions!!!
+                    *** or do we GatherDir this from root/.. at subtask build time?
+    - commit all resulting changes to git
+
+    - For any dist you want to ship, cd into that directory and
+        do 'dzil release'. then chdir back to the main directory and 'dzil release'.
+
+  need notes about versioning...
+    versions are determined from git tags. therefore since tags are global to the repo, and all dists share the same repo, when the version bumps on one dist, they bump on all of them.
+    when shipping a subtask(s), the version is higher than the last main task version, but is not updated in git tags.. then you must ship the global dist as well with that same tag (as its contents will also change, in accordance with the subtask)
+
+
+- decisions:
+    - do we template everything when we make the subtask dir, or defer?
+        - we need to run the template for dist.ini, at least, as it contains the dist name.
+         but if we leave everything else to run later, then we minimize the
+         changes between versions in the repo, and force the user to update
+         modules.yml instead. so I like this.
+    - do we commit after generating? up to the user, but I'd say yes, for ease
+      in tracking.
+
+    - do we munge in the relevant modules.yml data into the __DATA__ section
+    of the subtask module? or use MungeFileWithConfig to read the config data
+    when we build the subtask?
+    I think we should read the config file, because we already need to do that
+    at build time for the optional_feature metadata.
+
+
+** problems:
+    - metaprovides is empty (distmeta running too soon - because of Test::PodSpelling
+    - kwalitee is failing, claiming no modules found eihter (this is because it depends on 'provides', when present.)
+    - Git::Check.allow_dirty is not being set      ..problem in Config::MVP::Assembler::WithBundles
+    - Git::Check is ignoring uncommitted files in .. when in subtask dir <--
+        - 'repo_root' needs to be set?  <-- TODO: repo_root is poorly documented. not mentioned in [Git::Check]
+        (maybe solve with hard links from this repo?)
+
+
+- release everything again as TRIAL, bumping all versions to bring them into
+  alignment (check metacpan to find the next available version for all of
+  them...)
+
+-----------
+
+
 Investigate ways to generate these dists with a minimum amount of effort,
 ideally dumping Module::Install.
 
@@ -21,4 +91,15 @@ ideally dumping Module::Install.
 to mention optional features (i.e. use a cpan client if you want these), e.g.:
   cpanm --installdeps --interactive Task-Kensho
   cpanm --installdeps --interactive Task-Kensho-XML
+
+
+-----------
+
+need to go through and audit all modules' existence.
+
+remove Module::Install; add Dist::Milla and Milla.
+
+13:50 <@ether> does anyone have any opinions on Devel::Hide vs. Test::Without::Module?
+
+remove mentioning Module::Build
 

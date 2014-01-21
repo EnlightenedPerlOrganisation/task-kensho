@@ -1,0 +1,49 @@
+
+This file describes how to update and release new versions of Task-Kensho and
+its subtask distributions.
+
+Since the only "meat" of these distributions are the lists of recommended
+modules and their descriptions, almost everything that ends up in the final
+distribution(s) is generated via Dist::Zilla.  You should only edit files in
+the top level directory of the git repository. These are used to generate
+everything else.
+
+- update modules.yml
+- add an entry to Changes, including what dists(s) you changed
+- (optional) git commit
+
+- run `perl generate-tasks` to update all the subtasks (WARNING: this will
+  wipe all existing content in the subtask folders!)
+- (optional) 'git diff' to see what's changed. Unless someone's been hacking
+  on the generator code itself, you should only see changes for the specific
+  Task-Kensho- dist that you modified in modules.yml.
+- git commit
+
+By this point there should be no uncommitted changes in the repository.  Now
+you are at a state where each individual Task-Kensho-* subdist is its own
+self-contained distribution that can be shipped with Dist::Zilla.
+
+- pushd <dist you want to release>
+- (optional) dzil build --not; dist test --release, etc etc as desired
+- dzil release
+- popd
+- dzil release
+
+Now go have a beer!
+
+How it all works:
+
+The repository actually houses the Task-Kensho distribution itself, as well as
+all the subtasks.  However, all the dist.ini files are carefully constructed
+so that one can run 'dzil release' in each directory and only build and
+release the files relevant to that distribution.  There is one common
+'Changes' file, which is only updated and committed when the TK dist itself is
+released.  However, since the TK dist lists all the recommendations for all
+the subtasks, it is reasonable to release TK whenever any one or more subtasks
+are released -- and conveniently, doing so keeps version numbers aligned.
+
+Think this all is horrid? blame ether!
+No, seriously, it's wretched and you want to punt dzil to the moon (and
+probably ether too)?  Just download the last uploaded release of all dists
+from the cpan back to a git repository, commit everything, and you can return
+to managing everything manually again.
