@@ -39,6 +39,8 @@ around BUILDARGS => sub {
         configfile => $configfile,
         name => (split('::', $module))[-1],
         description => $module_data->{description},
+        always_recommend => 1,
+        default => 1,
         _prereqs => {
             (map { $_ => 0 } keys %{ $module_data->{components} }),
         },
