@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+
+0.34001   2014-01-21 05:11:59Z (TRIAL RELEASE)
           - fix munging of ::Hackery preamble into stopwords
           - fixed bugtracker metadata (now indicating github issues)
           - distributions split apart again, with new! and enhanced!
