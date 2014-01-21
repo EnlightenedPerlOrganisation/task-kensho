@@ -27,7 +27,7 @@ sub configure
         [ 'Git::NextVersion'    => { version_regexp => '^v([\d._]+)(-TRIAL)?$' } ],
 
         # Gather Files
-        [ 'Git::GatherDir'      => { exclude_match => '^inc', exclude_filename => [ 'dist.ini' ] } ],
+        [ 'Git::GatherDir'      => { exclude_match => '^inc', exclude_filename => [ 'dist.ini', 'META.json' ] } ],
         [ '=inc::MungeFileWithConfig' => { finder => ':InstallModules', configfile => '../modules.yml' } ],
         qw(MetaYAML MetaJSON License Readme Manifest),
         [ 'Test::Compile'       => { ':version' => '2.039', bail_out_on_fail => 1, xt_mode => 1 } ],
@@ -109,7 +109,8 @@ sub configure
         'FakeRelease',
 
         # After Release
-#        'Git::Push',
+        [ 'CopyFilesFromRelease' => { filename => [ 'META.json' ] } ],
+        [ 'Git::Commit'         => { add_files_in => [''], allow_dirty => [ 'Changes', 'META.json' ], commit_msg => '%N-%v%t%n%n%c' } ],
 
         # listed late, to allow all other plugins which do BeforeRelease checks to run first.
         'ConfirmRelease',
