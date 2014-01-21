@@ -28,8 +28,10 @@ sub configure
 
         # Gather Files
         [ 'Git::GatherDir'      => { exclude_match => '^inc', exclude_filename => [ 'dist.ini', 'META.json' ] } ],
-        [ '=inc::MungeFileWithConfig' => { finder => ':InstallModules', configfile => '../modules.yml' } ],
-        qw(MetaYAML MetaJSON License Readme Manifest),
+        [ '=inc::MungeFileWithConfig' => { finder => ':InstallModules', files => ['README'], configfile => '../modules.yml' } ],
+        # XXX FIXME - munging content too soon, before our module has its abstract munged
+        # 'Readme',
+        qw(MetaYAML MetaJSON License Manifest),
         [ 'Test::Compile'       => { ':version' => '2.039', bail_out_on_fail => 1, xt_mode => 1 } ],
         'Test::NoTabs',
         'EOLTests',
