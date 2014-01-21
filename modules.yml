@@ -5,6 +5,7 @@
 
 Task::Kensho::Async:
     description: Async Programming
+    long_description: =for stopwords Async
     components:
         POE: Multitasking and networking framework for Perl
 
@@ -75,7 +76,7 @@ Task::Kensho::Exceptions:
 
 Task::Kensho::Hackery:
     description: Script Hackery
-    long_description: '=for stopwords whippitupitude
+    long_description: '=for stopwords whippitupitude Hackery
 
 
 These packages are included less for production work and more for whippitupitude. They reflect packages that people have found incredibly useful for prototyping and debugging before reducing down to a production script.'
