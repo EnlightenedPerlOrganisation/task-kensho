@@ -97,11 +97,11 @@ sub configure
 
 
         # Before Release
+        'CheckPrereqsIndexed',
         [ 'Git::Check'          => { repo_root => '..', allow_dirty => ['foo'] } ], # FIXME: Config::MVP::Assembler::WithBundles::_add_bundle_contents
         'Git::CheckFor::MergeConflicts',
         [ 'Git::CheckFor::CorrectBranch' => { ':version' => '0.004', release_branch => 'master' } ],
         [ 'Git::Remote::Check'  => { branch => 'master', remote_branch => 'master' } ],
-        'CheckPrereqsIndexed',
         'TestRelease',
         [ 'Git::Check'          => 'after tests' => { allow_dirty => [] } ],
         # (ConfirmRelease)
