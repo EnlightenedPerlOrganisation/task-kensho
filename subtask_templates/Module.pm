@@ -3,7 +3,7 @@ use warnings;
 package {{
 ($module = $dist->name) =~ s/-/::/g;
 $module }};
-# ABSTRACT: {{ $config_data->{$module}{description} }}
+# ABSTRACT: A Glimpse at an Enlightened Perl: {{ $config_data->{$module}{description} }}
 
 __END__
 =pod
