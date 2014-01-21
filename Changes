@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+
+0.34002   20142014-01-21 (TRIAL RELEASE)
           - fix mangled abstract in META.*
           - fixed missing list of recommendations in Task::Kensho pod
 
