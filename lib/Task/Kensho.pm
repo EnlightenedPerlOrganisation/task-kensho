@@ -59,15 +59,15 @@ be prompted to determine which sets you wish to install.
         map {
             my $module = $_;
             join("\n\n",
-                '=head2 ' . $data->{$module}{description} . ': ' . $module,
-                $data->{$module}{long_description} ? $data->{$module}{long_description} : (),
+                '=head2 ' . $config_data->{$module}{description} . ': ' . $module,
+                $config_data->{$module}{long_description} ? $config_data->{$module}{long_description} : (),
                 "=over",
                 (map {
-                    '=item L<' . $_ . ">\n\n" . $data->{$module}{components}{$_};
-                } sort keys %{ $data->{$module}{components} })
+                    '=item L<' . $_ . ">\n\n" . $config_data->{$module}{components}{$_};
+                } sort keys %{ $config_data->{$module}{components} })
             ),
             "=back"
-        } sort keys %$data;
+        } sort keys %$config_data;
 }}
 
 =head1 INSTALLING
