@@ -42,7 +42,9 @@ sub configure
         [ 'Test::MinimumVersion' => { ':version' => '2.000003', max_target_perl => '5.006' } ],
         'PodSyntaxTests',
         'PodCoverageTests',
-        'Test::PodSpelling',
+        # XXX FIXME - forcing distmeta to be calculated too soon, and abstract
+        # fetched, before the module is munged
+        # 'Test::PodSpelling',
         'Test::Kwalitee',
         'MojibakeTests',
         [ 'Test::ReportPrereqs' => { verify_prereqs => 1 } ],   # gives us something in t/
