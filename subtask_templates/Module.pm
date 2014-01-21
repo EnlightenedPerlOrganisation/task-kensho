@@ -24,6 +24,7 @@ Kenshō (見性) (C. Wu) is a Japanese term for enlightenment
 experiences - most commonly used within the confines of Zen
 Buddhism - literally meaning "seeing one's nature"[1] or "true
 self."[2] It generally "refers to the realization of nonduality of
+subject and object."[3]
 
 =back
 
