@@ -53,7 +53,7 @@ sub configure
         [ PkgVersion            => { ':version' => '5.010', die_on_existing_version => 1, die_on_line_insertion => 1 } ],
         [ 'Authority'           => { authority => 'cpan:PERIGRIN' } ],
         [ PodWeaver             => { ':version' => '4.005', replacer => 'replace_with_comment', post_code_replacer => 'replace_with_nothing' } ],
-        [ 'NextRelease'         => { ':version' => '4.300018', time_zone => 'UTC', format => '%-8v  %{yyyy-MM-dd HH:mm:ss\'Z\'}d%{ (TRIAL RELEASE)}T' } ],
+        [ 'NextRelease'         => { ':version' => '4.300018', time_zone => 'UTC', format => '%-8v  %{yyyy-MM-dd}d%{ (TRIAL RELEASE)}T' } ],
         [ 'ReadmeAnyFromPod'    => { type => 'markdown', filename => 'README.md', location => 'build' } ],
 
         # MetaData
@@ -110,8 +110,8 @@ sub configure
         'UploadToCPAN',
 
         # After Release
-        [ 'CopyFilesFromRelease' => { filename => [ 'META.json' ] } ],
-        [ 'Git::Commit'         => { add_files_in => [''], allow_dirty => [ 'Changes', 'META.json' ], commit_msg => '%N-%v%t%n%n%c' } ],
+        #[ 'CopyFilesFromRelease' => { filename => [ 'META.json' ] } ],
+        [ 'Git::Commit'         => { add_files_in => [''], allow_dirty => [ 'Changes' ], commit_msg => '%N-%v%t%n%n%c' } ],
 
         # listed late, to allow all other plugins which do BeforeRelease checks to run first.
         'ConfirmRelease',
