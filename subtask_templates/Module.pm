@@ -91,8 +91,7 @@ better for you. This is however a path to good perl practice, and a
 starting place on the road to Enlightened Perl programming.
 
 Please report any bugs or feature requests to
-C<bug-task-kensho@rt.cpan.org>, or through the web interface at
-L<http://rt.cpan.org>.
+L<{{ $dist->distmeta->{resources}{bugtracker}{web} }}>.
 
 =head1 SEE ALSO
 
