@@ -310,14 +310,13 @@
    "provides" : {
       "Task::Kensho" : {
          "file" : "lib/Task/Kensho.pm",
-         "version" : "0.34002"
+         "version" : "0.34003"
       }
    },
    "release_status" : "testing",
    "resources" : {
       "bugtracker" : {
-         "mailto" : "bug-Task-Kensho@rt.cpan.org",
-         "web" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Task-Kensho"
+         "web" : "https://github.com/EnlightenedPerlOrganisation/task-kensho/issues"
       },
       "homepage" : "https://github.com/EnlightenedPerlOrganisation/task-kensho",
       "repository" : {
@@ -326,7 +325,7 @@
          "web" : "https://github.com/EnlightenedPerlOrganisation/task-kensho"
       }
    },
-   "version" : "0.34002",
+   "version" : "0.34003",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.019007"

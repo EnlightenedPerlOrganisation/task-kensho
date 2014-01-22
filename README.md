@@ -4,7 +4,7 @@ Task::Kensho - A Glimpse at an Enlightened Perl
 
 # VERSION
 
-version 0.34002
+version 0.34003
 
 # SYNOPSIS
 
@@ -18,384 +18,420 @@ From [http://en.wikipedia.org/wiki/Kensho](http://en.wikipedia.org/wiki/Kensho):
 > experiences - most commonly used within the confines of Zen
 > Buddhism - literally meaning "seeing one's nature"\[1\] or "true
 > self."\[2\] It generally "refers to the realization of nonduality of
+> subject and object."\[3\]
 
-Task::Kensho is a first cut at building a list of recommended modules
+[Task::Kensho](https://metacpan.org/pod/Task::Kensho) is a first cut at building a list of recommended modules
 for Enlightened Perl development. CPAN is wonderful, but there are too
 many wheels and you have to pick and choose amongst the various
 competing technologies.
 
-The plan is for Task::Kensho to be a rough testing ground for ideas that
+The plan is for [Task::Kensho](https://metacpan.org/pod/Task::Kensho) to be a rough testing ground for ideas that
 go into among other things the Enlightened Perl Organisation Extended
 Core (EPO-EC).
 
-The modules that are bundled by Task::Kensho are broken down into
+The modules that are bundled by [Task::Kensho](https://metacpan.org/pod/Task::Kensho) are broken down into
 several categories and are still being considered. They are all taken
 from various top 100 most used perl modules lists and from discussions
 with various subject matter experts in the Perl Community. That said,
 this bundle does _not_ follow the guidelines established for the EPO-EC
 for peer review via industry advisers.
 
-Starting in 2011, Task::Kensho split its sub-groups of modules into
-individually-installable tasks. These individual tasks will always install all
-their modules by default. This facilitates the ease and simplicity the
-distribution aims to achieve. Each Task::Kensho sub-task is listed at the
+Starting in 2011, [Task::Kensho](https://metacpan.org/pod/Task::Kensho) split its sub-groups of modules into
+individually-installable tasks.  Each [Task::Kensho](https://metacpan.org/pod/Task::Kensho) sub-task is listed at the
 beginning of its section in this documentation.
 
-Then in 2013, the distributions were reunified again, with each subset of
-modules as discrete sets of optional features. At installation time, you will
-be prompted to determine which sets you wish to install.
+When installing [Task::Kensho](https://metacpan.org/pod/Task::Kensho) itself, you will be asked to install each
+sub-task in turn, or you can install individual tasks separately. These
+individual tasks will always install all their modules by default. This
+facilitates the ease and simplicity the distribution aims to achieve.
 
 # RECOMMENDED MODULES
 
-## Async Programming: Task::Kensho::Async
+## [Task::Kensho::Async](https://metacpan.org/pod/Task::Kensho::Async): Async Programming
 
-- [POE](https://metacpan.org/pod/POE)
+### 
 
-    Multitasking and networking framework for Perl
+[POE](https://metacpan.org/pod/POE)
 
-## Useful Command-line Tools: Task::Kensho::CLI
+Multitasking and networking framework for Perl
 
-- [App::Ack](https://metacpan.org/pod/App::Ack)
+## [Task::Kensho::CLI](https://metacpan.org/pod/Task::Kensho::CLI): Useful Command-line Tools
 
-    A grep-like text finder
+### 
 
-- [App::Nopaste](https://metacpan.org/pod/App::Nopaste)
+[App::Ack](https://metacpan.org/pod/App::Ack)
 
-    Easy access to any pastebin
+A grep-like text finder
 
-- [App::perlbrew](https://metacpan.org/pod/App::perlbrew)
+[App::Nopaste](https://metacpan.org/pod/App::Nopaste)
 
-    Manage perl installations in your $HOME
+Easy access to any pastebin
 
-- [Devel::REPL](https://metacpan.org/pod/Devel::REPL)
+[App::perlbrew](https://metacpan.org/pod/App::perlbrew)
 
-    A modern perl interactive shell
+Manage perl installations in your $HOME
 
-- [Module::CoreList](https://metacpan.org/pod/Module::CoreList)
+[Devel::REPL](https://metacpan.org/pod/Devel::REPL)
 
-    What modules shipped with versions of perl
+A modern perl interactive shell
 
-## Config Modules: Task::Kensho::Config
+[Module::CoreList](https://metacpan.org/pod/Module::CoreList)
 
-- [Config::Any](https://metacpan.org/pod/Config::Any)
+What modules shipped with versions of perl
 
-    Load configuration from different file formats, transparently
+## [Task::Kensho::Config](https://metacpan.org/pod/Task::Kensho::Config): Config Modules
 
-- [Config::General](https://metacpan.org/pod/Config::General)
+### 
 
-    Generic Config Module
+[Config::Any](https://metacpan.org/pod/Config::Any)
 
-## Database Development: Task::Kensho::DBDev
+Load configuration from different file formats, transparently
 
-- [DBD::SQLite](https://metacpan.org/pod/DBD::SQLite)
+[Config::General](https://metacpan.org/pod/Config::General)
 
-    Self Contained RDBMS in a DBI Driver
+Generic Config Module
 
-- [DBI](https://metacpan.org/pod/DBI)
+## [Task::Kensho::DBDev](https://metacpan.org/pod/Task::Kensho::DBDev): Database Development
 
-    Database independent interface for Perl
+### 
 
-- [DBIx::Class](https://metacpan.org/pod/DBIx::Class)
+[DBD::SQLite](https://metacpan.org/pod/DBD::SQLite)
 
-    Extensible and flexible object <-> relational mapper.
+Self Contained RDBMS in a DBI Driver
 
-- [DBIx::Class::Schema::Loader](https://metacpan.org/pod/DBIx::Class::Schema::Loader)
+[DBI](https://metacpan.org/pod/DBI)
 
-    Dynamic definition of a DBIx::Class::Schema
+Database independent interface for Perl
 
-- [SQL::Translator](https://metacpan.org/pod/SQL::Translator)
+[DBIx::Class](https://metacpan.org/pod/DBIx::Class)
 
-    Manipulate structured data definitions (SQL and more)
+Extensible and flexible object <-> relational mapper.
 
-## Date Modules: Task::Kensho::Dates
+[DBIx::Class::Schema::Loader](https://metacpan.org/pod/DBIx::Class::Schema::Loader)
 
-- [Date::Tiny](https://metacpan.org/pod/Date::Tiny)
+Dynamic definition of a DBIx::Class::Schema
 
-    A date object with as little code as possible
+[SQL::Translator](https://metacpan.org/pod/SQL::Translator)
 
-- [DateTime](https://metacpan.org/pod/DateTime)
+Manipulate structured data definitions (SQL and more)
 
-    A date and time object
+## [Task::Kensho::Dates](https://metacpan.org/pod/Task::Kensho::Dates): Date Modules
 
-- [DateTime::Tiny](https://metacpan.org/pod/DateTime::Tiny)
+### 
 
-    A date object with as little code as possible
+[Date::Tiny](https://metacpan.org/pod/Date::Tiny)
 
-- [Time::ParseDate](https://metacpan.org/pod/Time::ParseDate)
+A date object with as little code as possible
 
-    Date parsing both relative and absolute
+[DateTime](https://metacpan.org/pod/DateTime)
 
-- [Time::Tiny](https://metacpan.org/pod/Time::Tiny)
+A date and time object
 
-    A time object with as little code as possible
+[DateTime::Tiny](https://metacpan.org/pod/DateTime::Tiny)
 
-## Email: Task::Kensho::Email
+A date object with as little code as possible
 
-- [Email::MIME::Kit](https://metacpan.org/pod/Email::MIME::Kit)
+[Time::ParseDate](https://metacpan.org/pod/Time::ParseDate)
 
-    The Swiss army chainsaw of assembling email messages
+Date parsing both relative and absolute
 
-- [Email::Sender](https://metacpan.org/pod/Email::Sender)
+[Time::Tiny](https://metacpan.org/pod/Time::Tiny)
 
-    A library for sending email
+A time object with as little code as possible
 
-- [Email::Simple](https://metacpan.org/pod/Email::Simple)
+## [Task::Kensho::Email](https://metacpan.org/pod/Task::Kensho::Email): Email
 
-    A __simple__ email object. No, really!
+### 
 
-- [Email::Valid](https://metacpan.org/pod/Email::Valid)
+[Email::MIME::Kit](https://metacpan.org/pod/Email::MIME::Kit)
 
-    Check validity of Internet email addresses
+The Swiss army chainsaw of assembling email messages
 
-## Excel/CSV: Task::Kensho::ExcelCSV
+[Email::Sender](https://metacpan.org/pod/Email::Sender)
 
-- [Spreadsheet::ParseExcel::Simple](https://metacpan.org/pod/Spreadsheet::ParseExcel::Simple)
+A library for sending email
 
-    A simple interface to Excel data
+[Email::Simple](https://metacpan.org/pod/Email::Simple)
 
-- [Spreadsheet::WriteExcel::Simple](https://metacpan.org/pod/Spreadsheet::WriteExcel::Simple)
+A __simple__ email object. No, really!
 
-    Create Excel documents easily
+[Email::Valid](https://metacpan.org/pod/Email::Valid)
 
-- [Text::CSV\_XS](https://metacpan.org/pod/Text::CSV_XS)
+Check validity of Internet email addresses
 
-    Manipulate comma-separated values (CSV)
+## [Task::Kensho::ExcelCSV](https://metacpan.org/pod/Task::Kensho::ExcelCSV): Excel/CSV
 
-## Exception Handling: Task::Kensho::Exceptions
+### 
 
-- [Try::Tiny](https://metacpan.org/pod/Try::Tiny)
+[Spreadsheet::ParseExcel::Simple](https://metacpan.org/pod/Spreadsheet::ParseExcel::Simple)
 
-    Lightweight exception handling that handles the vagaries of $@.
+A simple interface to Excel data
 
-- [TryCatch](https://metacpan.org/pod/TryCatch)
+[Spreadsheet::WriteExcel::Simple](https://metacpan.org/pod/Spreadsheet::WriteExcel::Simple)
 
-    Flexible exception handling without source filters, handles $@ properly.
+Create Excel documents easily
 
-- [autodie](https://metacpan.org/pod/autodie)
+[Text::CSV\_XS](https://metacpan.org/pod/Text::CSV_XS)
 
-    Make builtins and other functions die instead of returning undef on failure.
+Manipulate comma-separated values (CSV)
 
-## Script Hackery: Task::Kensho::Hackery
+## [Task::Kensho::Exceptions](https://metacpan.org/pod/Task::Kensho::Exceptions): Exception Handling
+
+### 
+
+[Try::Tiny](https://metacpan.org/pod/Try::Tiny)
+
+Lightweight exception handling that handles the vagaries of $@.
+
+[TryCatch](https://metacpan.org/pod/TryCatch)
+
+Flexible exception handling without source filters, handles $@ properly.
+
+[autodie](https://metacpan.org/pod/autodie)
+
+Make builtins and other functions die instead of returning undef on failure.
+
+## [Task::Kensho::Hackery](https://metacpan.org/pod/Task::Kensho::Hackery): Script Hackery
 
 These packages are included less for production work and more for whippitupitude. They reflect packages that people have found incredibly useful for prototyping and debugging before reducing down to a production script.
 
-- [IO::All](https://metacpan.org/pod/IO::All)
+### 
 
-    IO::All combines all of the best Perl IO modules into a single nifty object oriented interface to greatly simplify your everyday Perl IO idioms.
+[IO::All](https://metacpan.org/pod/IO::All)
 
-- [Smart::Comments](https://metacpan.org/pod/Smart::Comments)
+IO::All combines all of the best Perl IO modules into a single nifty object oriented interface to greatly simplify your everyday Perl IO idioms.
 
-    Comments that do more than just sit there
+[Smart::Comments](https://metacpan.org/pod/Smart::Comments)
 
-- [Term::ProgressBar::Simple](https://metacpan.org/pod/Term::ProgressBar::Simple)
+Comments that do more than just sit there
 
-    Simple progress bars
+[Term::ProgressBar::Simple](https://metacpan.org/pod/Term::ProgressBar::Simple)
 
-## Logging: Task::Kensho::Logging
+Simple progress bars
 
-- [Log::Contextual](https://metacpan.org/pod/Log::Contextual)
+## [Task::Kensho::Logging](https://metacpan.org/pod/Task::Kensho::Logging): Logging
 
-    Log::Contextual is a simple interface to extensible logging.  It is bundled with a really basic logger, Log::Contextual::SimpleLogger.
+### 
 
-- [Log::Dispatch](https://metacpan.org/pod/Log::Dispatch)
+[Log::Contextual](https://metacpan.org/pod/Log::Contextual)
 
-    This module manages a set of Log::Dispatch::\* output objects that can be logged to via a unified interface.
+Log::Contextual is a simple interface to extensible logging.  It is bundled with a really basic logger, Log::Contextual::SimpleLogger.
 
-- [Log::Log4perl](https://metacpan.org/pod/Log::Log4perl)
+[Log::Dispatch](https://metacpan.org/pod/Log::Dispatch)
 
-    Log::Log4perl lets you remote-control and fine-tune the logging behaviour of your system from the outside. It implements the widely popular (Java-based) Log4j logging package in pure Perl.
+This module manages a set of Log::Dispatch::\* output objects that can be logged to via a unified interface.
 
-## Module Development: Task::Kensho::ModuleDev
+[Log::Log4perl](https://metacpan.org/pod/Log::Log4perl)
 
-- [CPAN::Uploader](https://metacpan.org/pod/CPAN::Uploader)
+Log::Log4perl lets you remote-control and fine-tune the logging behaviour of your system from the outside. It implements the widely popular (Java-based) Log4j logging package in pure Perl.
 
-    Upload things to the CPAN
+## [Task::Kensho::ModuleDev](https://metacpan.org/pod/Task::Kensho::ModuleDev): Module Development
 
-- [Carp::Always](https://metacpan.org/pod/Carp::Always)
+### 
 
-    Warns and dies noisily with stack backtraces
+[CPAN::Uploader](https://metacpan.org/pod/CPAN::Uploader)
 
-- [Devel::NYTProf](https://metacpan.org/pod/Devel::NYTProf)
+Upload things to the CPAN
 
-    Powerful feature-rich perl source code profiler
+[Carp::Always](https://metacpan.org/pod/Carp::Always)
 
-- [Dist::Zilla](https://metacpan.org/pod/Dist::Zilla)
+Warns and dies noisily with stack backtraces
 
-    Builds distributions of code to be uploaded to the CPAN.
+[Devel::NYTProf](https://metacpan.org/pod/Devel::NYTProf)
 
-- [Modern::Perl](https://metacpan.org/pod/Modern::Perl)
+Powerful feature-rich perl source code profiler
 
-    enable all of the features of Modern Perl with one command
+[Dist::Zilla](https://metacpan.org/pod/Dist::Zilla)
 
-- [Module::Install](https://metacpan.org/pod/Module::Install)
+Builds distributions of code to be uploaded to the CPAN.
 
-    Standalone, extensible Perl module installer
+[Modern::Perl](https://metacpan.org/pod/Modern::Perl)
 
-- [Perl::Critic](https://metacpan.org/pod/Perl::Critic)
+enable all of the features of Modern Perl with one command
 
-    Critique Perl source code for best-practices.
+[Module::Install](https://metacpan.org/pod/Module::Install)
 
-- [Perl::Tidy](https://metacpan.org/pod/Perl::Tidy)
+Standalone, extensible Perl module installer
 
-    Parses and beautifies perl source
+[Perl::Critic](https://metacpan.org/pod/Perl::Critic)
 
-- [Perl::Version](https://metacpan.org/pod/Perl::Version)
+Critique Perl source code for best-practices.
 
-    Parse and manipulate Perl version strings
+[Perl::Tidy](https://metacpan.org/pod/Perl::Tidy)
 
-- [Pod::Readme](https://metacpan.org/pod/Pod::Readme)
+Parses and beautifies perl source
 
-    Convert POD to README file
+[Perl::Version](https://metacpan.org/pod/Perl::Version)
 
-- [Software::License](https://metacpan.org/pod/Software::License)
+Parse and manipulate Perl version strings
 
-    Packages that provide templated software licenses
+[Pod::Readme](https://metacpan.org/pod/Pod::Readme)
 
-## Object Oriented Programming: Task::Kensho::OOP
+Convert POD to README file
 
-- [Task::Moose](https://metacpan.org/pod/Task::Moose)
+[Software::License](https://metacpan.org/pod/Software::License)
 
-    Moose is a postmodern object system for Perl5. Task::Moose installs Moose and optionally a list of recommended modules that extend Moose.
+Packages that provide templated software licenses
 
-## Scalability: Task::Kensho::Scalability
+## [Task::Kensho::OOP](https://metacpan.org/pod/Task::Kensho::OOP): Object Oriented Programming
 
-- [CHI](https://metacpan.org/pod/CHI)
+### 
 
-    A unified cache interface, like DBI
+[Task::Moose](https://metacpan.org/pod/Task::Moose)
 
-## Testing: Task::Kensho::Testing
+Moose is a postmodern object system for Perl5. Task::Moose installs Moose and optionally a list of recommended modules that extend Moose.
 
-- [Devel::Cover](https://metacpan.org/pod/Devel::Cover)
+## [Task::Kensho::Scalability](https://metacpan.org/pod/Task::Kensho::Scalability): Scalability
 
-    Code coverage metrics for Perl
+### 
 
-- [Test::Deep](https://metacpan.org/pod/Test::Deep)
+[CHI](https://metacpan.org/pod/CHI)
 
-    Test deep data structures
+A unified cache interface, like DBI
 
-- [Test::Fatal](https://metacpan.org/pod/Test::Fatal)
+## [Task::Kensho::Testing](https://metacpan.org/pod/Task::Kensho::Testing): Testing
 
-    Test exception-based code
+### 
 
-- [Test::Memory::Cycle](https://metacpan.org/pod/Test::Memory::Cycle)
+[Devel::Cover](https://metacpan.org/pod/Devel::Cover)
 
-    Check for memory leaks and circular memory references
+Code coverage metrics for Perl
 
-- [Test::Most](https://metacpan.org/pod/Test::Most)
+[Test::Deep](https://metacpan.org/pod/Test::Deep)
 
-    Most commonly needed test functions and features.
+Test deep data structures
 
-- [Test::NoWarnings](https://metacpan.org/pod/Test::NoWarnings)
+[Test::Fatal](https://metacpan.org/pod/Test::Fatal)
 
-    Ensure that no (unexpected) warnings occur during testing
+Test exception-based code
 
-- [Test::Pod](https://metacpan.org/pod/Test::Pod)
+[Test::Memory::Cycle](https://metacpan.org/pod/Test::Memory::Cycle)
 
-    Check for POD errors in files
+Check for memory leaks and circular memory references
 
-- [Test::Pod::Coverage](https://metacpan.org/pod/Test::Pod::Coverage)
+[Test::Most](https://metacpan.org/pod/Test::Most)
 
-    Check for pod coverage in your distribution.
+Most commonly needed test functions and features.
 
-- [Test::Requires](https://metacpan.org/pod/Test::Requires)
+[Test::NoWarnings](https://metacpan.org/pod/Test::NoWarnings)
 
-    Make running a test conditional on a particular module being installed
+Ensure that no (unexpected) warnings occur during testing
 
-- [Test::Simple](https://metacpan.org/pod/Test::Simple)
+[Test::Pod](https://metacpan.org/pod/Test::Pod)
 
-    Basic utilities for writing tests.
+Check for POD errors in files
 
-## Basic Toolchain: Task::Kensho::Toolchain
+[Test::Pod::Coverage](https://metacpan.org/pod/Test::Pod::Coverage)
 
-- [App::cpanminus](https://metacpan.org/pod/App::cpanminus)
+Check for pod coverage in your distribution.
 
-    Get, unpack, build and install modules from CPAN
+[Test::Requires](https://metacpan.org/pod/Test::Requires)
 
-- [local::lib](https://metacpan.org/pod/local::lib)
+Make running a test conditional on a particular module being installed
 
-    Create and use a local lib/ for perl modules with PERL5LIB
+[Test::Simple](https://metacpan.org/pod/Test::Simple)
 
-- [version](https://metacpan.org/pod/version)
+Basic utilities for writing tests.
 
-    Perl extension for Version Objects
+## [Task::Kensho::Toolchain](https://metacpan.org/pod/Task::Kensho::Toolchain): Basic Toolchain
 
-## Web Crawling: Task::Kensho::WebCrawling
+### 
 
-- [HTTP::Lite](https://metacpan.org/pod/HTTP::Lite)
+[App::cpanminus](https://metacpan.org/pod/App::cpanminus)
 
-    Lightweight HTTP client implementation
+Get, unpack, build and install modules from CPAN
 
-- [LWP::Simple](https://metacpan.org/pod/LWP::Simple)
+[local::lib](https://metacpan.org/pod/local::lib)
 
-    Simple procedural interface to LWP
+Create and use a local lib/ for perl modules with PERL5LIB
 
-- [LWP::UserAgent](https://metacpan.org/pod/LWP::UserAgent)
+[version](https://metacpan.org/pod/version)
 
-    Full-featured Web client library for Perl
+Perl extension for Version Objects
 
-- [WWW::Mechanize](https://metacpan.org/pod/WWW::Mechanize)
+## [Task::Kensho::WebCrawling](https://metacpan.org/pod/Task::Kensho::WebCrawling): Web Crawling
 
-    Handy web browsing in a Perl object
+### 
 
-- [WWW::Mechanize::TreeBuilder](https://metacpan.org/pod/WWW::Mechanize::TreeBuilder)
+[HTTP::Lite](https://metacpan.org/pod/HTTP::Lite)
 
-    This module combines WWW::Mechanize and HTML::TreeBuilder.
+Lightweight HTTP client implementation
 
-## Web Development: Task::Kensho::WebDev
+[LWP::Simple](https://metacpan.org/pod/LWP::Simple)
 
-- [CGI::FormBuilder::Source::Perl](https://metacpan.org/pod/CGI::FormBuilder::Source::Perl)
+Simple procedural interface to LWP
 
-    Build CGI::FormBuilder configs from Perl syntax files.
+[LWP::UserAgent](https://metacpan.org/pod/LWP::UserAgent)
 
-- [MIME::Types](https://metacpan.org/pod/MIME::Types)
+Full-featured Web client library for Perl
 
-    Definition of MIME types
+[WWW::Mechanize](https://metacpan.org/pod/WWW::Mechanize)
 
-- [Plack](https://metacpan.org/pod/Plack)
+Handy web browsing in a Perl object
 
-    Flexible superglue between Web Servers and Perl Web Frameworks or code.
+[WWW::Mechanize::TreeBuilder](https://metacpan.org/pod/WWW::Mechanize::TreeBuilder)
 
-- [Task::Catalyst](https://metacpan.org/pod/Task::Catalyst)
+This module combines WWW::Mechanize and HTML::TreeBuilder.
 
-    Catalyst is The Elegant MVC Web Application Framework. Task::Catalyst is all you need to start with Catalyst.
+## [Task::Kensho::WebDev](https://metacpan.org/pod/Task::Kensho::WebDev): Web Development
 
-- [Template::Toolkit](https://metacpan.org/pod/Template::Toolkit)
+### 
 
-    Template Processing System
+[CGI::FormBuilder::Source::Perl](https://metacpan.org/pod/CGI::FormBuilder::Source::Perl)
 
-- [XML::Atom](https://metacpan.org/pod/XML::Atom)
+Build CGI::FormBuilder configs from Perl syntax files.
 
-    Atom feed and API implementation
+[MIME::Types](https://metacpan.org/pod/MIME::Types)
 
-- [XML::RSS](https://metacpan.org/pod/XML::RSS)
+Definition of MIME types
 
-    Creates and updates RSS files
+[Plack](https://metacpan.org/pod/Plack)
 
-## XML Development: Task::Kensho::XML
+Flexible superglue between Web Servers and Perl Web Frameworks or code.
 
-- [XML::Generator::PerlData](https://metacpan.org/pod/XML::Generator::PerlData)
+[Task::Catalyst](https://metacpan.org/pod/Task::Catalyst)
 
-    Perl extension for generating SAX2 events from nested Perl data structures.
+Catalyst is The Elegant MVC Web Application Framework. Task::Catalyst is all you need to start with Catalyst.
 
-- [XML::LibXML](https://metacpan.org/pod/XML::LibXML)
+[Template::Toolkit](https://metacpan.org/pod/Template::Toolkit)
 
-    Perl Binding for libxml2
+Template Processing System
 
-- [XML::LibXSLT](https://metacpan.org/pod/XML::LibXSLT)
+[XML::Atom](https://metacpan.org/pod/XML::Atom)
 
-    Interface to the gnome libxslt library
+Atom feed and API implementation
 
-- [XML::SAX](https://metacpan.org/pod/XML::SAX)
+[XML::RSS](https://metacpan.org/pod/XML::RSS)
 
-    Simple/Streaming API for XML
+Creates and updates RSS files
 
-- [XML::SAX::Writer](https://metacpan.org/pod/XML::SAX::Writer)
+## [Task::Kensho::XML](https://metacpan.org/pod/Task::Kensho::XML): XML Development
 
-    Output XML from SAX2 Events
+### 
+
+[XML::Generator::PerlData](https://metacpan.org/pod/XML::Generator::PerlData)
+
+Perl extension for generating SAX2 events from nested Perl data structures.
+
+[XML::LibXML](https://metacpan.org/pod/XML::LibXML)
+
+Perl Binding for libxml2
+
+[XML::LibXSLT](https://metacpan.org/pod/XML::LibXSLT)
+
+Interface to the gnome libxslt library
+
+[XML::SAX](https://metacpan.org/pod/XML::SAX)
+
+Simple/Streaming API for XML
+
+[XML::SAX::Writer](https://metacpan.org/pod/XML::SAX::Writer)
+
+Output XML from SAX2 Events
 
 # INSTALLING
 
-Since version 0.34, Task-Kensho has made use of the `optional_features` field
+Since version 0.34, [Task::Kensho](https://metacpan.org/pod/Task::Kensho) has made use of the `optional_features` field
 in distribution metadata. This allows CPAN clients to interact with you
 regarding which modules you wish to install.
 
@@ -405,9 +441,9 @@ The `cpanm` client requires interactive mode to be enabled for this to work:
 
 # RELEASE SCHEDULE
 
-Starting with release 0.18 Task::Kensho was moved to a monthly release
+Starting with release 0.18, [Task::Kensho](https://metacpan.org/pod/Task::Kensho) was moved to a monthly release
 cycle. This will facilitate a consistent schedule for upstream vendors
-to track the changes in Task::Kensho.
+to track the changes in [Task::Kensho](https://metacpan.org/pod/Task::Kensho).
 
 # BUGS AND LIMITATIONS
 
@@ -418,8 +454,7 @@ better for you. This is however a path to good perl practice, and a
 starting place on the road to Enlightened Perl programming.
 
 Please report any bugs or feature requests to
-`bug-task-kensho@rt.cpan.org`, or through the web interface at
-[http://rt.cpan.org](http://rt.cpan.org).
+[https://github.com/EnlightenedPerlOrganisation/task-kensho/issues](https://github.com/EnlightenedPerlOrganisation/task-kensho/issues).
 
 # SEE ALSO
 
