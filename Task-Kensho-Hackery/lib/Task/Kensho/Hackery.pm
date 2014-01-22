@@ -91,7 +91,7 @@ better for you. This is however a path to good perl practice, and a
 starting place on the road to Enlightened Perl programming.
 
 Please report any bugs or feature requests to
-L<{{ $dist->distmeta->{resources}{bugtracker}{web} }}>.
+L<https://github.com/EnlightenedPerlOrganisation/task-kensho/issues>.
 
 =head1 SEE ALSO
 
