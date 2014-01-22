@@ -59,14 +59,13 @@ facilitates the ease and simplicity the distribution aims to achieve.
         map {
             my $module = $_;
             join("\n\n",
-                '=head2 ' . $config_data->{$module}{description} . ': ' . $module,
+                '=head2 L<' . $module . '>: ' . $config_data->{$module}{description},
                 $config_data->{$module}{long_description} ? $config_data->{$module}{long_description} : (),
-                "=over",
+                '=head3',
                 (map {
-                    '=item L<' . $_ . ">\n\n" . $config_data->{$module}{components}{$_};
+                    'L<' . $_ . ">\n\n" . $config_data->{$module}{components}{$_};
                 } sort keys %{ $config_data->{$module}{components} })
             ),
-            "=back"
         } sort keys %$config_data;
 }}
 

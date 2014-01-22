@@ -53,20 +53,18 @@ sub-task in turn, or you can install individual tasks separately. These
 individual tasks will always install all their modules by default. This
 facilitates the ease and simplicity the distribution aims to achieve.
 
-=head2 {{ $config_data->{$module}{description} . ': ' . $module
+=head1 RECOMMENDED MODULES
+
+=head2 {{ 'L<' . $module . '>: ' . $config_data->{$module}{description}
     . ($config_data->{$module}{long_description} ? ("\n\n" . $config_data->{$module}{long_description}) : '')
 }}
-
-=over 4
 
 {{
     join "\n\n",
         map {
-            '=item L<' . $_ . ">\n\n" . $config_data->{$module}{components}{$_}
+            '=head3 L<' . $_ . ">\n\n" . $config_data->{$module}{components}{$_}
         } sort keys %{ $config_data->{$module}{components} }
 }}
-
-=back
 
 =head1 RELEASE SCHEDULE
 
