@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+
+0.34004   2014-01-22 (TRIAL RELEASE)
           - still more pod and metadata tweaks
 
 0.34003   2014-01-22 (TRIAL RELEASE)
