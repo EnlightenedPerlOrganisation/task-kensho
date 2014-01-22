@@ -4,7 +4,7 @@ Task::Kensho - A Glimpse at an Enlightened Perl
 
 # VERSION
 
-version 0.34003
+version 0.34004
 
 # SYNOPSIS
 

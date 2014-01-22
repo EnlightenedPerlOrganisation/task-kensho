@@ -225,7 +225,7 @@
       "configure" : {
          "requires" : {
             "ExtUtils::MakeMaker" : "6.30",
-            "Module::Build::Tiny" : "0.033"
+            "Module::Build::Tiny" : "0.034"
          }
       },
       "develop" : {
@@ -310,7 +310,7 @@
    "provides" : {
       "Task::Kensho" : {
          "file" : "lib/Task/Kensho.pm",
-         "version" : "0.34003"
+         "version" : "0.34004"
       }
    },
    "release_status" : "testing",
@@ -325,7 +325,7 @@
          "web" : "https://github.com/EnlightenedPerlOrganisation/task-kensho"
       }
    },
-   "version" : "0.34003",
+   "version" : "0.34004",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.019007"
