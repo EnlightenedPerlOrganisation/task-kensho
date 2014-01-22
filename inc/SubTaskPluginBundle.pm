@@ -27,7 +27,7 @@ sub configure
         [ 'Git::NextVersion'    => { version_regexp => '^v([\d._]+)(-TRIAL)?$' } ],
 
         # Gather Files
-        [ 'Git::GatherDir'      => { exclude_match => '^inc', exclude_filename => [ 'dist.ini', 'META.json' ] } ],
+        [ 'Git::GatherDir'      => { exclude_match => '^inc', exclude_filename => [ 'dist.ini', 'modules.yml', 'META.json' ] } ],
         [ '=inc::MungeFileWithConfig' => { finder => ':InstallModules', files => ['README'], configfile => '../modules.yml' } ],
         # XXX FIXME - munging content too soon, before our module has its abstract munged
         # 'Readme',
