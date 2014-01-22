@@ -66,6 +66,16 @@ facilitates the ease and simplicity the distribution aims to achieve.
         } sort keys %{ $config_data->{$module}{components} }
 }}
 
+=head1 INSTALLING
+
+Since version 0.34, L<Task::Kensho> has made use of the C<optional_features> field
+in distribution metadata. This allows CPAN clients to interact with you
+regarding which modules you wish to install.
+
+The C<cpanm> client requires interactive mode to be enabled for this to work:
+
+    cpanm --interactive Task-Kensho
+
 =head1 RELEASE SCHEDULE
 
 Starting with release 0.18, L<Task::Kensho> was moved to a monthly release
