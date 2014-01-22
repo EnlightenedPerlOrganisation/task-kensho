@@ -3,7 +3,7 @@ use warnings;
 package inc::OptionalFeatureForSubTask;
 
 use Moose;
-extends 'Dist::Zilla::Plugin::OptionalFeature';
+extends 'Dist::Zilla::Plugin::OptionalFeature' => { -version => '0.011' };
 with 'MooseX::SimpleConfig';
 
 use namespace::autoclean;
@@ -40,6 +40,7 @@ around BUILDARGS => sub {
         name => (split('::', $module))[-1],
         description => $module_data->{description},
         always_recommend => 1,
+        require_develop => 0,
         default => 1,
         _prereqs => {
             (map { $_ => 0 } keys %{ $module_data->{components} }),

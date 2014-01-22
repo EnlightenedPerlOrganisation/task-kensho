@@ -40,6 +40,7 @@ sub configure
             'OptionalFeature',
             $task,
             {
+                ':version' => '0.011',
                 -name => $task,
                 -description => $module_data->{description},
                 -always_recommend => 1,
