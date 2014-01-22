@@ -1,6 +1,7 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+          - more pod and metadata tweaks
 
 0.34002   2014-01-21 (TRIAL RELEASE)
           - fix mangled abstract in META.*
