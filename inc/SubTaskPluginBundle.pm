@@ -28,7 +28,7 @@ sub configure
 
         # Gather Files
         [ 'Git::GatherDir'      => { exclude_match => '^inc', exclude_filename => [ 'dist.ini', 'modules.yml', 'META.json' ] } ],
-        [ '=inc::MungeFileWithConfig' => { finder => ':InstallModules', files => ['README'], configfile => '../modules.yml' } ],
+        [ 'MungeFile::WithConfigFile' => { finder => ':InstallModules', files => ['README'], configfile => '../modules.yml' } ],
         # XXX FIXME - munging content too soon, before our module has its abstract munged
         # 'Readme',
         qw(MetaYAML MetaJSON License Manifest),
@@ -76,7 +76,7 @@ sub configure
         # Register Prereqs
         # (MakeMaker or other installer)
         'AutoPrereqs',
-        [ 'Prereqs::AuthorDeps' => { exclude => [ 'inc::SubTaskPluginBundle', 'inc::MungeFileWithConfig', 'inc::OptionalFeatureForSubTask' ] } ],
+        [ 'Prereqs::AuthorDeps' => { exclude => [ 'inc::SubTaskPluginBundle', 'inc::OptionalFeatureForSubTask' ] } ],
         'MinimumPerl',
         [ 'Prereqs' => installer_requirements => {
                 '-phase' => 'develop', '-relationship' => 'requires',
