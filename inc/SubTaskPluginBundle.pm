@@ -8,6 +8,7 @@ package # stay away, PAUSE!
 use 5.016;  # s///r
 use Moose;
 with
+    'MooseX::SimpleConfig',
     'Dist::Zilla::Role::PluginBundle::Easy',
     'Dist::Zilla::Role::PluginBundle::PluginRemover' => { -version => '0.102' },
     'Dist::Zilla::Role::PluginBundle::Config::Slicer';
@@ -18,9 +19,36 @@ use namespace::autoclean;
 # 0.047, with customizations removed that we do not want.. and also less
 # manipulation of the git repo, and silly irrelevant tests removed.
 
+has distname => (
+    is => 'ro', isa => 'Str',
+    lazy => 1,
+    default => sub { shift->payload->{distname} // die 'missing required option: \'distname\'' ; },
+);
+
+has configfile => (
+    is => 'ro', isa => 'Str',
+    lazy => 1,
+    default => sub { shift->payload->{configfile} // '../modules.yml'; },
+);
+
+has _module_data => (
+    isa => 'HashRef[HashRef[Str|HashRef[Str]]]',
+    traits => ['Hash'],
+    handles => { data_for => 'get' },
+    lazy => 1,
+    default => sub {
+        my $self = shift;
+        $self->get_config_from_file($self->configfile);
+    },
+);
+
+
 sub configure
 {
     my $self = shift;
+
+    my $module = $self->distname =~ s/-/::/gr;
+    my $module_data = $self->data_for($module);
 
     my @plugins = (
         # VersionProvider
@@ -28,7 +56,7 @@ sub configure
 
         # Gather Files
         [ 'Git::GatherDir'      => { exclude_match => '^inc', exclude_filename => [ 'dist.ini', 'modules.yml', 'META.json' ] } ],
-        [ 'MungeFile::WithConfigFile' => { finder => ':InstallModules', files => ['README'], configfile => '../modules.yml' } ],
+        [ 'MungeFile::WithConfigFile' => { finder => ':InstallModules', files => ['README'], configfile => $self->configfile } ],
         # XXX FIXME - munging content too soon, before our module has its abstract munged
         # 'Readme',
         qw(MetaYAML MetaJSON License Manifest),
@@ -67,16 +95,23 @@ sub configure
         # created before the filemunging phase starts
         # [ 'MetaProvides::Package' => { meta_noindex => 1, ':version' => '1.15000002', finder => ':InstallModules' } ],
         'MetaConfig',
-        [ '=inc::OptionalFeatureForSubTask' => { configfile => 'modules.yml', -default => 1,
-            -always_recommend => 1,   # report-prereqs will list these
-        } ],
+        [ 'OptionalFeature' => {
+                ':version' => '0.011',
+                -name => (split('::', $module))[-1],
+                -description => $module_data->{description},
+                -always_recommend => 1,   # report-prereqs will list these
+                -require_develop => 0,
+                -default => 1,
+                (map { $_ => 0 } keys %{ $module_data->{components} }),
+            },
+        ],
 
         #[ContributorsFromGit]
 
         # Register Prereqs
         # (MakeMaker or other installer)
         'AutoPrereqs',
-        [ 'Prereqs::AuthorDeps' => { exclude => [ 'inc::SubTaskPluginBundle', 'inc::OptionalFeatureForSubTask' ] } ],
+        [ 'Prereqs::AuthorDeps' => { exclude => [ 'inc::SubTaskPluginBundle' ] } ],
         'MinimumPerl',
         [ 'Prereqs' => installer_requirements => {
                 '-phase' => 'develop', '-relationship' => 'requires',
