@@ -2,6 +2,9 @@
 
 tk_test()
 {
+    # do this once more, just to be sure...
+    perl generate-tasks
+
     dzil test --release
     if [[ $? -ne 0 ]]; then
         echo "uh oh something went wrong; testing halted"
@@ -22,6 +25,11 @@ tk_test()
 
 tk_release()
 {
+    # do this once more, just to be sure...
+    # releases will be halted if there are any uncommited changes as a result
+    # of running this.
+    perl generate-tasks
+
     for f in Task-Kensho-[A-Z]*/
     do
         pushd $f
