@@ -79,12 +79,6 @@ The C<cpanm> client requires interactive mode to be enabled for this to work:
 
     cpanm --interactive Task-Kensho
 
-=head1 RELEASE SCHEDULE
-
-Starting with release 0.18, L<Task::Kensho> was moved to a monthly release
-cycle. This will facilitate a consistent schedule for upstream vendors
-to track the changes in L<Task::Kensho>.
-
 =head1 BUGS AND LIMITATIONS
 
 This list is by no means comprehensive of the "Good" Modules on CPAN.
