@@ -17,9 +17,10 @@ Task::Kensho::CLI:
     components:
         App::Ack: A grep-like text finder
         App::Nopaste: Easy access to any pastebin
-        Devel::REPL: A modern perl interactive shell
         Module::CoreList: What modules shipped with versions of perl
         App::perlbrew: Manage perl installations in your $HOME
+        Carton: Perl module dependency manager (aka Bundler for Perl)
+        App::cpanminus: get, unpack, build and install modules from CPAN
 
 
 Task::Kensho::Config:
@@ -121,6 +122,7 @@ Task::Kensho::Scalability:
     description: Scalability
     components:
         CHI: A unified cache interface, like DBI
+      Redis: Perl binding for Redis database
 
 
 Task::Kensho::Testing:
@@ -149,7 +151,8 @@ Task::Kensho::Toolchain:
 Task::Kensho::WebCrawling:
     description: Web Crawling
     components:
-        HTTP::Lite: Lightweight HTTP client implementation 
+        HTTP::Tiny: Lightweight HTTP client implementation 
+        HTTP::Thin: A Thin Wrapper around HTTP::Tiny to play nice with HTTP::Message
         LWP::UserAgent: Full-featured Web client library for Perl 
         LWP::Simple: Simple procedural interface to LWP 
         WWW::Mechanize: Handy web browsing in a Perl object 
@@ -162,6 +165,8 @@ Task::Kensho::WebDev:
     components:
         Plack: Flexible superglue between Web Servers and Perl Web Frameworks or code.
         Task::Catalyst: Catalyst is The Elegant MVC Web Application Framework. Task::Catalyst is all you need to start with Catalyst.
+        Dancer: A lightweight yet powerful web application framework
+        Mojolicious: Real-time web framework
         Template::Toolkit: Template Processing System
         CGI::FormBuilder::Source::Perl: Build CGI::FormBuilder configs from Perl syntax files.
         XML::RSS: Creates and updates RSS files
@@ -178,4 +183,5 @@ Task::Kensho::XML:
         XML::SAX: Simple/Streaming API for XML
         XML::Generator::PerlData: Perl extension for generating SAX2 events from nested Perl data structures.
         XML::SAX::Writer: Output XML from SAX2 Events
+        RDF::Trine: An RDF Framework for Perl
 
