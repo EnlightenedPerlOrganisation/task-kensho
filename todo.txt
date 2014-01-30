@@ -20,8 +20,6 @@
     - metaprovides is empty (distmeta running too soon - because of Test::PodSpelling
         for now, we need to dump both plugins and send patches.
     - kwalitee is failing, claiming no modules found eihter (this is because it depends on 'provides', when present.)  solved by removing spelling and provides plugins
-    - Git::Check.allow_dirty is not being set      ..problem in Config::MVP::Assembler::WithBundles
-        workaround used, issue sent to rjbs.
     - Git::Check is ignoring uncommitted files in .. when in subtask dir <--
         - 'repo_root' needs to be set?  <-- TODO: repo_root is poorly documented. not mentioned in [Git::Check]
         (maybe solve with hard links from this repo?)
