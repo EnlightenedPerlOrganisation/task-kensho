@@ -13,7 +13,7 @@ Task::Kensho::Async:
 
 Task::Kensho::CLI:
     description: Useful Command-line Tools
-    long_description: =for stopwords pastebin
+    long_description: =for stopwords pastebin Bundler
     components:
         App::Ack: A grep-like text finder
         App::Nopaste: Easy access to any pastebin
@@ -121,6 +121,7 @@ Task::Kensho::OOP:
 
 Task::Kensho::Scalability:
     description: Scalability
+    long_description: =for stopwords Redis
     components:
       CHI: A unified cache interface, like DBI
       Redis: Perl binding for Redis database
@@ -177,7 +178,7 @@ Task::Kensho::WebDev:
 
 Task::Kensho::XML:
     description: XML Development
-    long_description: =for stopwords libxml libxml2 libxslt
+    long_description: =for stopwords libxml libxml2 libxslt RDF
     components:
         XML::LibXML: Perl Binding for libxml2
         XML::LibXSLT: Interface to the gnome libxslt library
