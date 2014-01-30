@@ -18,6 +18,8 @@ everything else.
   on the generator code itself, you should only see changes for the specific
   Task-Kensho- dist that you modified in modules.yml.
 - git commit
+- `dzil test --release`, to be sure there are no YAML or spelling errors
+(or, run `tk_test`, as defined in release.sh)
 
 By this point there should be no uncommitted changes in the repository.  Now
 you are at a state where each individual Task-Kensho-* subdist is its own
@@ -28,8 +30,7 @@ foreach dist...
     - (optional) dzil build --not; dist test --release, etc etc as desired
     - dzil release
     - popd
-(or to release everything:)
-- for f in Task-Kensho-[A-Z]*/; do pushd $f; dzil release; popd; done
+(or to release everything, see the "tk_release" function in in release.sh)
 - dzil release
 
 Now go have a beer!
