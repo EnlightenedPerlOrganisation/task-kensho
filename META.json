@@ -230,7 +230,7 @@
       },
       "develop" : {
          "recommends" : {
-            "Dist::Zilla::PluginBundle::Author::ETHER" : "0.048"
+            "Dist::Zilla::PluginBundle::Author::ETHER" : "0.049"
          },
          "requires" : {
             "Config::Any" : "0",
@@ -239,6 +239,7 @@
             "Dist::Zilla::Plugin::GithubMeta" : "0",
             "Dist::Zilla::Plugin::MakeMaker::Fallback" : "0",
             "Dist::Zilla::Plugin::ModuleBuildTiny" : "0.004",
+            "Dist::Zilla::Plugin::MungeFile::WithConfigFile" : "0",
             "Dist::Zilla::Plugin::OptionalFeature" : "0.011",
             "Dist::Zilla::Plugin::Prereqs" : "0",
             "Dist::Zilla::Plugin::PromptIfStale" : "0",
@@ -297,23 +298,24 @@
       "test" : {
          "recommends" : {
             "CPAN::Meta" : "0",
-            "CPAN::Meta::Requirements" : "0"
+            "CPAN::Meta::Requirements" : "2.120900"
          },
          "requires" : {
             "ExtUtils::MakeMaker" : "0",
             "File::Spec::Functions" : "0",
             "List::Util" : "0",
-            "Test::More" : "0"
+            "Test::More" : "0",
+            "version" : "0"
          }
       }
    },
    "provides" : {
       "Task::Kensho" : {
          "file" : "lib/Task/Kensho.pm",
-         "version" : "0.34004"
+         "version" : "0.35"
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "web" : "https://github.com/EnlightenedPerlOrganisation/task-kensho/issues"
@@ -325,16 +327,16 @@
          "web" : "https://github.com/EnlightenedPerlOrganisation/task-kensho"
       }
    },
-   "version" : "0.34004",
+   "version" : "0.35",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.019007"
       },
       "plugins" : [
          {
-            "class" : "inc::MungeFileWithConfig",
+            "class" : "Dist::Zilla::Plugin::MungeFile::WithConfigFile",
             "config" : {
-               "inc::MungeFileWithConfig" : {
+               "Dist::Zilla::Plugin::MungeFile::WithConfigFile" : {
                   "configfile" : "modules.yml",
                   "files" : [
                      "INSTALL"
@@ -344,8 +346,8 @@
                   ]
                }
             },
-            "name" : "=inc::MungeFileWithConfig",
-            "version" : null
+            "name" : "MungeFile::WithConfigFile",
+            "version" : "0.002"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -364,7 +366,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/Async",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -383,7 +385,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/CLI",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -402,7 +404,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/Config",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -421,7 +423,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/DBDev",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -440,7 +442,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/Dates",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -459,7 +461,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/Email",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -478,7 +480,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/ExcelCSV",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -497,7 +499,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/Exceptions",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -516,7 +518,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/Hackery",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -535,7 +537,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/Logging",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -554,7 +556,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/ModuleDev",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -573,7 +575,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/OOP",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -592,7 +594,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/Scalability",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -611,7 +613,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/Testing",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -630,7 +632,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/Toolchain",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -649,7 +651,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/WebCrawling",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -668,7 +670,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/WebDev",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::OptionalFeature",
@@ -687,7 +689,7 @@
                }
             },
             "name" : "=inc::OptionalFeatureForMainTask/XML",
-            "version" : "0.011"
+            "version" : "0.012"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::NextVersion",
@@ -830,7 +832,7 @@
          {
             "class" : "Dist::Zilla::Plugin::Test::ReportPrereqs",
             "name" : "@Author::ETHER/Test::ReportPrereqs",
-            "version" : "0.012"
+            "version" : "0.013"
          },
          {
             "class" : "Dist::Zilla::Plugin::Test::Portability",
@@ -1056,7 +1058,7 @@
          {
             "class" : "Dist::Zilla::Plugin::MakeMaker::Fallback",
             "name" : "@Author::ETHER/MakeMaker::Fallback",
-            "version" : "0.005"
+            "version" : "0.006"
          },
          {
             "class" : "Dist::Zilla::Plugin::ModuleBuildTiny",
@@ -1065,8 +1067,15 @@
          },
          {
             "class" : "Dist::Zilla::Plugin::CheckSelfDependency",
+            "config" : {
+               "Dist::Zilla::Plugin::CheckSelfDependency" : {
+                  "finder" : [
+                     ":InstallModules"
+                  ]
+               }
+            },
             "name" : "@Author::ETHER/CheckSelfDependency",
-            "version" : "0.006"
+            "version" : "0.007"
          },
          {
             "class" : "Dist::Zilla::Plugin::Run::AfterBuild",
@@ -1081,12 +1090,12 @@
          {
             "class" : "Dist::Zilla::Plugin::Git::CheckFor::MergeConflicts",
             "name" : "@Author::ETHER/Git::CheckFor::MergeConflicts",
-            "version" : "0.008"
+            "version" : "0.009"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::CheckFor::CorrectBranch",
             "name" : "@Author::ETHER/Git::CheckFor::CorrectBranch",
-            "version" : "0.008"
+            "version" : "0.009"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Remote::Check",
@@ -1166,17 +1175,6 @@
             "version" : "5.012"
          },
          {
-            "class" : "Dist::Zilla::Plugin::Prereqs",
-            "config" : {
-               "Dist::Zilla::Plugin::Prereqs" : {
-                  "phase" : "develop",
-                  "type" : "requires"
-               }
-            },
-            "name" : "DevelopRequires",
-            "version" : "5.012"
-         },
-         {
             "class" : "Dist::Zilla::Plugin::PromptIfStale",
             "config" : {
                "Dist::Zilla::Plugin::PromptIfStale" : {
@@ -1234,7 +1232,7 @@
       "zilla" : {
          "class" : "Dist::Zilla::Dist::Builder",
          "config" : {
-            "is_trial" : "1"
+            "is_trial" : "0"
          },
          "version" : "5.012"
       }

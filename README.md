@@ -4,7 +4,7 @@ Task::Kensho - A Glimpse at an Enlightened Perl
 
 # VERSION
 
-version 0.34004
+version 0.35
 
 # SYNOPSIS
 
@@ -51,6 +51,10 @@ facilitates the ease and simplicity the distribution aims to achieve.
 
 ### 
 
+[IO::Async](https://metacpan.org/pod/IO::Async)
+
+Asynchronous event-driven programming
+
 [POE](https://metacpan.org/pod/POE)
 
 Multitasking and networking framework for Perl
@@ -67,13 +71,21 @@ A grep-like text finder
 
 Easy access to any pastebin
 
+[App::cpanminus](https://metacpan.org/pod/App::cpanminus)
+
+get, unpack, build and install modules from CPAN
+
 [App::perlbrew](https://metacpan.org/pod/App::perlbrew)
 
 Manage perl installations in your $HOME
 
+[Carton](https://metacpan.org/pod/Carton)
+
+Perl module dependency manager (aka Bundler for Perl)
+
 [Devel::REPL](https://metacpan.org/pod/Devel::REPL)
 
-A modern perl interactive shell
+a modern perl interactive shell
 
 [Module::CoreList](https://metacpan.org/pod/Module::CoreList)
 
@@ -249,9 +261,9 @@ Builds distributions of code to be uploaded to the CPAN.
 
 enable all of the features of Modern Perl with one command
 
-[Module::Install](https://metacpan.org/pod/Module::Install)
+[Module::Build::Tiny](https://metacpan.org/pod/Module::Build::Tiny)
 
-Standalone, extensible Perl module installer
+A simple, lightweight, drop-in replacement for ExtUtils::MakeMaker or Module::Build
 
 [Perl::Critic](https://metacpan.org/pod/Perl::Critic)
 
@@ -288,6 +300,10 @@ Moose is a postmodern object system for Perl5. Task::Moose installs Moose and op
 [CHI](https://metacpan.org/pod/CHI)
 
 A unified cache interface, like DBI
+
+[Redis](https://metacpan.org/pod/Redis)
+
+Perl binding for Redis database
 
 ## [Task::Kensho::Testing](https://metacpan.org/pod/Task::Kensho::Testing): Testing
 
@@ -353,7 +369,11 @@ Perl extension for Version Objects
 
 ### 
 
-[HTTP::Lite](https://metacpan.org/pod/HTTP::Lite)
+[HTTP::Thin](https://metacpan.org/pod/HTTP::Thin)
+
+A Thin Wrapper around HTTP::Tiny to play nice with HTTP::Message
+
+[HTTP::Tiny](https://metacpan.org/pod/HTTP::Tiny)
 
 Lightweight HTTP client implementation
 
@@ -381,9 +401,17 @@ This module combines WWW::Mechanize and HTML::TreeBuilder.
 
 Build CGI::FormBuilder configs from Perl syntax files.
 
+[Dancer](https://metacpan.org/pod/Dancer)
+
+A lightweight yet powerful web application framework
+
 [MIME::Types](https://metacpan.org/pod/MIME::Types)
 
 Definition of MIME types
+
+[Mojolicious](https://metacpan.org/pod/Mojolicious)
+
+Real-time web framework
 
 [Plack](https://metacpan.org/pod/Plack)
 
@@ -408,6 +436,10 @@ Creates and updates RSS files
 ## [Task::Kensho::XML](https://metacpan.org/pod/Task::Kensho::XML): XML Development
 
 ### 
+
+[RDF::Trine](https://metacpan.org/pod/RDF::Trine)
+
+An RDF Framework for Perl
 
 [XML::Generator::PerlData](https://metacpan.org/pod/XML::Generator::PerlData)
 
@@ -438,12 +470,6 @@ regarding which modules you wish to install.
 The `cpanm` client requires interactive mode to be enabled for this to work:
 
     cpanm --interactive Task-Kensho
-
-# RELEASE SCHEDULE
-
-Starting with release 0.18, [Task::Kensho](https://metacpan.org/pod/Task::Kensho) was moved to a monthly release
-cycle. This will facilitate a consistent schedule for upstream vendors
-to track the changes in [Task::Kensho](https://metacpan.org/pod/Task::Kensho).
 
 # BUGS AND LIMITATIONS
 
