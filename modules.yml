@@ -21,6 +21,7 @@ Task::Kensho::CLI:
         App::perlbrew: Manage perl installations in your $HOME
         Carton: Perl module dependency manager (aka Bundler for Perl)
         App::cpanminus: get, unpack, build and install modules from CPAN
+        Devel::REPL: a modern perl interactive shell
 
 
 Task::Kensho::Config:
