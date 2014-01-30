@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+
+0.35      2014-01-30
           - updated recommendations for Async, CLI, ModuleDev, Scalability,
             WebDev
 
