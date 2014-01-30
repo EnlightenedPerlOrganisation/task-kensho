@@ -122,7 +122,7 @@ Task::Kensho::OOP:
 Task::Kensho::Scalability:
     description: Scalability
     components:
-        CHI: A unified cache interface, like DBI
+      CHI: A unified cache interface, like DBI
       Redis: Perl binding for Redis database
 
 
