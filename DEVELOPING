@@ -10,7 +10,7 @@ everything else.
 
 - update modules.yml
 - add an entry to Changes, including what dists(s) you changed
-- (optional) git commit
+- git commit
 
 - run `perl generate-tasks` to update all the subtasks (WARNING: this will
   wipe all existing content in the subtask folders!)
