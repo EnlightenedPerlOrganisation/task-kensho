@@ -23,10 +23,13 @@ By this point there should be no uncommitted changes in the repository.  Now
 you are at a state where each individual Task-Kensho-* subdist is its own
 self-contained distribution that can be shipped with Dist::Zilla.
 
-- pushd <dist you want to release>
-- (optional) dzil build --not; dist test --release, etc etc as desired
-- dzil release
-- popd
+foreach dist...
+    - pushd <dist you want to release>
+    - (optional) dzil build --not; dist test --release, etc etc as desired
+    - dzil release
+    - popd
+(or to release everything:)
+- for f in Task-Kensho-[A-Z]*/; do pushd $f; dzil release; popd; done
 - dzil release
 
 Now go have a beer!
