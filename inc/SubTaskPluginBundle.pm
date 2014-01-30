@@ -141,7 +141,6 @@ sub configure
         [ 'Git::Remote::Check'  => { branch => 'master', remote_branch => 'master' } ],
         'TestRelease',
         [ 'Git::Check'          => 'after tests' => { allow_dirty => [''] } ],
-        # (ConfirmRelease)
 
         # Releaser
         'UploadToCPAN',
@@ -149,9 +148,6 @@ sub configure
         # After Release
         #[ 'CopyFilesFromRelease' => { filename => [ 'META.json' ] } ],
         [ 'Git::Commit'         => { add_files_in => [''], allow_dirty => [ 'Changes' ], commit_msg => '%N-%v%t%n%n%c' } ],
-
-        # listed late, to allow all other plugins which do BeforeRelease checks to run first.
-        'ConfirmRelease',
     );
 
     $self->add_plugins(@plugins);

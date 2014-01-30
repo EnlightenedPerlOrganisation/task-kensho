@@ -25,6 +25,9 @@ By this point there should be no uncommitted changes in the repository.  Now
 you are at a state where each individual Task-Kensho-* subdist is its own
 self-contained distribution that can be shipped with Dist::Zilla.
 
+Note that the distributions DO NOT PROMPT for release - so once you've started
+the release engines, it will run to completion!
+
 foreach dist...
     - pushd <dist you want to release>
     - (optional) dzil build --not; dist test --release, etc etc as desired
