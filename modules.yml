@@ -161,6 +161,7 @@ Task::Kensho::WebCrawling:
         LWP::Simple: Simple procedural interface to LWP
         WWW::Mechanize: Handy web browsing in a Perl object
         WWW::Mechanize::TreeBuilder: This module combines WWW::Mechanize and HTML::TreeBuilder.
+        WWW::Selenium: Perl Client for the Selenium Remote Control test tool
 
 
 Task::Kensho::WebDev:
