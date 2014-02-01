@@ -47,7 +47,7 @@ Task::Kensho::Dates:
         DateTime: A date and time object
         Date::Tiny: A date object with as little code as possible
         Time::Tiny: A time object with as little code as possible
-        DateTime::Tiny: A date object with as little code as possible
+        DateTime::Tiny: A date time object with as little code as possible
         Time::ParseDate: Date parsing both relative and absolute
 
 
@@ -153,11 +153,11 @@ Task::Kensho::Toolchain:
 Task::Kensho::WebCrawling:
     description: Web Crawling
     components:
-        HTTP::Tiny: Lightweight HTTP client implementation 
+        HTTP::Tiny: Lightweight HTTP client implementation
         HTTP::Thin: A Thin Wrapper around HTTP::Tiny to play nice with HTTP::Message
-        LWP::UserAgent: Full-featured Web client library for Perl 
-        LWP::Simple: Simple procedural interface to LWP 
-        WWW::Mechanize: Handy web browsing in a Perl object 
+        LWP::UserAgent: Full-featured Web client library for Perl
+        LWP::Simple: Simple procedural interface to LWP
+        WWW::Mechanize: Handy web browsing in a Perl object
         WWW::Mechanize::TreeBuilder: This module combines WWW::Mechanize and HTML::TreeBuilder.
 
 
