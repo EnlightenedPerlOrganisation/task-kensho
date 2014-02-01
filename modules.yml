@@ -18,9 +18,6 @@ Task::Kensho::CLI:
         App::Ack: A grep-like text finder
         App::Nopaste: Easy access to any pastebin
         Module::CoreList: What modules shipped with versions of perl
-        App::perlbrew: Manage perl installations in your $HOME
-        Carton: Perl module dependency manager (aka Bundler for Perl)
-        App::cpanminus: get, unpack, build and install modules from CPAN
         Devel::REPL: a modern perl interactive shell
 
 
@@ -146,7 +143,8 @@ Task::Kensho::Toolchain:
     description: Basic Toolchain
     components:
         App::cpanminus: Get, unpack, build and install modules from CPAN
-        Carton: Perl module dependency manager
+        App::perlbrew: Manage perl installations in your $HOME
+        Carton: Perl module dependency manager (aka Bundler for Perl)
         CPAN::Mini: Create a minimal mirror of CPAN
         local::lib: Create and use a local lib/ for perl modules with PERL5LIB
         version: Perl extension for Version Objects
