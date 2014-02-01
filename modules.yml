@@ -146,6 +146,7 @@ Task::Kensho::Toolchain:
     description: Basic Toolchain
     components:
         App::cpanminus: Get, unpack, build and install modules from CPAN
+        Carton: Perl module dependency manager
         local::lib: Create and use a local lib/ for perl modules with PERL5LIB
         version: Perl extension for Version Objects
 
