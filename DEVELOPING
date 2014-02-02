@@ -36,6 +36,8 @@ foreach dist...
 (or to release everything, see the "tk_release" function in in release.sh)
 - dzil release
 
+(see also the functions defined in release.sh)
+
 Now go have a beer!
 
 How it all works:
