@@ -8,9 +8,9 @@ From http://en.wikipedia.org/wiki/Kensho:
     "seeing one's nature"[1] or "true self."[2] It generally "refers to the
     realization of nonduality of subject and object."[3]
 
-Task::Kensho is a first cut at building a list of recommended modules for
-Enlightened Perl development. CPAN is wonderful, but there are too many wheels
-and you have to pick and choose amongst the various competing technologies.
+Task::Kensho is a list of recommended modules for Enlightened Perl
+development. CPAN is wonderful, but there are too many wheels and you have to
+pick and choose amongst the various competing technologies.
 
 The plan is for Task::Kensho to be a rough testing ground for ideas that go
 into among other things the Enlightened Perl Organisation Extended Core
