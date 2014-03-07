@@ -70,9 +70,7 @@ sub configure
         [ 'Test::MinimumVersion' => { ':version' => '2.000003', max_target_perl => '5.006' } ],
         'PodSyntaxTests',
         'PodCoverageTests',
-        # XXX FIXME - forcing distmeta to be calculated too soon, and abstract
-        # fetched, before the module is munged
-        # 'Test::PodSpelling',
+        [ 'Test::PodSpelling'   => { ':version' => '2.006003' } ],
         'Test::Kwalitee',
         'MojibakeTests',
         [ 'Test::ReportPrereqs' => { verify_prereqs => 1 } ],   # gives us something in t/
@@ -93,7 +91,7 @@ sub configure
         # XXX FIXME - this runs too late to get the package name out of our
         # module, because [Test::PodSpelling] is forcing metadata to be
         # created before the filemunging phase starts
-        # [ 'MetaProvides::Package' => { meta_noindex => 1, ':version' => '1.15000002', finder => ':InstallModules' } ],
+        [ 'MetaProvides::Package' => { meta_noindex => 1, ':version' => '1.15000002', finder => ':InstallModules' } ],
         'MetaConfig',
         [ 'OptionalFeature' => {
                 ':version' => '0.011',
