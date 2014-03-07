@@ -1,6 +1,7 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+          - fix pod markup error in main Task::Kensho distribution
 
 0.35      2014-01-30
           - updated recommendations for Async, CLI, ModuleDev, Scalability,

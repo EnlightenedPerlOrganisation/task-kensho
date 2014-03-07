@@ -61,9 +61,8 @@ facilitates the ease and simplicity the distribution aims to achieve.
             join("\n\n",
                 '=head2 L<' . $module . '>: ' . $config_data->{$module}{description},
                 $config_data->{$module}{long_description} ? $config_data->{$module}{long_description} : (),
-                '=head3',
                 (map {
-                    'L<' . $_ . ">\n\n" . $config_data->{$module}{components}{$_};
+                    '=head3 L<' . $_ . ">\n\n" . $config_data->{$module}{components}{$_};
                 } sort keys %{ $config_data->{$module}{components} })
             ),
         } sort keys %$config_data;
