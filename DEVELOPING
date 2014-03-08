@@ -16,8 +16,8 @@ everything else.
   wipe all existing content in the subtask folders!)
 - (optional) 'git diff' to see what's changed. Unless someone's been hacking
   on the generator code itself, you should only see changes for the specific
-  Task-Kensho- dist that you modified in modules.yml.
-- git commit
+  Task-Kensho- dist(s) that you modified in modules.yml.
+- git commit -m'committing generated changes in advance of release'
 - `dzil test --release`, to be sure there are no YAML or spelling errors
 (or, run `tk_test`, as defined in release.sh)
 
@@ -26,7 +26,7 @@ you are at a state where each individual Task-Kensho-* subdist is its own
 self-contained distribution that can be shipped with Dist::Zilla.
 
 Note that the distributions DO NOT PROMPT for release - so once you've started
-the release engines, it will run to completion!
+the release engines, it will run to completion (or until an error is hit)!
 
 foreach dist...
     - pushd <dist you want to release>
