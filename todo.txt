@@ -5,10 +5,7 @@
 
 10:28 < ranguard> ether: V minor: "Task::Kensho is a first cut at" - well there have been several 'cuts' so not sure that's quite right any more
 10:29 < ether> indeed
-10:31 < ranguard> Date::Tiny and DateTime::Tiny have the same description - guessing the latter should be 'A date time object with as...'
 10:33 < ranguard> having all 3 ::Tiny is a bit confusing, as they're split up in the list, but I'm guessing it's Alphabetical?
-10:34 < ranguard> should 'Moo' be included for OOP?
-10:35 < ranguard> oh, HTML::FormHandler should be in WebDev - IMHO (recommended to me by mst)
 10:36 < ranguard> ether: btw, ignore any/all of these, just saying what I see, might be better to ship something rather than add new modules!
 10:37 < ranguard> the release schedule still says monthly - for your own sanity probably better to take that out :) ?
 10:37 < ranguard> or maybe with all your reworking that's easier
@@ -34,8 +31,8 @@
 
 - should Task::Kensho always get re-released when a subdist changes? or should
   TK just list the categories and not list the actual components?
-    - TK should always get re-released when a sub-dist changes. 
-      The sub-dist is a hack around CPAN clients not reliably 
+    - TK should always get re-released when a sub-dist changes.
+      The sub-dist is a hack around CPAN clients not reliably
       doing optional deps. -- Chris
         - cpan clients should be supporting optional deps now -- I know cpanm
           does support "optional_features" --

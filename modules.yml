@@ -18,9 +18,6 @@ Task::Kensho::CLI:
         App::Ack: A grep-like text finder
         App::Nopaste: Easy access to any pastebin
         Module::CoreList: What modules shipped with versions of perl
-        App::perlbrew: Manage perl installations in your $HOME
-        Carton: Perl module dependency manager (aka Bundler for Perl)
-        App::cpanminus: get, unpack, build and install modules from CPAN
         Devel::REPL: a modern perl interactive shell
 
 
@@ -47,7 +44,7 @@ Task::Kensho::Dates:
         DateTime: A date and time object
         Date::Tiny: A date object with as little code as possible
         Time::Tiny: A time object with as little code as possible
-        DateTime::Tiny: A date object with as little code as possible
+        DateTime::Tiny: A date time object with as little code as possible
         Time::ParseDate: Date parsing both relative and absolute
 
 
@@ -146,6 +143,9 @@ Task::Kensho::Toolchain:
     description: Basic Toolchain
     components:
         App::cpanminus: Get, unpack, build and install modules from CPAN
+        App::perlbrew: Manage perl installations in your $HOME
+        Carton: Perl module dependency manager (aka Bundler for Perl)
+        CPAN::Mini: Create a minimal mirror of CPAN
         local::lib: Create and use a local lib/ for perl modules with PERL5LIB
         version: Perl extension for Version Objects
 
@@ -153,12 +153,13 @@ Task::Kensho::Toolchain:
 Task::Kensho::WebCrawling:
     description: Web Crawling
     components:
-        HTTP::Tiny: Lightweight HTTP client implementation 
+        HTTP::Tiny: Lightweight HTTP client implementation
         HTTP::Thin: A Thin Wrapper around HTTP::Tiny to play nice with HTTP::Message
-        LWP::UserAgent: Full-featured Web client library for Perl 
-        LWP::Simple: Simple procedural interface to LWP 
-        WWW::Mechanize: Handy web browsing in a Perl object 
+        LWP::UserAgent: Full-featured Web client library for Perl
+        LWP::Simple: Simple procedural interface to LWP
+        WWW::Mechanize: Handy web browsing in a Perl object
         WWW::Mechanize::TreeBuilder: This module combines WWW::Mechanize and HTML::TreeBuilder.
+        WWW::Selenium: Perl Client for the Selenium Remote Control test tool
 
 
 Task::Kensho::WebDev:
@@ -170,6 +171,7 @@ Task::Kensho::WebDev:
         Dancer: A lightweight yet powerful web application framework
         Mojolicious: Real-time web framework
         Template::Toolkit: Template Processing System
+        HTML::FormHandler: HTML forms using Moose
         CGI::FormBuilder::Source::Perl: Build CGI::FormBuilder configs from Perl syntax files.
         XML::RSS: Creates and updates RSS files
         XML::Atom: Atom feed and API implementation
