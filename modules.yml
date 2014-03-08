@@ -13,7 +13,7 @@ Task::Kensho::Async:
 
 Task::Kensho::CLI:
     description: Useful Command-line Tools
-    long_description: =for stopwords pastebin Bundler
+    long_description: =for stopwords pastebin
     components:
         App::Ack: A grep-like text finder
         App::Nopaste: Easy access to any pastebin
@@ -141,6 +141,7 @@ Task::Kensho::Testing:
 
 Task::Kensho::Toolchain:
     description: Basic Toolchain
+    long_description: =for stopwords Bundler
     components:
         App::cpanminus: Get, unpack, build and install modules from CPAN
         App::perlbrew: Manage perl installations in your $HOME
