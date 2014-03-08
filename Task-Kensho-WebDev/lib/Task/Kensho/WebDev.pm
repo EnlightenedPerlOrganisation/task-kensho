@@ -28,7 +28,7 @@ subject and object."[3]
 
 =back
 
-L<Task::Kensho> is a first cut at building a list of recommended modules
+L<Task::Kensho> is a list of recommended modules
 for Enlightened Perl development. CPAN is wonderful, but there are too
 many wheels and you have to pick and choose amongst the various
 competing technologies.
@@ -74,7 +74,7 @@ regarding which modules you wish to install.
 
 The C<cpanm> client requires interactive mode to be enabled for this to work:
 
-    cpanm --interactive Task-Kensho
+    cpanm --interactive {{ $module }}
 
 =head1 BUGS AND LIMITATIONS
 

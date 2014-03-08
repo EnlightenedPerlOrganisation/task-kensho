@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+          - fix pod markup error in main Task::Kensho distribution
+          - module list revisions to CLI, Dates, Toolchain, WebCrawling,
+            WebDev
 
 0.35      2014-01-30
           - updated recommendations for Async, CLI, ModuleDev, Scalability,
