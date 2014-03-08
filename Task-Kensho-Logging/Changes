@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+
+0.36      2014-03-08
           - fix pod markup error in main Task::Kensho distribution
           - module list revisions to CLI, Dates, Toolchain, WebCrawling,
             WebDev
