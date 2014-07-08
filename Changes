@@ -3,8 +3,9 @@ Revision history for {{ $dist->name }}
 {{ $NEXT }}
 
           - Switch Carp::Always over to Devel::Confess (per mst)
-          - Add Data::Printer (perl Sawyer X)
+          - Add Data::Printer (per Sawyer X)
           - Add Devel::Dwarn (per mst)
+          - Add Pinto (per Sawyer X)
 
 0.36      2014-03-08
           - fix pod markup error in main Task::Kensho distribution
