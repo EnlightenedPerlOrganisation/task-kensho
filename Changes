@@ -3,6 +3,7 @@ Revision history for {{ $dist->name }}
 {{ $NEXT }}
 
           - Switch Carp::Always over to Devel::Confess
+          - Add Data::Printer
 
 0.36      2014-03-08
           - fix pod markup error in main Task::Kensho distribution

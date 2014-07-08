@@ -97,6 +97,7 @@ Task::Kensho::ModuleDev:
     description: Module Development
     long_description: =for stopwords profiler templated
     components:
+        Data::Printer: Colored pretty-print of Perl data structures and objects
         Dist::Zilla: Builds distributions of code to be uploaded to the CPAN.
         Devel::NYTProf: Powerful feature-rich perl source code profiler
         Perl::Tidy: Parses and beautifies perl source
