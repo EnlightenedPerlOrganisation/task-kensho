@@ -6,6 +6,7 @@ Revision history for {{ $dist->name }}
           - Add Data::Printer (per Sawyer X)
           - Add Devel::Dwarn (per mst)
           - Add Pinto (per Sawyer X)
+          - Add App::FatPacker (per perigrin)
 
 0.36      2014-03-08
           - fix pod markup error in main Task::Kensho distribution

@@ -146,6 +146,7 @@ Task::Kensho::Toolchain:
     long_description: =for stopwords Bundler
     components:
         App::cpanminus: Get, unpack, build and install modules from CPAN
+        App::FatPacker: Pack your dependencies onto your script file
         App::perlbrew: Manage perl installations in your $HOME
         Carton: Perl module dependency manager (aka Bundler for Perl)
         CPAN::Mini: Create a minimal mirror of CPAN
