@@ -28,6 +28,11 @@ self-contained distribution that can be shipped with Dist::Zilla.
 Note that the distributions DO NOT PROMPT for release - so once you've started
 the release engines, it will run to completion (or until an error is hit)!
 
+(To use a different $VERSION than what would be selected by Dist::Zilla
+automatically, set the V environment variable.  Please keep the main TK dist
+version consistent with the highest version of any subtask, and always release
+the main TK dist when any subtask changes.)
+
 foreach dist...
     - pushd <dist you want to release>
     - (optional) dzil build --not; dist test --release, etc etc as desired
