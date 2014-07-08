@@ -99,6 +99,7 @@ Task::Kensho::ModuleDev:
     components:
         Data::Printer: Colored pretty-print of Perl data structures and objects
         Dist::Zilla: Builds distributions of code to be uploaded to the CPAN.
+        Devel::Dwarn: Return Dwarn @return_value
         Devel::NYTProf: Powerful feature-rich perl source code profiler
         Perl::Tidy: Parses and beautifies perl source
         Perl::Critic: Critique Perl source code for best-practices.
