@@ -101,7 +101,7 @@ Task::Kensho::ModuleDev:
         Devel::NYTProf: Powerful feature-rich perl source code profiler
         Perl::Tidy: Parses and beautifies perl source
         Perl::Critic: Critique Perl source code for best-practices.
-        Carp::Always: Warns and dies noisily with stack backtraces
+        Devel::Confess: Include stack traces on all warnings and errors
         Modern::Perl: enable all of the features of Modern Perl with one command
         Perl::Version: Parse and manipulate Perl version strings
         Software::License: Packages that provide templated software licenses
@@ -189,4 +189,3 @@ Task::Kensho::XML:
         XML::Generator::PerlData: Perl extension for generating SAX2 events from nested Perl data structures.
         XML::SAX::Writer: Output XML from SAX2 Events
         RDF::Trine: An RDF Framework for Perl
-

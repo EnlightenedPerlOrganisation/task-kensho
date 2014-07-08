@@ -2,6 +2,8 @@ Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
 
+          - Switch Carp::Always over to Devel::Confess
+
 0.36      2014-03-08
           - fix pod markup error in main Task::Kensho distribution
           - module list revisions to CLI, Dates, Toolchain, WebCrawling,
@@ -166,4 +168,3 @@ Revision history for {{ $dist->name }}
 
 0.0.1     2008-09-05
           - Initial release.
-
