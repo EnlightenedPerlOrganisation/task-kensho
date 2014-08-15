@@ -13,10 +13,11 @@ with
     'Dist::Zilla::Role::PluginBundle::PluginRemover' => { -version => '0.102' },
     'Dist::Zilla::Role::PluginBundle::Config::Slicer';
 
+use Devel::CheckBin;
 use namespace::autoclean;
 
 # this is ripped off wholesale from Dist::Zilla::PluginBundle::Author::ETHER
-# 0.047, with customizations removed that we do not want.. and also less
+# 0.068, with customizations removed that we do not want.. and also less
 # manipulation of the git repo, and silly irrelevant tests removed.
 
 has distname => (
@@ -42,6 +43,7 @@ has _module_data => (
     },
 );
 
+my $has_bash = can_run('bash');
 
 sub configure
 {
@@ -55,7 +57,7 @@ sub configure
         [ 'Git::NextVersion'    => { version_regexp => '^v([\d._]+)(-TRIAL)?$' } ],
 
         # Gather Files
-        [ 'Git::GatherDir'      => { exclude_match => '^inc', exclude_filename => [ 'dist.ini', 'modules.yml', 'META.json' ] } ],
+        [ 'Git::GatherDir'      => { ':version' => '2.016', exclude_match => '^inc', exclude_filename => [ 'dist.ini', 'modules.yml', 'META.json', 'README.md', 'README.pod' ] } ],
         [ 'MungeFile::WithConfigFile' => { finder => ':InstallModules', files => ['README'], configfile => $self->configfile } ],
         # XXX FIXME - munging content too soon, before our module has its abstract munged
         # 'Readme',
@@ -64,7 +66,6 @@ sub configure
         'Test::NoTabs',
         'EOLTests',
         'MetaTests',
-        [ 'Test::Version'       => { is_strict => 1 } ],
         [ 'Test::CPAN::Changes' => { ':version' => '0.008' } ],
         'Test::ChangesHasContent',
         [ 'Test::MinimumVersion' => { ':version' => '2.000003', max_target_perl => '5.006' } ],
@@ -75,17 +76,18 @@ sub configure
         'MojibakeTests',
         [ 'Test::ReportPrereqs' => { verify_prereqs => 1 } ],   # gives us something in t/
         'Test::Portability',
+        'Test::CleanNamespaces',
 
         # Munge Files
         'Git::Describe',
         [ PkgVersion            => { ':version' => '5.010', die_on_existing_version => 1, die_on_line_insertion => 1 } ],
-        [ 'Authority'           => { authority => 'cpan:PERIGRIN' } ],
+        [ 'Authority'           => { authority => 'cpan:PERIGRIN', do_munging => 0} ],
         [ PodWeaver             => { ':version' => '4.005', replacer => 'replace_with_comment', post_code_replacer => 'replace_with_nothing' } ],
         [ 'NextRelease'         => { ':version' => '4.300018', time_zone => 'UTC', format => '%-8v  %{yyyy-MM-dd}d%{ (TRIAL RELEASE)}T' } ],
-        [ 'ReadmeAnyFromPod'    => { type => 'markdown', filename => 'README.md', location => 'build' } ],
+        [ 'ReadmeAnyFromPod'    => { ':version' => '0.142180', type => 'pod', location => 'root', phase => 'release' } ],
 
         # MetaData
-        [ 'GithubMeta'            => { issues => 1 } ],
+        [ 'GithubMeta'          => { issues => 1 } ],
         # (Authority)
         [ 'MetaNoIndex'         => { directory => [ qw(t xt examples share) ] } ],
         # XXX FIXME - this runs too late to get the package name out of our
@@ -104,8 +106,6 @@ sub configure
             },
         ],
 
-        #[ContributorsFromGit]
-
         # Register Prereqs
         # (MakeMaker or other installer)
         'AutoPrereqs',
@@ -113,14 +113,13 @@ sub configure
         'MinimumPerl',
         [ 'Prereqs' => installer_requirements => {
                 '-phase' => 'develop', '-relationship' => 'requires',
-                'Dist::Zilla' => Dist::Zilla->VERSION,
                 # these are optional in [@Author::ETHER] (not listed as required prereqs)
                 'Dist::Zilla::Plugin::GitHub::Update' => 0,
                 'Dist::Zilla::Plugin::GithubMeta' => 0,
             } ],
 
         # Test Runner
-        'RunExtraTests',
+        [ 'RunExtraTests'       => { ':version' => '0.019' } ],
 
         # Install Tool
         'MakeMaker::Fallback',
@@ -128,24 +127,29 @@ sub configure
 
         # After Build
         'CheckSelfDependency',
-        [ 'Run::AfterBuild' => { run => q{if [ `dirname %d` != .build ]; then test -e .ackrc && grep -q -- '--ignore-dir=%d' .ackrc || echo '--ignore-dir=%d' >> .ackrc; fi} } ],
+        [ 'Run::AfterBuild' => { run => q{bash -c "if [[ `dirname %d` != .build ]]; then test -e .ackrc && grep -q -- '--ignore-dir=%d' .ackrc || echo '--ignore-dir=%d' >> .ackrc; fi"} } ],
 
 
         # Before Release
-        'CheckPrereqsIndexed',
-        [ 'Git::Check'          => { repo_root => '..', allow_dirty => [''] } ],
+        [ 'CheckStrictVersion'  => { decimal_only => 1 } ],
+        [ 'Git::Check'          => 'initial check' => { repo_root => '..', allow_dirty => [''] } ],
         'Git::CheckFor::MergeConflicts',
         [ 'Git::CheckFor::CorrectBranch' => { ':version' => '0.004', release_branch => 'master' } ],
         [ 'Git::Remote::Check'  => { branch => 'master', remote_branch => 'master' } ],
+        'CheckPrereqsIndexed',
         'TestRelease',
-        [ 'Git::Check'          => 'after tests' => { allow_dirty => [''] } ],
+        [ 'Git::Check'          => 'after tests' => { repo_root => '..', allow_dirty => [''] } ],
+        [ 'CheckIssues' ],
+        # note: no [ConfirmRelease]
 
         # Releaser
         'UploadToCPAN',
 
         # After Release
         #[ 'CopyFilesFromRelease' => { filename => [ 'META.json' ] } ],
-        [ 'Git::Commit'         => { add_files_in => [''], allow_dirty => [ 'Changes' ], commit_msg => '%N-%v%t%n%n%c' } ],
+        [ 'Run::AfterRelease'   => 'remove old READMEs' => { run => 'rm -f README.md' } ],
+        [ 'Git::Commit'         => { ':version' => '2.020', add_files_in => ['.'], allow_dirty => [ 'Changes', 'README.md' ], commit_msg => '%N-%v%t%n%n%c' } ],
+        # note: no [Git::Tag], [Git::Push]
     );
 
     $self->add_plugins(@plugins);
