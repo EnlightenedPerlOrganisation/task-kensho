@@ -97,11 +97,13 @@ Task::Kensho::ModuleDev:
     description: Module Development
     long_description: =for stopwords profiler templated
     components:
+        Data::Printer: Colored pretty-print of Perl data structures and objects
         Dist::Zilla: Builds distributions of code to be uploaded to the CPAN.
+        Devel::Dwarn: Return Dwarn @return_value
         Devel::NYTProf: Powerful feature-rich perl source code profiler
         Perl::Tidy: Parses and beautifies perl source
         Perl::Critic: Critique Perl source code for best-practices.
-        Carp::Always: Warns and dies noisily with stack backtraces
+        Devel::Confess: Include stack traces on all warnings and errors
         Modern::Perl: enable all of the features of Modern Perl with one command
         Perl::Version: Parse and manipulate Perl version strings
         Software::License: Packages that provide templated software licenses
@@ -144,10 +146,12 @@ Task::Kensho::Toolchain:
     long_description: =for stopwords Bundler
     components:
         App::cpanminus: Get, unpack, build and install modules from CPAN
+        App::FatPacker: Pack your dependencies onto your script file
         App::perlbrew: Manage perl installations in your $HOME
         Carton: Perl module dependency manager (aka Bundler for Perl)
         CPAN::Mini: Create a minimal mirror of CPAN
         local::lib: Create and use a local lib/ for perl modules with PERL5LIB
+        Pinto: Curate a repository of Perl modules
         version: Perl extension for Version Objects
 
 
@@ -189,4 +193,3 @@ Task::Kensho::XML:
         XML::Generator::PerlData: Perl extension for generating SAX2 events from nested Perl data structures.
         XML::SAX::Writer: Output XML from SAX2 Events
         RDF::Trine: An RDF Framework for Perl
-
