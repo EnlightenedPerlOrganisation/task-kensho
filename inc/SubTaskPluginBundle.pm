@@ -129,7 +129,6 @@ sub configure
 
         # After Build
         'CheckSelfDependency',
-        [ 'Run::AfterBuild' => { run => q{bash -c "if [[ `dirname %d` != .build ]]; then test -e .ackrc && grep -q -- '--ignore-dir=%d' .ackrc || echo '--ignore-dir=%d' >> .ackrc; fi"} } ],
 
 
         # Before Release
@@ -153,6 +152,7 @@ sub configure
         [ 'Run::AfterRelease'   => 'remove old READMEs' => { run => 'rm -f README.md' } ],
         [ 'Git::Commit'         => { ':version' => '2.020', add_files_in => ['.'], allow_dirty => [ 'Changes', 'README.md' ], commit_msg => '%N-%v%t%n%n%c' } ],
         # note: no [Git::Tag], [Git::Push]
+        [ 'Clean' ],
     );
 
     $self->add_plugins(@plugins);
