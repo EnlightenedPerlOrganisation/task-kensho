@@ -92,17 +92,6 @@ sub configure
         [ 'MetaNoIndex'         => { directory => [ qw(t xt examples share) ] } ],
         [ 'MetaProvides::Package' => { meta_noindex => 1, ':version' => '1.15000002', finder => ':InstallModules' } ],
         'MetaConfig',
-        [ 'OptionalFeature' => {
-                ':version' => '0.011',
-                -name => (split('::', $module))[-1],
-                -description => $module_data->{description},
-                -always_recommend => 1,   # report-prereqs will list these
-                -require_develop => 0,
-                -default => 1,
-                (map { $_ => 0 } keys %{ $module_data->{components} }),
-            },
-        ],
-
         [ 'Git::Contributors'   => { ':version' => '0.006', order_by => 'commits', paths => [ '.', '../modules.yml' ] } ],
 
         # Register Prereqs
@@ -116,6 +105,10 @@ sub configure
                 'Dist::Zilla::Plugin::GitHub::Update' => 0,
                 'Dist::Zilla::Plugin::GithubMeta' => 0,
             } ],
+        [ 'Prereqs' => 'task components' => {
+                '-phase' => 'runtime', '-relationship' => 'requires',
+                (map { $_ => 0 } keys %{ $module_data->{components} }),
+            } ],
 
         # Test Runner
         [ 'RunExtraTests'       => { ':version' => '0.019' } ],
@@ -126,7 +119,6 @@ sub configure
 
         # After Build
         'CheckSelfDependency',
-
 
         # Before Release
         [ 'CheckStrictVersion'  => { decimal_only => 1 } ],
