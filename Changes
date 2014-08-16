@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+          - WebDev: Template::Toolkit is not indexed (see RT#92588) -
+            refer to Template instead
 
 0.37      2014-08-16
           - ModuleDev: Switch Carp::Always over to Devel::Confess (per mst)

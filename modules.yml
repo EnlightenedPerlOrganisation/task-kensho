@@ -176,7 +176,7 @@ Task::Kensho::WebDev:
         Task::Catalyst: Catalyst is The Elegant MVC Web Application Framework. Task::Catalyst is all you need to start with Catalyst.
         Dancer: A lightweight yet powerful web application framework
         Mojolicious: Real-time web framework
-        Template::Toolkit: Template Processing System
+        Template: (Template::Toolkit) Template Processing System
         HTML::FormHandler: HTML forms using Moose
         CGI::FormBuilder::Source::Perl: Build CGI::FormBuilder configs from Perl syntax files.
         XML::RSS: Creates and updates RSS files
