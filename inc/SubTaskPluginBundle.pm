@@ -84,7 +84,6 @@ sub configure
         [ 'Authority'           => { authority => 'cpan:PERIGRIN', do_munging => 0} ],
         [ PodWeaver             => { ':version' => '4.005', replacer => 'replace_with_comment', post_code_replacer => 'replace_with_nothing' } ],
         [ 'NextRelease'         => { ':version' => '4.300018', time_zone => 'UTC', format => '%-8v  %{yyyy-MM-dd}d%{ (TRIAL RELEASE)}T' } ],
-        [ 'ReadmeAnyFromPod'    => { ':version' => '0.142180', type => 'pod', location => 'root', phase => 'release' } ],
 
         # MetaData
         [ 'GithubMeta'          => { issues => 1 } ],
