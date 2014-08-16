@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+
+0.37      2014-08-16
           - ModuleDev: Switch Carp::Always over to Devel::Confess (per mst)
           - ModuleDev: Add Data::Printer (per Sawyer X)
           - ModuleDev: Add Devel::Dwarn (per mst)
