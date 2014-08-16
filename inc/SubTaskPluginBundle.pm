@@ -106,7 +106,7 @@ sub configure
             },
         ],
 
-        [ 'Git::Contributors'   => { ':version' => '0.004', order_by => 'commits' } ],
+        [ 'Git::Contributors'   => { ':version' => '0.006', order_by => 'commits', paths => [ '.', '../modules.yml' ] } ],
 
         # Register Prereqs
         # (MakeMaker or other installer)
