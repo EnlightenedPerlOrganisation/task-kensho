@@ -144,6 +144,7 @@ sub configure
 
         # Releaser
         'UploadToCPAN',
+        [ 'ArchiveRelease'      => { directory => '../released-subtasks' } ],
 
         # After Release
         #[ 'CopyFilesFromRelease' => { filename => [ 'META.json' ] } ],
