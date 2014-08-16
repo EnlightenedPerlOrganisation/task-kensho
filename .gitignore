@@ -1,6 +1,10 @@
+/.ackrc
 /.build
-!.gitignore
-.*
-Task-Kensho-*[0-9]/
-Task-Kensho-*.tar.gz
+!/.gitignore
+/.latest
+/Task-Kensho-*[0-9]/
+/Task-Kensho-*.tar.gz
+/Task-Kensho-*/Task-Kensho-*-*[0-9]/
+/Task-Kensho-*/Task-Kensho-*-*[0-9].tar.gz
+/Task-Kensho-*/.build
 /todo/
