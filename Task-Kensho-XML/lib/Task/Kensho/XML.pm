@@ -54,7 +54,7 @@ individual tasks will always install all their modules by default. This
 facilitates the ease and simplicity the distribution aims to achieve.
 
 =head1 RECOMMENDED MODULES
-
+{{ $config_data->{$module}{stopwords} ? "\n=for stopwords $config_data->{$module}{stopwords}\n\n" : () }}
 =head2 {{ 'L<' . $module . '>: ' . $config_data->{$module}{description}
     . ($config_data->{$module}{long_description} ? ("\n\n" . $config_data->{$module}{long_description}) : '')
 }}
