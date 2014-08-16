@@ -3,7 +3,7 @@
 # stick all the files in templates/ into each individual task dir, according
 # to what we see in modules.yml...
 
-use 5.016;  # s///r
+use 5.014;  # s///r
 use Config::Any;
 use Path::Tiny;
 
