@@ -106,6 +106,8 @@ sub configure
             },
         ],
 
+        [ 'Git::Contributors'   => { ':version' => '0.004', order_by => 'commits' } ],
+
         # Register Prereqs
         # (MakeMaker or other installer)
         'AutoPrereqs',
