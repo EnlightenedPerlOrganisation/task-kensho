@@ -59,6 +59,7 @@ facilitates the ease and simplicity the distribution aims to achieve.
         map {
             my $module = $_;
             join("\n\n",
+                $config_data->{$module}{stopwords} ? '=for stopwords ' . $config_data->{$module}{stopwords} . "\n\n" : (),
                 '=head2 L<' . $module . '>: ' . $config_data->{$module}{description},
                 $config_data->{$module}{long_description} ? $config_data->{$module}{long_description} : (),
                 (map {

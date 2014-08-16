@@ -4,16 +4,16 @@
 # To parse: perl -MYAML::Any=LoadFile -MData::Dumper -wle'print Dumper(LoadFile("modules.yml"))'
 
 Task::Kensho::Async:
+    stopwords: Async
     description: Async Programming
-    long_description: =for stopwords Async
     components:
         POE: Multitasking and networking framework for Perl
         IO::Async: Asynchronous event-driven programming
 
 
 Task::Kensho::CLI:
+    stopwords: pastebin
     description: Useful Command-line Tools
-    long_description: =for stopwords pastebin
     components:
         App::Ack: A grep-like text finder
         App::Nopaste: Easy access to any pastebin
@@ -58,8 +58,8 @@ Task::Kensho::Email:
 
 
 Task::Kensho::ExcelCSV:
+    stopwords: CSV
     description: Excel/CSV
-    long_description: =for stopwords CSV
     components:
         Text::CSV_XS: Manipulate comma-separated values (CSV)
         Spreadsheet::ParseExcel::Simple: A simple interface to Excel data
@@ -75,8 +75,9 @@ Task::Kensho::Exceptions:
 
 
 Task::Kensho::Hackery:
+    stopwords: whippitupitude Hackery
     description: Script Hackery
-    long_description: '=for stopwords whippitupitude Hackery
+    long_description: '
 
 
 These packages are included less for production work and more for whippitupitude. They reflect packages that people have found incredibly useful for prototyping and debugging before reducing down to a production script.'
@@ -94,8 +95,8 @@ Task::Kensho::Logging:
 
 
 Task::Kensho::ModuleDev:
+    stopwords: profiler templated
     description: Module Development
-    long_description: =for stopwords profiler templated
     components:
         Data::Printer: Colored pretty-print of Perl data structures and objects
         Dist::Zilla: Builds distributions of code to be uploaded to the CPAN.
@@ -119,8 +120,8 @@ Task::Kensho::OOP:
 
 
 Task::Kensho::Scalability:
+    stopwords: Redis
     description: Scalability
-    long_description: =for stopwords Redis
     components:
       CHI: A unified cache interface, like DBI
       Redis: Perl binding for Redis database
@@ -142,8 +143,8 @@ Task::Kensho::Testing:
 
 
 Task::Kensho::Toolchain:
+    stopwords: Bundler
     description: Basic Toolchain
-    long_description: =for stopwords Bundler
     components:
         App::cpanminus: Get, unpack, build and install modules from CPAN
         App::FatPacker: Pack your dependencies onto your script file
@@ -168,8 +169,8 @@ Task::Kensho::WebCrawling:
 
 
 Task::Kensho::WebDev:
+    stopwords: configs RSS
     description: Web Development
-    long_description: =for stopwords configs RSS
     components:
         Plack: Flexible superglue between Web Servers and Perl Web Frameworks or code.
         Task::Catalyst: Catalyst is The Elegant MVC Web Application Framework. Task::Catalyst is all you need to start with Catalyst.
@@ -184,8 +185,8 @@ Task::Kensho::WebDev:
 
 
 Task::Kensho::XML:
+    stopwords: libxml libxml2 libxslt RDF
     description: XML Development
-    long_description: =for stopwords libxml libxml2 libxslt RDF
     components:
         XML::LibXML: Perl Binding for libxml2
         XML::LibXSLT: Interface to the gnome libxslt library
