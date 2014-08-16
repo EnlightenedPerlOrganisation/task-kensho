@@ -90,9 +90,6 @@ sub configure
         [ 'GithubMeta'          => { issues => 1 } ],
         # (Authority)
         [ 'MetaNoIndex'         => { directory => [ qw(t xt examples share) ] } ],
-        # XXX FIXME - this runs too late to get the package name out of our
-        # module, because [Test::PodSpelling] is forcing metadata to be
-        # created before the filemunging phase starts
         [ 'MetaProvides::Package' => { meta_noindex => 1, ':version' => '1.15000002', finder => ':InstallModules' } ],
         'MetaConfig',
         [ 'OptionalFeature' => {
