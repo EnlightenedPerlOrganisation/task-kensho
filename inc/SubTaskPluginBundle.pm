@@ -135,8 +135,7 @@ sub configure
 
         # After Release
         #[ 'CopyFilesFromRelease' => { filename => [ 'META.json' ] } ],
-        [ 'Run::AfterRelease'   => 'remove old READMEs' => { run => 'rm -f README.md' } ],
-        [ 'Git::Commit'         => { ':version' => '2.020', add_files_in => ['.'], allow_dirty => [ 'Changes', 'README.md' ], commit_msg => '%N-%v%t%n%n%c' } ],
+        [ 'Git::Commit'         => { ':version' => '2.020', add_files_in => ['.'], allow_dirty => [ 'Changes' ], commit_msg => '%N-%v%t%n%n%c' } ],
         # note: no [Git::Tag], [Git::Push]
         [ 'Clean' ],
     );
