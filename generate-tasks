@@ -25,34 +25,18 @@ sub generate_task
     my $task_module = shift;
     my $distname = $task_module =~ s/::/-/gr;
 
-    my $distdir = path($distname);
-    $distdir->remove_tree({ safe => 0 });
+    path($distname)->remove_tree({ safe => 0 });
 
     # destination => source
-    my %to_copy;
-
-    foreach my $template_file (glob('subtask_templates/*'))
-    {
-        $template_file = path($template_file);
-
-        # copy file to distdir, treating Module.pm specially
-        my $destination_file;
-        if ($template_file =~ /Module\.pm$/)
-        {
-            my @path = split '::', $task_module;
-            $path[-1] .= '.pm';
-            $destination_file = path($distdir, 'lib', @path);
-        }
-        else
-        {
-            # note this does not work for files in subdirs!
-            $destination_file = path($distdir, $template_file->basename);
-        }
-
-        $to_copy{$destination_file} = $template_file;
-    }
-
-    $to_copy{path($distdir, 'Changes')} = path('Changes');
+    my %to_copy = (
+        path($distname, 'Changes') => path('Changes'),
+        map {
+            ( /Module\.pm$/
+                ? path($distname, 'lib', split('::', $task_module . '.pm'))
+                : path($distname, path($_)->basename)
+            ) => $_;
+        } glob('subtask_templates/*'),
+    );
 
     foreach my $destination (sort keys %to_copy)
     {
@@ -67,7 +51,7 @@ sub generate_task
 
     # symlinks back to the parent inc
     do {
-        symlink(path('..', $_), path($distdir, $_)) or die "cannot create symlink for $_: $!";
+        symlink(path('..', $_), path($distname, $_)) or die "cannot create symlink for $_: $!";
     } foreach qw(inc modules.yml);
 }
 
