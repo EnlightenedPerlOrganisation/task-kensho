@@ -1,8 +1,6 @@
 use strict;
 use warnings;
-package {{
-($module = $dist->name) =~ s/-/::/g;
-$module }};
+package {{ ($module = $dist->name) =~ s/-/::/g; $module }};
 # ABSTRACT: A Glimpse at an Enlightened Perl: {{ $config_data->{$module}{description} }}
 
 __END__
