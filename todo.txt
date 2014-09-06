@@ -1,5 +1,4 @@
 
-# XXX FIXME: http://cpants.cpanauthors.org/dist/Task-Kensho
 
 -----------
 
@@ -10,16 +9,6 @@
 10:37 < ranguard> the release schedule still says monthly - for your own sanity probably better to take that out :) ?
 10:37 < ranguard> or maybe with all your reworking that's easier
 
-
------------
-
-** problems:
-    - metaprovides is empty (distmeta running too soon - because of Test::PodSpelling
-        for now, we need to dump both plugins and send patches.
-    - kwalitee is failing, claiming no modules found eihter (this is because it depends on 'provides', when present.)  solved by removing spelling and provides plugins
-    - Git::Check is ignoring uncommitted files in .. when in subtask dir <--
-        - 'repo_root' needs to be set?  <-- TODO: repo_root is poorly documented. not mentioned in [Git::Check]
-        (maybe solve with hard links from this repo?)
 
 -----------
 
