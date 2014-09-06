@@ -73,7 +73,7 @@ sub configure
         [ 'Test::PodSpelling'   => { ':version' => '2.006003' } ],
         'Test::Kwalitee',
         'MojibakeTests',
-        [ 'Test::ReportPrereqs' => { verify_prereqs => 1 } ],   # gives us something in t/
+        [ 'Test::ReportPrereqs' => { ':version' => '0.019', verify_prereqs => 1 } ], # gives us something in t/
         'Test::Portability',
         'Test::CleanNamespaces',
 
@@ -104,8 +104,8 @@ sub configure
         [ 'RunExtraTests'       => { ':version' => '0.019' } ],
 
         # Install Tool
-        'MakeMaker::Fallback',
-        'ModuleBuildTiny::Fallback',
+        [ 'MakeMaker::Fallback'   => { ':version' => '0.012' } ],
+        [ 'ModuleBuildTiny::Fallback' => { ':version' => '0.006' } ],
 
         # After Build
         'CheckSelfDependency',
