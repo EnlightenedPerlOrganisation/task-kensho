@@ -11,7 +11,8 @@ with
     'MooseX::SimpleConfig',
     'Dist::Zilla::Role::PluginBundle::Easy',
     'Dist::Zilla::Role::PluginBundle::PluginRemover' => { -version => '0.102' },
-    'Dist::Zilla::Role::PluginBundle::Config::Slicer';
+    'Dist::Zilla::Role::PluginBundle::Config::Slicer',
+    'Dist::Zilla::Role::BundleDeps';
 
 use Devel::CheckBin;
 use namespace::autoclean;
@@ -93,14 +94,7 @@ sub configure
 
         # Register Prereqs
         'AutoPrereqs',
-        [ 'Prereqs::AuthorDeps' => { exclude => [ 'inc::SubTaskPluginBundle' ] } ],
         'MinimumPerl',
-        [ 'Prereqs' => installer_requirements => {
-                '-phase' => 'develop', '-relationship' => 'requires',
-                # these are optional in [@Author::ETHER] (not listed as required prereqs)
-                'Dist::Zilla::Plugin::GitHub::Update' => 0,
-                'Dist::Zilla::Plugin::GithubMeta' => 0,
-            } ],
         [ 'Prereqs' => 'task components' => {
                 '-phase' => 'runtime', '-relationship' => 'requires',
                 (map { $_ => 0 } keys %{ $module_data->{components} }),
