@@ -92,7 +92,6 @@ sub configure
         [ 'Git::Contributors'   => { ':version' => '0.006', order_by => 'commits', paths => [ '.', '../modules.yml' ] } ],
 
         # Register Prereqs
-        # (MakeMaker or other installer)
         'AutoPrereqs',
         [ 'Prereqs::AuthorDeps' => { exclude => [ 'inc::SubTaskPluginBundle' ] } ],
         'MinimumPerl',
@@ -112,7 +111,7 @@ sub configure
 
         # Install Tool
         'MakeMaker::Fallback',
-        'ModuleBuildTiny',
+        'ModuleBuildTiny::Fallback',
 
         # After Build
         'CheckSelfDependency',
