@@ -5,6 +5,7 @@ package inc::OptionalFeatureForMainTask;
 use Moose;
 with
     'Dist::Zilla::Role::PluginBundle::Easy',
+    'Dist::Zilla::Role::BundleDeps',
     'MooseX::SimpleConfig';
 use namespace::autoclean;
 
