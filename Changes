@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+
+0.38      2014-09-13
           - WebDev: Template::Toolkit is not indexed (see RT#92588) -
             refer to Template instead
           - subtask distributions now just use regular prereqs on their
