@@ -33,24 +33,38 @@ sub configure
 {
     my $self = shift;
 
-    my @plugins = map {
-        my $module = $_;
+    # skip the prompts when building
+    $ENV{PERL_MM_USE_DEFAULT} = 1;
+
+    my (@plugins,@dynamic_prompts);
+    foreach my $module (sort $self->modules)
+    {
         my $module_data = $self->data_for($module);
         my $task = (split('::', $module))[-1];
-        [
+
+        push @plugins, [
             'OptionalFeature',
-            $task,
+            "$task feature",
             {
-                ':version' => '0.011',
+                ':version' => '0.016',
                 -name => $task,
                 -description => $module_data->{description},
                 -always_recommend => 1,
                 -require_develop => 0,
                 -default => 0,
+                -prompt => 0,   # so the plugin can add -prompt without breaking us here
                 $module => 0,
-            }
-        ]
-    } sort $self->modules;
+            },
+        ];
+
+        push @dynamic_prompts, (
+            # $release_version is provided by =inc::MakeMaker
+            qq!\$WriteMakefileArgs{PREREQ_PM}{'$module'} = \$FallbackPrereqs{'$module'} = \$release_version!,
+            qq!if \$ENV{PERL_MM_USE_DEFAULT} or prompt("install $module ($module_data->{description})? [Y/n]", 'Y') =~ /^y/i;!,
+        );
+    }
+
+    push @plugins, [ 'DynamicPrereqs', { ':version' => '0.006', '-raw' => \@dynamic_prompts } ];
 
     $self->add_plugins(@plugins);
 }
