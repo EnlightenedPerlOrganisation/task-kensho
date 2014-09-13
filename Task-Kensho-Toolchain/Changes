@@ -1,6 +1,12 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+          - WebDev: Template::Toolkit is not indexed (see RT#92588) -
+            refer to Template instead
+          - subtask distributions now just use regular prereqs on their
+            component modules, rather than using optional_features metadata
+          - Task-Kensho now once again prompts at install time for each
+            subtask to be optionally installed
 
 0.37      2014-08-16
           - ModuleDev: Switch Carp::Always over to Devel::Confess (per mst)
