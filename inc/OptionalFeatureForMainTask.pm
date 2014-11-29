@@ -60,7 +60,7 @@ sub configure
         push @dynamic_prompts, (
             # $release_version is provided by =inc::MakeMaker
             qq!\$WriteMakefileArgs{PREREQ_PM}{'$module'} = \$FallbackPrereqs{'$module'} = \$release_version!,
-            qq!if prompt("install $module ($module_data->{description})? [Y/n]", 'Y') =~ /^y/i;!,
+            qq!  if prompt("install $module ($module_data->{description})? [Y/n]", 'Y') =~ /^y/i;!,
         );
     }
 
