@@ -52,7 +52,7 @@ sub configure
                 -always_recommend => 1,
                 -require_develop => 0,
                 -default => 1,
-                -prompt => 0,   # so the plugin can add -prompt without breaking us here
+                -prompt => 0,
                 $module => 0,
             },
         ];
