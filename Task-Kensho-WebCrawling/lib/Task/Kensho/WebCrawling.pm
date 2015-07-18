@@ -3,6 +3,8 @@ use warnings;
 package {{ ($module = $dist->name) =~ s/-/::/g; $module }};
 # ABSTRACT: A Glimpse at an Enlightened Perl: {{ $config_data->{$module}{description} }}
 
+our $VERSION = '0.39';
+
 __END__
 =pod
 
