@@ -92,6 +92,7 @@ sub configure
         'MetaConfig',
         [ 'Git::Contributors'   => { ':version' => '0.006', order_by => 'commits', paths => [ '.', '../modules.yml' ] } ],
         # (StaticInstall)
+        [ 'MetaResources'       => { x_IRC => 'irc://irc.perl.org/#epo' } ],
 
         # Register Prereqs
         'AutoPrereqs',
