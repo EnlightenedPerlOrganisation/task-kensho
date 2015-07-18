@@ -3,6 +3,8 @@ use warnings;
 package Task::Kensho;
 # ABSTRACT: A Glimpse at an Enlightened Perl
 
+our $VERSION = '0.39';
+
 __END__
 =pod
 
