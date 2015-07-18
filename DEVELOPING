@@ -9,7 +9,7 @@ the top level directory of the git repository. These are used to generate
 everything else.
 
 - update modules.yml
-- add an entry to Changes, including what dists(s) you changed
+- add an entry to Changes, including what dist(s) you changed
 - git commit
 
 - run `perl generate-tasks` to update all the subtasks (WARNING: this will
@@ -28,10 +28,12 @@ self-contained distribution that can be shipped with Dist::Zilla.
 Note that the distributions DO NOT PROMPT for release - so once you've started
 the release engines, it will run to completion (or until an error is hit)!
 
-(To use a different $VERSION than what would be selected by Dist::Zilla
+To use a different $VERSION than what would be selected by Dist::Zilla
 automatically, set the V environment variable.  Please keep the main TK dist
 version consistent with the highest version of any subtask, and always release
-the main TK dist when any subtask changes.)
+the main TK dist when any subtask changes.  Note that it is *not* required to
+release all subtasks at once; just always release the main task after the
+subtask(s).
 
 foreach dist...
     - pushd <dist you want to release>
@@ -41,7 +43,8 @@ foreach dist...
 (or to release everything, see the "tk_release" function in in release.sh)
 - dzil release
 
-(see also the functions defined in release.sh)
+See also the functions defined in release.sh, which you should be using if you
+are releasing *all* subtasks and the main task.
 
 Now go have a beer!
 
