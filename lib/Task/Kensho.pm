@@ -89,9 +89,6 @@ these modules has a perfectly acceptable replacement that may work
 better for you. This is however a path to good perl practice, and a
 starting place on the road to Enlightened Perl programming.
 
-Please report any bugs or feature requests to
-L<{{ $dist->distmeta->{resources}{bugtracker}{web} }}>.
-
 =head1 SEE ALSO
 
 L<http://www.enlightenedperl.org/>,
