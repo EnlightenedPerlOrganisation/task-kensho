@@ -81,7 +81,7 @@ The C<cpanm> client requires interactive mode to be enabled for this to work:
 
     cpanm --interactive Task::Kensho
 
-=head1 BUGS AND LIMITATIONS
+=head1 LIMITATIONS
 
 This list is by no means comprehensive of the "Good" Modules on CPAN.
 Nor is this necessarily the correct path for all developers. Each of
