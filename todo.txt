@@ -2,13 +2,8 @@
 
 -----------
 
-10:28 < ranguard> ether: V minor: "Task::Kensho is a first cut at" - well there have been several 'cuts' so not sure that's quite right any more
-10:29 < ether> indeed
 10:33 < ranguard> having all 3 ::Tiny is a bit confusing, as they're split up in the list, but I'm guessing it's Alphabetical?
 10:36 < ranguard> ether: btw, ignore any/all of these, just saying what I see, might be better to ship something rather than add new modules!
-10:37 < ranguard> the release schedule still says monthly - for your own sanity probably better to take that out :) ?
-10:37 < ranguard> or maybe with all your reworking that's easier
-
 
 -----------
 
@@ -29,13 +24,11 @@
 
 need to go through and audit all modules' existence.
 
-remove Module::Install; add Dist::Milla and Milla.
+add Dist::Milla or Minilla?
 
 13:50 <@ether> does anyone have any opinions on Devel::Hide vs. Test::Without::Module?
 
-remove mentioning Module::Build
-
-webdev: add HTML::FormHandler, Catalyst, Dancer, Mojolicious, Web::Simple
+webdev: add Web::Simple
 
 Time::Moment
 JSON::MaybeXS
@@ -43,3 +36,4 @@ File::Slurper
 
 06:41 < ranguard> Any objection if I add https://metacpan.org/pod/Sereal to Kensho?
 
+remove Test::NoWarnings
