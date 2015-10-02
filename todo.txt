@@ -37,3 +37,9 @@ remove mentioning Module::Build
 
 webdev: add HTML::FormHandler, Catalyst, Dancer, Mojolicious, Web::Simple
 
+Time::Moment
+JSON::MaybeXS
+File::Slurper
+
+06:41 < ranguard> Any objection if I add https://metacpan.org/pod/Sereal to Kensho?
+
