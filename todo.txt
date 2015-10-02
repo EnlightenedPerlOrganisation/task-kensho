@@ -13,11 +13,6 @@
 -----------
 
 
-
-- automatically detect when a dist changes, and mark that as needing release?
-    (can be done with Makefiles and committing the release version of the tree
-    -- ether will investigate after ripping out MI.)
-
 - should Task::Kensho always get re-released when a subdist changes? or should
   TK just list the categories and not list the actual components?
     - TK should always get re-released when a sub-dist changes.
