@@ -174,7 +174,7 @@ Task::Kensho::WebDev:
     components:
         Plack: Flexible superglue between Web Servers and Perl Web Frameworks or code.
         Task::Catalyst: Catalyst is The Elegant MVC Web Application Framework. Task::Catalyst is all you need to start with Catalyst.
-        Dancer: A lightweight yet powerful web application framework
+        Dancer2: A lightweight yet powerful web application framework
         Mojolicious: Real-time web framework
         Template: (Template::Toolkit) Template Processing System
         HTML::FormHandler: HTML forms using Moose
