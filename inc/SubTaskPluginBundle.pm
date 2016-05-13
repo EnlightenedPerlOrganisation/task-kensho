@@ -68,13 +68,14 @@ sub configure
         [ 'Test::CPAN::Changes' => { ':version' => '0.008' } ],
         'Test::ChangesHasContent',
         [ 'Test::MinimumVersion' => { ':version' => '2.000003', max_target_perl => '5.006' } ],
-        'PodSyntaxTests',
-        'PodCoverageTests',
+        [ 'PodSyntaxTests'      => { ':version' => '5.040' } ],
+        [ 'PodCoverageTests'    => { ':version' => '5.040' } ],
         [ 'Test::PodSpelling'   => { ':version' => '2.006003' } ],
         # 'Test::Pod::No404s',  # TODO: see RT#105937
         [ 'Test::Kwalitee'      => { ':version' => '2.10', filename => 'xt/author/kwalitee.t' } ],
         [ 'MojibakeTests'       => { ':version' => '0.8' } ],
         [ 'Test::ReportPrereqs' => { ':version' => '0.019', verify_prereqs => 1 } ], # gives us something in t/
+        [ 'Test::ReportPrereqs' => { ':version' => '0.022', verify_prereqs => 1, version_extractor => 'Module::Metadata' } ],
         'Test::Portability',
         [ 'Test::CleanNamespaces' => { ':version' => '0.006' } ],
 
@@ -90,7 +91,7 @@ sub configure
         [ 'MetaNoIndex'         => { directory => [ qw(t xt examples share) ] } ],
         [ 'MetaProvides::Package' => { ':version' => '1.15000002', finder => ':InstallModules', meta_noindex => 1, inherit_version => 0, inherit_missing => 0 } ],
         'MetaConfig',
-        [ 'Git::Contributors'   => { ':version' => '0.006', order_by => 'commits', paths => [ '.', '../modules.yml' ] } ],
+        # [Git::Contributors]
         # (StaticInstall)
         [ 'MetaResources'       => { x_IRC => 'irc://irc.perl.org/#epo' } ],
 
@@ -101,6 +102,9 @@ sub configure
                 '-phase' => 'runtime', '-relationship' => 'requires',
                 (map { $_ => 0 } keys %{ $module_data->{components} }),
             } ],
+
+        # we prefer this to run after other Register Prereqs plugins
+        [ 'Git::Contributors'   => { ':version' => '0.006', order_by => 'commits', paths => [ '.', '../modules.yml' ] } ],
 
         # Test Runner
         [ 'RunExtraTests'       => { ':version' => '0.024' } ],
