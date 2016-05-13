@@ -94,6 +94,7 @@ sub configure
         # [Git::Contributors]
         # (StaticInstall)
         [ 'MetaResources'       => { x_IRC => 'irc://irc.perl.org/#epo' } ],
+        [ 'Keywords'            => { ':version' => '0.004', keywords => [ qw(EPO enlightened recommendations curated) ] } ],
 
         # Register Prereqs
         'AutoPrereqs',

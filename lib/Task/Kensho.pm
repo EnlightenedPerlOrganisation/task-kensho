@@ -2,6 +2,7 @@ use strict;
 use warnings;
 package Task::Kensho;
 # ABSTRACT: A Glimpse at an Enlightened Perl
+# KEYWORDS: EPO enlightened recommendations curated
 
 our $VERSION = '0.39';
 
