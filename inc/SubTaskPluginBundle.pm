@@ -139,8 +139,8 @@ sub configure
         [ 'ArchiveRelease'      => { directory => '../released-subtasks' } ],
 
         # After Release
-        [ 'Git::Commit'         => 'release snapshot' => { ':version' => '2.020', add_files_in => ['.'], allow_dirty => [ 'Changes',  ], commit_msg => '%N-%v%t%n%n%c' } ],
-        # note: no [Git::Tag], [Git::Push], [BumpVersionAfterRelease], [NextRelease], [Git::Commit]
+        [ 'Git::Commit'         => 'release snapshot' => { ':version' => '2.020', add_files_in => ['.'], allow_dirty => [ 'Changes' ], commit_msg => '%N-%v%t%n%n%c' } ],
+        # note: no [CopyFilesFromRelease], [Git::Tag], [BumpVersionAfterRelease], [NextRelease], [Git::Commit], [Git::Push]
 
         [ 'Clean' ],
     );
