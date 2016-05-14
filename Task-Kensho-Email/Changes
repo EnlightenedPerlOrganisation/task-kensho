@@ -1,6 +1,11 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+          - WebDev: removed Dancer, added Dancer2
+          - OOP: added Moose, Moo and many related modules
+          - Exceptions: remove TryCatch
+          - Testing: remove Test::Most and Test::NoWarnings, added Test::Warnings
+          - Config: added JSON::MaybeXS
 
 0.38      2014-09-13
           - WebDev: Template::Toolkit is not indexed (see RT#92588) -
