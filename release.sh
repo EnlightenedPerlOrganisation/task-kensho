@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+# this is a bash script: source it!
 
 tk_test()
 {
