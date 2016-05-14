@@ -70,7 +70,7 @@ sub configure
         [ 'Test::MinimumVersion' => { ':version' => '2.000003', max_target_perl => '5.006' } ],
         [ 'PodSyntaxTests'      => { ':version' => '5.040' } ],
         [ 'PodCoverageTests'    => { ':version' => '5.040' } ],
-        [ 'Test::PodSpelling'   => { ':version' => '2.006003' } ],
+        [ 'Test::PodSpelling'   => { ':version' => '2.006003', stopwords => ['irc'] } ],
         # 'Test::Pod::No404s',  # TODO: see RT#105937
         [ 'Test::Kwalitee'      => { ':version' => '2.10', filename => 'xt/author/kwalitee.t' } ],
         [ 'MojibakeTests'       => { ':version' => '0.8' } ],
