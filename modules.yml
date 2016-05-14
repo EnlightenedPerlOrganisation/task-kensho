@@ -70,7 +70,6 @@ Task::Kensho::Exceptions:
     description: Exception Handling
     components:
         Try::Tiny: Lightweight exception handling that handles the vagaries of $@.
-        TryCatch: Flexible exception handling without source filters, handles $@ properly.
         autodie: Make builtins and other functions die instead of returning undef on failure.
 
 
