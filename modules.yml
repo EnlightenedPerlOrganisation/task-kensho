@@ -141,7 +141,6 @@ Task::Kensho::Testing:
     description: Testing
     components:
         Test::Simple: Basic utilities for writing tests.
-        Test::Most: Most commonly needed test functions and features.
         Test::Fatal: Test exception-based code
         Test::Pod: Check for POD errors in files
         Test::Pod::Coverage: Check for pod coverage in your distribution.
