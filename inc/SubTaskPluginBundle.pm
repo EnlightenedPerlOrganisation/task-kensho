@@ -74,8 +74,11 @@ sub configure
         # 'Test::Pod::No404s',  # TODO: see RT#105937
         [ 'Test::Kwalitee'      => { ':version' => '2.10', filename => 'xt/author/kwalitee.t' } ],
         [ 'MojibakeTests'       => { ':version' => '0.8' } ],
-        [ 'Test::ReportPrereqs' => { ':version' => '0.019', verify_prereqs => 1 } ], # gives us something in t/
-        [ 'Test::ReportPrereqs' => { ':version' => '0.022', verify_prereqs => 1, version_extractor => 'Module::Metadata' } ],
+        [ 'Test::ReportPrereqs' => {    # gives us something in t/
+                ':version' => '0.022',
+                verify_prereqs => 1,
+                version_extractor => 'Module::Metadata',
+            } ],
         'Test::Portability',
         [ 'Test::CleanNamespaces' => { ':version' => '0.006' } ],
 
