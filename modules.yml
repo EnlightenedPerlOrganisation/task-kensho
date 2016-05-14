@@ -26,6 +26,7 @@ Task::Kensho::Config:
     components:
         Config::Any: Load configuration from different file formats, transparently
         Config::General: Generic Config Module
+        JSON::MaybeXS: wrapper around the most current and fast JSON backends
 
 
 Task::Kensho::DBDev:
