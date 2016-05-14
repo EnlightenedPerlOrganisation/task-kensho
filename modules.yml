@@ -120,7 +120,7 @@ Task::Kensho::OOP:
         MooseX::Getopt: a Moose role for processing command line options
         MooseX::SimpleConfig: a Moose role for setting attributes from a simple configuration file
         MooseX::Aliases: easy aliasing of methods and attributes in Moose
-        MooseX::StrictConstructor: a Moose extension thatmas your object constructors blow up on unknown attributes
+        MooseX::StrictConstructor: a Moose extension that makes your object constructors blow up on unknown attributes
         MooseX::NonMoose: easy subclassing of non-Moose classes
         MooseX::Role::Parameterized: Moose roles with composition parameters
         Task::Moose: Task::Moose installs Moose and optionally a list of recommended modules that extend Moose.
