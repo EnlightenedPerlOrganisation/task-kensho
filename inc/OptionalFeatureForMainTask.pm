@@ -36,7 +36,7 @@ sub configure
     # skip the prompts when building
     $ENV{PERL_MM_USE_DEFAULT} = 1;
 
-    my (@plugins,@dynamic_prompts);
+    my (@plugins, @dynamic_prompts);
     foreach my $module (sort $self->modules)
     {
         my $module_data = $self->data_for($module);
@@ -58,7 +58,7 @@ sub configure
         ];
 
         push @dynamic_prompts, (
-            qq!\$WriteMakefileArgs{PREREQ_PM}{'$module'} = \$FallbackPrereqs{'$module'} = \$WriteMakefileArgs{VERSION}!,
+            qq!requires('$module', \$WriteMakefileArgs{VERSION})!,
             qq!  if prompt("install $module ($module_data->{description})? [Y/n]", 'Y') =~ /^y/i;!,
         );
     }
