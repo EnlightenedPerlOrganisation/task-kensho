@@ -60,7 +60,8 @@ sub configure
         # Gather Files
         [ 'Git::GatherDir'      => { ':version' => '2.016', exclude_match => '^inc', exclude_filename => [ 'dist.ini', 'modules.yml', 'META.json', 'README.md', 'README.pod' ] } ],
         [ 'MungeFile::WithConfigFile' => { finder => ':InstallModules', files => ['README'], configfile => $self->configfile } ],
-        qw(MetaYAML MetaJSON License Manifest),
+        qw(MetaYAML MetaJSON Manifest),
+        [ 'License'             => { ':version' => '5.038', filename => 'LICENCE' } ],
         [ 'Test::Compile'       => { ':version' => '2.039', bail_out_on_fail => 1, xt_mode => 1 } ],
         'Test::NoTabs',
         'Test::EOL',
