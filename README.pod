@@ -8,7 +8,7 @@ Task::Kensho - A Glimpse at an Enlightened Perl
 
 =head1 VERSION
 
-version 0.38
+version 0.39
 
 =head1 SYNOPSIS
 
@@ -99,6 +99,10 @@ Load configuration from different file formats, transparently
 
 Generic Config Module
 
+=head3 L<JSON::MaybeXS>
+
+wrapper around the most current and fast JSON backends
+
 =head2 L<Task::Kensho::DBDev>: Database Development
 
 =head3 L<DBD::SQLite>
@@ -182,10 +186,6 @@ Manipulate comma-separated values (CSV)
 =head3 L<Try::Tiny>
 
 Lightweight exception handling that handles the vagaries of $@.
-
-=head3 L<TryCatch>
-
-Flexible exception handling without source filters, handles $@ properly.
 
 =head3 L<autodie>
 
@@ -281,9 +281,53 @@ Packages that provide templated software licenses
 
 =head2 L<Task::Kensho::OOP>: Object Oriented Programming
 
+=head3 L<Moo>
+
+Minimalist Object Orientation (with Moose compatibility)
+
+=head3 L<Moose>
+
+a postmodern object system for Perl5
+
+=head3 L<MooseX::Aliases>
+
+easy aliasing of methods and attributes in Moose
+
+=head3 L<MooseX::Getopt>
+
+a Moose role for processing command line options
+
+=head3 L<MooseX::NonMoose>
+
+easy subclassing of non-Moose classes
+
+=head3 L<MooseX::Role::Parameterized>
+
+Moose roles with composition parameters
+
+=head3 L<MooseX::SimpleConfig>
+
+a Moose role for setting attributes from a simple configuration file
+
+=head3 L<MooseX::StrictConstructor>
+
+a Moose extension that makes your object constructors blow up on unknown attributes
+
+=head3 L<Package::Variant>
+
+Parameterizable packages
+
 =head3 L<Task::Moose>
 
-Moose is a postmodern object system for Perl5. Task::Moose installs Moose and optionally a list of recommended modules that extend Moose.
+Task::Moose installs Moose and optionally a list of recommended modules that extend Moose.
+
+=head3 L<Type::Tiny>
+
+tiny, yet Moo(se)-compatible type constraints
+
+=head3 L<namespace::autoclean>
+
+keep imports out of your namespace (Moose-aware)
 
 =for stopwords Redis
 
@@ -315,14 +359,6 @@ Test exception-based code
 
 Check for memory leaks and circular memory references
 
-=head3 L<Test::Most>
-
-Most commonly needed test functions and features.
-
-=head3 L<Test::NoWarnings>
-
-Ensure that no (unexpected) warnings occur during testing
-
 =head3 L<Test::Pod>
 
 Check for POD errors in files
@@ -338,6 +374,10 @@ Make running a test conditional on a particular module being installed
 =head3 L<Test::Simple>
 
 Basic utilities for writing tests.
+
+=head3 L<Test::Warnings>
+
+Test for warnings and the lack of them
 
 =for stopwords Bundler
 
@@ -413,9 +453,9 @@ Perl Client for the Selenium Remote Control test tool
 
 Build CGI::FormBuilder configs from Perl syntax files.
 
-=head3 L<Dancer>
+=head3 L<Dancer2>
 
-A lightweight yet powerful web application framework
+the new generation of Dancer, a lightweight yet powerful web application framework
 
 =head3 L<HTML::FormHandler>
 
@@ -487,7 +527,7 @@ The C<cpanm> client requires interactive mode to be enabled for this to work:
 
     cpanm --interactive Task::Kensho
 
-=head1 BUGS AND LIMITATIONS
+=head1 LIMITATIONS
 
 This list is by no means comprehensive of the "Good" Modules on CPAN.
 Nor is this necessarily the correct path for all developers. Each of
@@ -495,28 +535,25 @@ these modules has a perfectly acceptable replacement that may work
 better for you. This is however a path to good perl practice, and a
 starting place on the road to Enlightened Perl programming.
 
-Please report any bugs or feature requests to
-L<https://github.com/EnlightenedPerlOrganisation/task-kensho/issues>.
-
 =head1 SEE ALSO
 
 L<http://www.enlightenedperl.org/>,
 L<Perl::Dist::Strawberry|Perl::Dist::Strawberry>
 
+=head1 SUPPORT
+
+bugs may be submitted through L<https://github.com/EnlightenedPerlOrganisation/task-kensho/issues>.
+
+There is also an irc channel available for users of this distribution, at
+L<C<#epo> on C<irc.perl.org>|irc://irc.perl.org/#epo>.
+
 =head1 AUTHOR
 
 Chris Prather <chris@prather.org>
 
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2008 by Chris Prather.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
-
 =head1 CONTRIBUTORS
 
-=for stopwords Karen Etheridge Chris Nehren Leo Lapworth Prather Florian Ragwitz Andrew Whatson
+=for stopwords Karen Etheridge Chris Nehren Leo Lapworth Florian Ragwitz Andrew Whatson Rick Leir
 
 =over 4
 
@@ -534,16 +571,23 @@ Leo Lapworth <leo@cuckoo.org>
 
 =item *
 
-Chris Prather <cprather@hdpublishing.com>
-
-=item *
-
 Florian Ragwitz <rafl@debian.org>
 
 =item *
 
 Andrew Whatson <whatson@gmail.com>
 
+=item *
+
+Rick Leir <rleir@leirtech.com>
+
 =back
+
+=head1 COPYRIGHT AND LICENCE
+
+This software is copyright (c) 2008 by Chris Prather.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

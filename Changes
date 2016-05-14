@@ -1,6 +1,6 @@
-Revision history for {{ $dist->name }}
+Revision history for Task-Kensho
 
-{{ $NEXT }}
+0.39      2016-05-14
           - WebDev: removed Dancer, added Dancer2
           - OOP: added Moose, Moo and many related modules
           - Exceptions: remove TryCatch
