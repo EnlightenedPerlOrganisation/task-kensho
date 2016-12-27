@@ -162,7 +162,7 @@ Task::Kensho::Toolchain:
         Carton: Perl module dependency manager (aka Bundler for Perl)
         CPAN::Mini: Create a minimal mirror of CPAN
         local::lib: Create and use a local lib/ for perl modules with PERL5LIB
-        Pinto: Curate a repository of Perl modules
+        Pinto: Create a repository of Perl modules
         version: Perl extension for Version Objects
 
 
