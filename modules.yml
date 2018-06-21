@@ -188,6 +188,7 @@ Task::Kensho::WebDev:
         Mojolicious: Real-time web framework
         Template: (Template::Toolkit) Template Processing System
         HTML::FormHandler: HTML forms using Moose
+        HTML::BrowserDetect: Determine Web browser, version, and platform from an HTTP user agent string
         CGI::FormBuilder::Source::Perl: Build CGI::FormBuilder configs from Perl syntax files.
         XML::RSS: Creates and updates RSS files
         XML::Atom: Atom feed and API implementation
