@@ -98,6 +98,7 @@ Task::Kensho::ModuleDev:
     stopwords: profiler templated
     description: Module Development
     components:
+        Code::TidyAll: Engine for tidyall, your all-in-one code tidier and validator
         Data::Printer: Colored pretty-print of Perl data structures and objects
         Dist::Zilla: Builds distributions of code to be uploaded to the CPAN.
         Devel::Dwarn: Combine warns and Data::Dumper::Concise
