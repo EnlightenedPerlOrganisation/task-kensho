@@ -158,6 +158,7 @@ Task::Kensho::Toolchain:
     description: Basic Toolchain
     components:
         App::cpanminus: Get, unpack, build and install modules from CPAN
+        App::cpm: a fast CPAN module installer
         App::FatPacker: Pack your dependencies onto your script file
         App::perlbrew: Manage perl installations in your $HOME
         Carton: Perl module dependency manager (aka Bundler for Perl)
