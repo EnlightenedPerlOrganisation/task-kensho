@@ -206,4 +206,4 @@ Task::Kensho::XML:
         XML::SAX: Simple/Streaming API for XML
         XML::Generator::PerlData: Perl extension for generating SAX2 events from nested Perl data structures.
         XML::SAX::Writer: Output XML from SAX2 Events
-        RDF::Trine: An RDF Framework for Perl
+        Attean: A Semantic Web Framework
