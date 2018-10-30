@@ -65,9 +65,11 @@ facilitates the ease and simplicity the distribution aims to achieve.
                 $config_data->{$module}{stopwords} ? '=for stopwords ' . $config_data->{$module}{stopwords} . "\n\n" : (),
                 '=head2 L<' . $module . '>: ' . $config_data->{$module}{description},
                 $config_data->{$module}{long_description} ? $config_data->{$module}{long_description} : (),
+                '=over 4',
                 (map {
-                    '=head3 L<' . $_ . ">\n\n" . $config_data->{$module}{components}{$_};
-                } sort keys %{ $config_data->{$module}{components} })
+                    '=item L<' . $_ . ">\n\n" . $config_data->{$module}{components}{$_};
+                } sort keys %{ $config_data->{$module}{components} }),
+                '=back'
             ),
         } sort keys %$config_data;
 }}
