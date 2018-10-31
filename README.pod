@@ -81,9 +81,9 @@ A grep-like text finder
 
 Easy access to any pastebin
 
-=head3 L<Devel::REPL>
+=head3 L<Reply>
 
-a modern perl interactive shell
+reply - read, eval, print, loop, yay!
 
 =head3 L<Module::CoreList>
 

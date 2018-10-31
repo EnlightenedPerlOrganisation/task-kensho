@@ -18,7 +18,7 @@ Task::Kensho::CLI:
         App::Ack: A grep-like text finder
         App::Nopaste: Easy access to any pastebin
         Module::CoreList: What modules shipped with versions of perl
-        Devel::REPL: a modern perl interactive shell
+        Reply: reply - read, eval, print, loop, yay!
 
 
 Task::Kensho::Config:
