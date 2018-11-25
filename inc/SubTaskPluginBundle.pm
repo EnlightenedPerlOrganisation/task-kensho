@@ -78,7 +78,7 @@ sub configure
         [ 'Test::ReportPrereqs' => {    # gives us something in t/
                 ':version' => '0.022',
                 verify_prereqs => 1,
-                version_extractor => 'Module::Metadata',
+                version_extractor => 'ExtUtils::MakeMaker',
             } ],
         'Test::Portability',
         [ 'Test::CleanNamespaces' => { ':version' => '0.006' } ],
@@ -115,8 +115,7 @@ sub configure
         [ 'RunExtraTests'       => { ':version' => '0.024' } ],
 
         # Install Tool
-        [ 'MakeMaker::Fallback' => { ':version' => '0.012' } ],
-        [ 'ModuleBuildTiny::Fallback' => { ':version' => '0.011', version_method => 'conservative' } ],
+        'MakeMaker',
         [ 'StaticInstall'       => { ':version' => '0.005', mode => 'auto' } ],
 
         # After Build
