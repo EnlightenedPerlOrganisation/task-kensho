@@ -6,6 +6,7 @@ Revision history for {{ $dist->name }}
           - Email: added Email::Stuffer
           - Exceptions: added Syntax::Keyword::Try
           - ModuleDev: added Code::TidyAll, removed Perl::Version
+          - OOP: removed Task::Moose
           - Toolchain: added App::cpm
           - WebDev: fixed mis-named HTTP::BrowserDetect, added Attean
           - XML: removed RDF::Trine
