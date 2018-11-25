@@ -2,6 +2,7 @@ Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
           - CLI: added Reply
+          - Dates: added Time::Moment
           - Email: added Email::Stuffer
           - ModuleDev: added Code::TidyAll
           - Toolchain: added App::cpm
