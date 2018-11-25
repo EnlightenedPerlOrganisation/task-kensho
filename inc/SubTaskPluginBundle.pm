@@ -66,9 +66,9 @@ sub configure
         'Test::NoTabs',
         'Test::EOL',
         'MetaTests',
-        [ 'Test::CPAN::Changes' => { ':version' => '0.008' } ],
+        [ 'Test::CPAN::Changes' => { ':version' => '0.012' } ],
         'Test::ChangesHasContent',
-        [ 'Test::MinimumVersion' => { ':version' => '2.000003', max_target_perl => '5.006' } ],
+        [ 'Test::MinimumVersion' => { ':version' => '2.000008', max_target_perl => '5.006' } ],
         [ 'PodSyntaxTests'      => { ':version' => '5.040' } ],
         [ 'PodCoverageTests'    => { ':version' => '5.040' } ],
         [ 'Test::PodSpelling'   => { ':version' => '2.006003', stopwords => ['irc'] } ],
@@ -80,7 +80,7 @@ sub configure
                 verify_prereqs => 1,
                 version_extractor => 'ExtUtils::MakeMaker',
             } ],
-        'Test::Portability',
+        [ 'Test::Portability'   => { ':version' => '2.000007' } ],
         [ 'Test::CleanNamespaces' => { ':version' => '0.006' } ],
 
         # Munge Files
@@ -90,7 +90,6 @@ sub configure
 
         # MetaData
         [ 'GithubMeta'          => { issues => 1 } ],
-        [ 'AuthorityFromModule' => { ':version' => '0.002' } ],
         [ 'Authority'           => { ':version' => '1.009', authority => 'cpan:PERIGRIN', do_munging => 0 } ],
         [ 'MetaNoIndex'         => { directory => [ qw(t xt examples share) ] } ],
         [ 'MetaProvides::Package' => { ':version' => '1.15000002', finder => ':InstallModules', meta_noindex => 1, inherit_version => 0, inherit_missing => 0 } ],
@@ -99,6 +98,7 @@ sub configure
         # (StaticInstall)
         [ 'MetaResources'       => { x_IRC => 'irc://irc.perl.org/#epo' } ],
         [ 'Keywords'            => { ':version' => '0.004', keywords => [ qw(EPO enlightened recommendations curated) ] } ],
+        ($Config{default_inc_excludes_dot} ? [ 'UseUnsafeInc' => { dot_in_INC => 0 } ] : ()),
 
         # Register Prereqs
         'AutoPrereqs',
@@ -109,7 +109,7 @@ sub configure
             } ],
 
         # we prefer this to run after other Register Prereqs plugins
-        [ 'Git::Contributors'   => { ':version' => '0.006', order_by => 'commits', paths => [ '.', '../modules.yml' ] } ],
+        [ 'Git::Contributors'   => { ':version' => '0.029', order_by => 'commits', paths => [ '.', '../modules.yml' ] } ],
 
         # Test Runner
         [ 'RunExtraTests'       => { ':version' => '0.024' } ],
@@ -127,7 +127,7 @@ sub configure
         'Git::CheckFor::MergeConflicts',
         [ 'Git::CheckFor::CorrectBranch' => { ':version' => '0.004', release_branch => 'master' } ],
         [ 'Git::Remote::Check'  => { branch => 'master', remote_branch => 'master' } ],
-        'CheckPrereqsIndexed',
+        [ 'CheckPrereqsIndexed' => { ':version' => '0.019' } ],
         'TestRelease',
         [ 'Git::Check'          => 'after tests' => { repo_root => '..', allow_dirty => [''] } ],
         'CheckIssues',
