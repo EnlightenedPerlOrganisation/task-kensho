@@ -4,7 +4,7 @@ Revision history for {{ $dist->name }}
           - CLI: added Reply
           - Dates: added Time::Moment
           - Email: added Email::Stuffer
-          - ModuleDev: added Code::TidyAll
+          - ModuleDev: added Code::TidyAll, removed Perl::Version
           - Toolchain: added App::cpm
           - WebDev: fixed mis-named HTTP::BrowserDetect, added Attean
           - XML: removed RDF::Trine

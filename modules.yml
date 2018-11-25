@@ -109,7 +109,6 @@ Task::Kensho::ModuleDev:
         Perl::Critic: Critique Perl source code for best-practices.
         Devel::Confess: Include stack traces on all warnings and errors
         Modern::Perl: enable all of the features of Modern Perl with one command
-        Perl::Version: Parse and manipulate Perl version strings
         Software::License: Packages that provide templated software licenses
         Pod::Readme: Convert POD to README file
         CPAN::Uploader: Upload things to the CPAN
