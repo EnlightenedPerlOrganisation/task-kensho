@@ -56,7 +56,7 @@ Task::Kensho::Email:
         Email::Valid: Check validity of Internet email addresses
         Email::Sender: A library for sending email
         Email::MIME::Kit: The Swiss army chainsaw of assembling email messages
-        Email::Stuffer: A more casual approach to creating and sending Email:: emails
+        Email::Stuffer: "A more casual approach to creating and sending Email:: emails"
 
 
 Task::Kensho::ExcelCSV:
