@@ -74,6 +74,7 @@ Task::Kensho::Exceptions:
     components:
         Try::Tiny: Lightweight exception handling that handles the vagaries of $@.
         autodie: Make builtins and other functions die instead of returning undef on failure.
+        Syntax::Keyword::Try: try/catch/finally with full syntax support for control statements
 
 
 Task::Kensho::Hackery:
