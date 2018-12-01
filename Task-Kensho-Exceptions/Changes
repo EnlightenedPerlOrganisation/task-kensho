@@ -1,6 +1,15 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+          - CLI: added Reply
+          - Dates: added Time::Moment
+          - Email: added Email::Stuffer
+          - Exceptions: added Syntax::Keyword::Try
+          - ModuleDev: added Code::TidyAll, removed Perl::Version
+          - OOP: removed Task::Moose
+          - Toolchain: added App::cpm
+          - WebDev: added HTTP::BrowserDetect, Attean
+          - XML: removed RDF::Trine
 
 0.39      2016-05-14
           - WebDev: removed Dancer, added Dancer2
