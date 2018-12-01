@@ -55,8 +55,7 @@ sub configure
     my $module_data = $self->data_for($module);
 
     my @plugins = (
-        # VersionProvider
-        [ 'RewriteVersion' => { ':version' => '0.004', global => 1, add_tarball_name => 0 } ],
+        # no VersionProvider: it is hardcoded in dist.ini
 
         # Gather Files
         [ 'Git::GatherDir'      => { ':version' => '2.016', exclude_match => '^inc', exclude_filename => [ 'dist.ini', 'modules.yml', 'META.json', 'README.md', 'README.pod' ] } ],
