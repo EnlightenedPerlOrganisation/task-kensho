@@ -41,5 +41,5 @@ tk_release()
         fi
         popd
     done
-    dzil release
+    DZIL_AIRPLANE= dzil release
 }
