@@ -9,14 +9,14 @@ the top level directory of the git repository. These are used to generate
 everything else.
 
 - update modules.yml
-- add an entry to Changes, including what dist(s) you changed
+- add an entry to Changes, including what distribution(s) you changed
 - git commit
 
 - run `perl generate-tasks` to update all the subtasks (WARNING: this will
   wipe all existing content in the subtask folders!)
 - (optional) 'git diff' to see what's changed. Unless someone's been hacking
   on the generator code itself, you should only see changes for the specific
-  Task-Kensho- dist(s) that you modified in modules.yml.
+  Task-Kensho-* distribution(s) that you modified in modules.yml.
 - `dzil test --release`, to be sure there are no YAML or spelling errors
 - git commit -m'committing generated changes in advance of release'
 (or, run `tk_test`, as defined in release.sh)
@@ -29,15 +29,16 @@ Note that the distributions DO NOT PROMPT for release - so once you've started
 the release engines, it will run to completion (or until an error is hit)!
 
 To use a different $VERSION than what would be selected by Dist::Zilla
-automatically, set the V environment variable.  Please keep the main TK dist
-version consistent with the highest version of any subtask, and always release
-the main TK dist when any subtask changes.  Note that it is *not* required to
-release all subtasks at once; just always release the main task after the
-subtask(s).
+automatically, set the V environment variable (take care - this is also used
+by the subtask distributions too).  Please keep the main Task-Kensho
+distribution version consistent with the highest version of any subtask, and
+always release the main Task-Kensho distribution when any subtask changes.
+Note that it is *not* required to release all subtasks at once; just always
+release the main task after the subtask(s).
 
-foreach dist...
-    - pushd <dist you want to release>
-    - (optional) dzil build --not; dist test --release, etc etc as desired
+foreach distribution...
+    - pushd <distribution you want to release>
+    - (optional) dzil build --not; dzil test --release, etc etc as desired
     - dzil release
     - popd
 (or to release everything, see the "tk_release" function in in release.sh)
@@ -54,13 +55,14 @@ The repository actually houses the Task-Kensho distribution itself, as well as
 all the subtasks.  However, all the dist.ini files are carefully constructed
 so that one can run 'dzil release' in each directory and only build and
 release the files relevant to that distribution.  There is one common
-'Changes' file, which is only updated and committed when the TK dist itself is
-released.  However, since the TK dist lists all the recommendations for all
-the subtasks, it is reasonable to release TK whenever any one or more subtasks
-are released -- and conveniently, doing so keeps version numbers aligned.
+'Changes' file, which is only updated and committed when the Task-Kensho
+distribution itself is released.  However, since the Task-Kensho distribution
+lists all the recommendations for all the subtasks, it is reasonable to
+release Task-Kensho whenever any one or more subtasks are released -- and
+conveniently, doing so keeps version numbers aligned.
 
 Think this all is horrid? blame ether!
-No, seriously, it's wretched and you want to punt dzil to the moon (and
-probably ether too)?  Just download the last uploaded release of all dists
-from the cpan back to a git repository, commit everything, and you can return
-to managing everything manually again.
+No, seriously, think it's really wretched and you want to punt dzil to the moon
+(and probably ether too)?  Just download the last uploaded release of all
+distributions from the cpan back to a git repository, commit everything, and
+you can return to managing everything manually again.
