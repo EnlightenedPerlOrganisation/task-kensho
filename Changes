@@ -8,7 +8,7 @@ Revision history for {{ $dist->name }}
           - ModuleDev: added Code::TidyAll, removed Perl::Version
           - OOP: removed Task::Moose
           - Toolchain: added App::cpm
-          - WebDev: fixed mis-named HTTP::BrowserDetect, added Attean
+          - WebDev: added HTTP::BrowserDetect, Attean
           - XML: removed RDF::Trine
 
 0.39      2016-05-14
