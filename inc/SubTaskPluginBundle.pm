@@ -15,6 +15,7 @@ with
     'Dist::Zilla::Role::BundleDeps';
 
 use Devel::CheckBin 'can_run';
+use Config;
 use namespace::autoclean;
 
 # this is ripped off wholesale from Dist::Zilla::PluginBundle::Author::ETHER
