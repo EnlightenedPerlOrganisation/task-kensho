@@ -5,19 +5,7 @@ addons:
       - aspell
 language: perl
 perl:
-  - blead       # builds perl from git
-  - dev         # latest point release
   - "5.28"
-  - "5.26"
-  - "5.24"
-  - "5.22"
-  - "5.20"
-  - "5.18"
-  - "5.16"
-  - "5.14"
-  - "5.12"
-  - "5.10"
-  - "5.8"
 env:
   global:
     - AUTHOR_TESTING=1
