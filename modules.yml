@@ -12,7 +12,7 @@ Task::Kensho::Async:
 
 
 Task::Kensho::CLI:
-    stopwords: pastebin
+    stopwords: pastebin yay
     description: Useful Command-line Tools
     components:
         App::Ack: A grep-like text finder
@@ -95,7 +95,7 @@ Task::Kensho::Logging:
 
 
 Task::Kensho::ModuleDev:
-    stopwords: profiler templated
+    stopwords: profiler templated tidyall validator
     description: Module Development
     components:
         Code::TidyAll: Engine for tidyall, your all-in-one code tidier and validator
