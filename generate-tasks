@@ -3,15 +3,14 @@
 # stick all the files in templates/ into each individual task dir, according
 # to what we see in modules.yml...
 
-use 5.014;  # s///r
+use 5.026;
+use experimental 'signatures';
 use Config::Any;
 use Path::Tiny;
 use Dist::Zilla::Plugin::RewriteVersion;
 
-sub get_config
+sub get_config ($config_file = 'modules.yml')
 {
-    my $config_file = shift || 'modules.yml';
-
     # TODO: encoding issues? Can we control the backend that is used, or the options passed to it?
     my $data = Config::Any->load_files({
         use_ext         => 1,
@@ -21,7 +20,7 @@ sub get_config
     $data->{$config_file};
 }
 
-sub get_version
+sub get_version ()
 {
     return $ENV{V} if $ENV{V};
 
@@ -31,10 +30,8 @@ sub get_version
     return $version;
 }
 
-sub generate_task
+sub generate_task ($task_module, $version)
 {
-    my $task_module = shift;
-    my $version = shift;
     my $distname = $task_module =~ s/::/-/gr;
 
     path($distname)->remove_tree({ safe => 0 });
@@ -68,7 +65,7 @@ sub generate_task
     } foreach qw(inc modules.yml);
 }
 
-sub stuff
+sub stuff ()
 {
     my $config = get_config();
     my $version = get_version();
