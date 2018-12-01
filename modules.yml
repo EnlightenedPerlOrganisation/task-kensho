@@ -80,10 +80,7 @@ Task::Kensho::Exceptions:
 Task::Kensho::Hackery:
     stopwords: whippitupitude Hackery
     description: Script Hackery
-    long_description: '
-
-
-These packages are included less for production work and more for whippitupitude. They reflect packages that people have found incredibly useful for prototyping and debugging before reducing down to a production script.'
+    long_description: 'These packages are included less for production work and more for whippitupitude. They reflect packages that people have found incredibly useful for prototyping and debugging before reducing down to a production script.'
     components:
         Smart::Comments: Comments that do more than just sit there
         Term::ProgressBar::Simple: Simple progress bars
