@@ -1,6 +1,6 @@
-Revision history for {{ $dist->name }}
+Revision history for Task-Kensho
 
-{{ $NEXT }}
+0.40      2018-12-01
           - CLI: added Reply
           - Dates: added Time::Moment
           - Email: added Email::Stuffer
