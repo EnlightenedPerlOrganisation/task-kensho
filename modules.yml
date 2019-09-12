@@ -205,3 +205,4 @@ Task::Kensho::XML:
         XML::SAX: Simple/Streaming API for XML
         XML::Generator::PerlData: Perl extension for generating SAX2 events from nested Perl data structures.
         XML::SAX::Writer: Output XML from SAX2 Events
+        Data::Edit::Xml: Edit data held in the XML format.
