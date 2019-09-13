@@ -150,6 +150,7 @@ Task::Kensho::Testing:
         Test::Deep: Test deep data structures
         Test::Requires: Make running a test conditional on a particular module being installed
         Test::Warnings: Test for warnings and the lack of them
+        Test2::Suite: Distribution with a rich set of tools built upon the Test2 framework.
 
 
 Task::Kensho::Toolchain:
