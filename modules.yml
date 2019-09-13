@@ -177,6 +177,7 @@ Task::Kensho::WebCrawling:
         WWW::Mechanize: Handy web browsing in a Perl object
         WWW::Mechanize::TreeBuilder: This module combines WWW::Mechanize and HTML::TreeBuilder.
         WWW::Selenium: Perl Client for the Selenium Remote Control test tool
+        Mojo::UserAgent: Non-blocking I/O HTTP and WebSocket user agent
 
 
 Task::Kensho::WebDev:

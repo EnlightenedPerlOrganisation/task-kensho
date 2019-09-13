@@ -15,7 +15,7 @@ __END__
 
 =head1 DESCRIPTION
 
-=for stopwords Buddhism EPO Kenshō nonduality amongst Organisation installable
+=for stopwords Buddhism EPO Kenshō nonduality amongst Organisation installable WebSocket
 
 From L<http://en.wikipedia.org/wiki/Kensho>:
 
