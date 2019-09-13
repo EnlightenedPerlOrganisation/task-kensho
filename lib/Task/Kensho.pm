@@ -17,6 +17,11 @@ __END__
 
 =for stopwords Buddhism EPO Kenshō nonduality amongst Organisation installable WebSocket
 
+L<Task::Kensho> is a list of recommended, widely used and best-in-class modules
+for Enlightened Perl development. CPAN is wonderful, but there are too
+many wheels and you have to pick and choose amongst the various
+competing technologies.
+
 From L<http://en.wikipedia.org/wiki/Kensho>:
 
 =over 4
@@ -28,11 +33,6 @@ self."[2] It generally "refers to the realization of nonduality of
 subject and object."[3]
 
 =back
-
-L<Task::Kensho> is a list of recommended modules
-for Enlightened Perl development. CPAN is wonderful, but there are too
-many wheels and you have to pick and choose amongst the various
-competing technologies.
 
 The plan is for L<Task::Kensho> to be a rough testing ground for ideas that
 go into among other things the Enlightened Perl Organisation Extended
