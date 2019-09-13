@@ -9,6 +9,7 @@ Task::Kensho::Async:
     components:
         POE: Multitasking and networking framework for Perl
         IO::Async: Asynchronous event-driven programming
+        IO::Async: Asynchronous event-driven programming
 
 
 Task::Kensho::CLI:
