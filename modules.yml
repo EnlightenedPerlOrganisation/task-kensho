@@ -198,7 +198,7 @@ Task::Kensho::WebDev:
 
 
 Task::Kensho::XML:
-    stopwords: libxml libxml2 libxslt RDF
+    stopwords: libxml libxml2 libxslt RDF Minimalistic DOM
     description: XML Development
     components:
         Mojo::DOM: Minimalistic HTML/XML DOM parser with CSS selectors
