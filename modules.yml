@@ -9,6 +9,10 @@ Task::Kensho::Async:
     components:
         POE: Multitasking and networking framework for Perl
         IO::Async: Asynchronous event-driven programming
+        Future: represent an operation awaiting completion
+        Mojo::IOLoop: Minimalistic event loop
+        MCE: Many-Core Engine for Perl providing parallel processing capabilities
+        Parallel::ForkManager: A simple parallel processing fork manager
 
 
 Task::Kensho::CLI:
