@@ -47,11 +47,9 @@ Task::Kensho::Dates:
     description: Date Modules
     components:
         DateTime: A date and time object
-        Date::Tiny: A date object with as little code as possible
-        Time::Tiny: A time object with as little code as possible
-        DateTime::Tiny: A date time object with as little code as possible
         Time::ParseDate: Date parsing both relative and absolute
         Time::Moment: A fast immutable object representing a date and time
+        Time::Piece: A date and time object based on localtime or gmtime
 
 
 Task::Kensho::Email:
