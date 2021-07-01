@@ -61,12 +61,13 @@ Task::Kensho::Email:
 
 
 Task::Kensho::ExcelCSV:
-    stopwords: CSV
+    stopwords: CSV XLS XLSX
     description: Excel/CSV
     components:
         Text::CSV_XS: Manipulate comma-separated values (CSV)
-        Spreadsheet::ParseExcel::Simple: A simple interface to Excel data
-        Spreadsheet::WriteExcel::Simple: Create Excel documents easily
+        Spreadsheet::Read: Read the data from a spreadsheet
+        Spreadsheet::WriteExcel::Simple: Create XLS documents easily
+        Excel::Writer::XLSX: Create spreadsheets in the XLSX format
 
 
 Task::Kensho::Exceptions:
