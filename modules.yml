@@ -85,6 +85,7 @@ Task::Kensho::Hackery:
         Smart::Comments: Comments that do more than just sit there
         Term::ProgressBar::Simple: Simple progress bars
         IO::All: 'IO::All combines all of the best Perl IO modules into a single nifty object oriented interface to greatly simplify your everyday Perl IO idioms.'
+        ojo: Fun one-liners with Mojo
 
 Task::Kensho::Logging:
     description: Logging
