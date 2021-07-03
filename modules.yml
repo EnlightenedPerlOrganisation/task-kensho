@@ -27,6 +27,20 @@ Task::Kensho::CLI:
         Reply: reply - read, eval, print, loop, yay!
 
 
+Task::Kensho::CommandIO:
+    stopwords: ptys
+    description: Running Commands with Input/Output
+    long_description: >-
+      Powerful tools for running external commands and managing their input and
+      output, as alternatives to the standard system function or backticks
+      operator.
+    components:
+        IPC::Run: Run commands with piping, redirection, ptys
+        IPC::Run3: Run commands with input/output redirection
+        IPC::System::Simple: Run commands simply, with detailed diagnostics
+        IO::Async::Process: Run a child process with asynchronous interaction
+
+
 Task::Kensho::Config:
     description: Config Modules
     components:
