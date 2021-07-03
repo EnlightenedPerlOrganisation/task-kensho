@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+
+0.41      2021-07-03
           - Async: added Future, Mojo::IOLoop, MCE, Parallel::ForkManager
           - Dates: added Time::Piece; removed Date::Tiny, Time::Tiny, DateTime::Tiny
           - ExcelCSV: replaced Spreadsheet::ParseExcel with Spreadsheet::Read,
