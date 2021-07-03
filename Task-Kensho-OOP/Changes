@@ -1,6 +1,15 @@
 Revision history for {{ $dist->name }}
 
 {{ $NEXT }}
+          - Async: added Future, Mojo::IOLoop, MCE, Parallel::ForkManager
+          - Dates: added Time::Piece; removed Date::Tiny, Time::Tiny, DateTime::Tiny
+          - ExcelCSV: replaced Spreadsheet::ParseExcel with Spreadsheet::Read,
+            added Excel::Writer::XLSX
+          - Hackery: added ojo
+          - Logging: added Log::Any
+          - Testing: added Test2::Suite
+          - WebCrawling: added Mojo::UserAgent
+          - WebDev: added Web::Simple
 
 0.40      2018-12-01
           - CLI: added Reply
