@@ -189,6 +189,7 @@ Task::Kensho::Toolchain:
 
 
 Task::Kensho::WebCrawling:
+    stopwords: WebSocket
     description: Web Crawling
     components:
         HTTP::Tiny: Lightweight HTTP client implementation
