@@ -105,7 +105,7 @@ sub configure
         'MinimumPerl',
         [ 'Prereqs' => 'task components' => {
                 '-phase' => 'runtime', '-relationship' => 'requires',
-                (map { $_ => 0 } keys %{ $module_data->{components} }),
+                (map +($_ => 0), keys %{ $module_data->{components} }),
             } ],
 
         # we prefer this to run after other Register Prereqs plugins
