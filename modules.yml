@@ -83,7 +83,7 @@ Task::Kensho::Exceptions:
 
 
 Task::Kensho::Hackery:
-    stopwords: whippitupitude Hackery
+    stopwords: whippitupitude Hackery Mojo
     description: Script Hackery
     long_description: >-
       These packages are included less for production work and more for
