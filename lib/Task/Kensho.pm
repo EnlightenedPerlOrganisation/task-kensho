@@ -4,7 +4,7 @@ package Task::Kensho;
 # ABSTRACT: A Glimpse at an Enlightened Perl
 # KEYWORDS: EPO enlightened recommendations curated
 
-our $VERSION = '0.41';
+our $VERSION = '0.42';
 
 __END__
 =pod

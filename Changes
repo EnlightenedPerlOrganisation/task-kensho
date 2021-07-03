@@ -1,4 +1,6 @@
-Revision history for Task-Kensho
+Revision history for {{ $dist->name }}
+
+{{ $NEXT }}
 
 0.41      2021-07-03
           - Async: added Future, Mojo::IOLoop, MCE, Parallel::ForkManager
