@@ -6,7 +6,7 @@
 # ysh [-MSome::YAML::Module] < modules.yml
 
 Task::Kensho::Async:
-    stopwords: Async
+    stopwords: Async Minimalistic
     description: Async Programming
     components:
         POE: Multitasking and networking framework for Perl
