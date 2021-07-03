@@ -61,9 +61,9 @@ facilitates the ease and simplicity the distribution aims to achieve.
 
 {{
     join "\n\n",
-        map {
+        map +(
             '=head3 L<' . $_ . ">\n\n" . $config_data->{$module}{components}{$_}
-        } sort keys %{ $config_data->{$module}{components} }
+        ), sort keys %{ $config_data->{$module}{components} }
 }}
 
 =head1 INSTALLING
