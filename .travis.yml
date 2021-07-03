@@ -5,6 +5,7 @@ addons:
       - aspell-en
 language: perl
 perl:
+  - "5.34"
   - "5.28"
 env:
   global:
